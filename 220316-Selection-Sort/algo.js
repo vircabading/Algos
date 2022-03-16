@@ -38,7 +38,10 @@ function selectionSort(arr){
     let minValIdx = 0;
 
     for (let outIdx = 0; outIdx < arr.length; outIdx++) {
-        console.log( {outIdx} );
+        // Iterate through the array and find the minimum value
+        for (let inIdx = outIdx; inIdx < arr.length; inIdx++) {
+            console.log({ inIdx })
+        }
     }
 }
 
