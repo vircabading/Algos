@@ -37,7 +37,7 @@ function selectionSort(arr){
     // Field Variables
     let minValIdx = 0;
 
-    for (let outIdx = 0; outIdx < arr.length; arr++) {
+    for (let outIdx = 0; outIdx < arr.length; outIdx++) {
         console.log( {outIdx} );
     }
 }
