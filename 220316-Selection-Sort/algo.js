@@ -48,8 +48,9 @@ function selectionSort(arr){
         let temp = arr[outIdx]
         arr[outIdx] = arr[minValIdx];
         arr[minValIdx] = temp;
-        console.log({ arr });
     }
+    return arr;
 }
 
-selectionSort(myArr);
+console.log("Selection Sort: [3,2,9,5,1,4,8]", selectionSort(myArr));
+console.log("Selection Sort: [99,65,12,0,32,87552,625,12]", selectionSort([99,65,12,0,32,87552,625,12]));
