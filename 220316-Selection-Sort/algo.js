@@ -44,6 +44,11 @@ function selectionSort(arr){
                 minValIdx = inIdx;
             }
         }
+        // Move the minimum value to the beginning of the list
+        let temp = arr[outIdx]
+        arr[outIdx] = arr[minValIdx];
+        arr[minValIdx] = temp;
+        console.log({ arr });
     }
 }
 
