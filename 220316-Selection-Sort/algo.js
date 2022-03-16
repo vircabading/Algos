@@ -34,4 +34,12 @@ function selectionSort(arr){
     // Move the minimum value to the beginning of the list
     // Next, iterate through list again to find next minimum value and move it to next index at front
     // Repeat until all values are sorted
+    // Field Variables
+    let minValIdx = 0;
+
+    for (let outIdx = 0; outIdx < arr.length; arr++) {
+        console.log( {outIdx} );
+    }
 }
+
+selectionSort(myArr);
