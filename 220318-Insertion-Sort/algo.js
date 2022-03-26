@@ -43,6 +43,18 @@ function insertionSort(arr) {
     //   Keep swapping the current with the value to the left until the value to the left is less than current
     for (let current=0; current<arr.length; current++) {
         console.log({current});
+        let backRunner = current;
+        while (backRunner > 0) {
+            console.log({backRunner});
+            if (arr[backRunner] < arr[backRunner-1]) {
+                let temp = arr[backRunner];
+                arr[backRunner] = arr[backRunner-1];
+                arr[backRunner-1] = temp;
+                backRunner -= 1;
+            } else {
+                backRunner = 0;
+            }
+        }
     }
     return arr;
 }
