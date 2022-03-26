@@ -37,6 +37,10 @@
 
 
 function insertionSort(arr) {
+    // Pseudo Code
+    // All items to the left of current are assumed to be sorted
+    // If the current is less less than item to left of it, swap
+    //   Keep swapping the current with the value to the left until the value to the left is less than current
     return arr;
 }
 
