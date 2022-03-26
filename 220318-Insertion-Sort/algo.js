@@ -37,5 +37,7 @@
 
 
 function insertionSort(arr) {
-
+    return arr;
 }
+
+console.log("Insertion Sort: [565,909,349,126,477,201,240,699] ::", insertionSort([565,909,349,126,477,201,240,699]));
