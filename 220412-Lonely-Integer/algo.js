@@ -6,11 +6,19 @@
  */
 
 function lonelyinteger(a) {
+
+    // Create a Hash Map
     const aHash = new Map();
     console.log({aHash});
 
+    // Iterate through the array
     for (let idx=0; idx<a.length; idx++) {
-        console.log(a[idx]);
+        // if item in the array is not in the hashMap, add it to the hashMap
+        if (!aHash.has(a[idx])) {
+            aHash.set(a[idx], 1);
+        }
+        // otherwise, remove the item from the hashmap
+        console.log({aHash});
     }
 }
 
