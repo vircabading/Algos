@@ -9,6 +9,9 @@ function lonelyinteger(a) {
     const aHash = new Map();
     console.log({aHash});
 
+    for (let idx=0; idx<a.length; idx++) {
+        console.log(a[idx]);
+    }
 }
 
 console.log("lonelyinteger[1,2,3,4,3,2,1]:", lonelyinteger( [1,2,3,4,3,2,1] ));
