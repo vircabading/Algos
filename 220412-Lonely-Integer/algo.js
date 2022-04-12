@@ -15,13 +15,15 @@ function lonelyinteger(a) {
     for (let idx=0; idx<a.length; idx++) {
         // if item in the array is not in the hashMap, add it to the hashMap
         if (!aHash.has(a[idx])) {
-            aHash.set(a[idx], 1);
+            aHash.set(a[idx], a[idx]);
         // otherwise, remove the item from the hashmap
         } else {
             aHash.delete(a[idx]);
         }
         console.log({aHash});
     }
+    // Return the only thing left in the hashMap
+    return aHash.keys().next().value;
 }
 
 console.log("lonelyinteger[1,2,3,4,3,2,1]:", lonelyinteger( [1,2,3,4,3,2,1] ));
