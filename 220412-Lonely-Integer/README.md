@@ -1,0 +1,1 @@
+# Lonely Integer Algorithm
