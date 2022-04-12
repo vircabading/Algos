@@ -14,3 +14,7 @@ The unique element is 4
 Complete the lonelyinteger function.
 lonelyinteger has the following parameter(s):
 - int a: an array of integers
+
+## Returns
+
+int: the element that occcurs only once
