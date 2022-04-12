@@ -16,8 +16,10 @@ function lonelyinteger(a) {
         // if item in the array is not in the hashMap, add it to the hashMap
         if (!aHash.has(a[idx])) {
             aHash.set(a[idx], 1);
-        }
         // otherwise, remove the item from the hashmap
+        } else {
+            aHash.delete(a[idx]);
+        }
         console.log({aHash});
     }
 }
