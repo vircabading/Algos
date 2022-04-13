@@ -39,7 +39,7 @@ function diagonalDifference(arr) {
     if (sumLeftToRight > sumRightToLeft) {
         absDiff = sumLeftToRight - sumRightToLeft;
     } else {
-        absDiff = sumRightToLeft = sumLeftToRight;
+        absDiff = sumRightToLeft - sumLeftToRight;
     }
     return absDiff;
 }
