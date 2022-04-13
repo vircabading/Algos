@@ -15,13 +15,20 @@ function diagonalDifference(arr) {
     // 2. Get the sum of the Right to Left Diagonal
     // 3. Get the absolute difference betweent the two diagonal sums
 
+    // Variabes
+    let sumLeftToRight = 0;
+    let SumRightToLeft = 0;
+
     // Get the array length
     let arrLength = arr.length;
     console.log({arrLength});
 
     // Iterate through the array
     for (let x=0; x<arrLength; x++) {
-        console.log(arr[x]);
+        // Get the Sum of the Left to Right Diagonal
+        sumLeftToRight += arr[x][x];
+
+        console.log("Arr:", arr[x], "| Sum L to R:", sumLeftToRight);
     }
 }
 
