@@ -19,3 +19,5 @@ The absolute difference is |15 - 17| = 2
 diagonalDifference functions takes the following parameters:
 - int arr[n][m]: a two dimensional array of integers
 
+diagonalDifference function returns:
+- int: the absolute diagonal difference
