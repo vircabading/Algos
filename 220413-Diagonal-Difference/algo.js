@@ -17,7 +17,7 @@ function diagonalDifference(arr) {
 
     // Variabes
     let sumLeftToRight = 0;
-    let SumRightToLeft = 0;
+    let sumRightToLeft = 0;
 
     // Get the array length
     let arrLength = arr.length;
@@ -29,10 +29,19 @@ function diagonalDifference(arr) {
         sumLeftToRight += arr[x][x];
 
         // Get the Sum of Right to Left Diagonal
-        SumRightToLeft += arr[x][arrLength-1-x];
+        sumRightToLeft += arr[x][arrLength-1-x];
 
-        console.log("Arr:", arr[x], "| Sum L to R:", sumLeftToRight, "| Sum R to L:", SumRightToLeft);
+        console.log("Arr:", arr[x], "| Sum L to R:", sumLeftToRight, "| Sum R to L:", sumRightToLeft);
     }
+
+    // Get the absolute difference betweent the two diagonal sums
+    let absDiff = 0;
+    if (sumLeftToRight > sumRightToLeft) {
+        absDiff = sumLeftToRight - sumRightToLeft;
+    } else {
+        absDiff = sumRightToLeft = sumLeftToRight;
+    }
+    return absDiff;
 }
 
 console.log("Diagonal Difference: [[11,2,4],[4,5,6],[10, 8, -12]]", diagonalDifference([[11,2,4],[4,5,6],[10, 8, -12]]));
