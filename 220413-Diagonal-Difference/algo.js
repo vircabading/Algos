@@ -28,7 +28,10 @@ function diagonalDifference(arr) {
         // Get the Sum of the Left to Right Diagonal
         sumLeftToRight += arr[x][x];
 
-        console.log("Arr:", arr[x], "| Sum L to R:", sumLeftToRight);
+        // Get the Sum of Right to Left Diagonal
+        SumRightToLeft += arr[x][arrLength-1-x];
+
+        console.log("Arr:", arr[x], "| Sum L to R:", sumLeftToRight, "| Sum R to L:", SumRightToLeft);
     }
 }
 
