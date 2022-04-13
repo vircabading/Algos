@@ -14,6 +14,8 @@ function diagonalDifference(arr) {
     // 1. Get the sum of the Left to Right Diagonal
     // 2. Get the sum of the Right to Left Diagonal
     // 3. Get the absolute difference betweent the two diagonal sums
+    let arrLength = arr.length;
+    console.log({arrLength});
 }
 
 console.log("Diagonal Difference: [[11,2,4],[4,5,6],[10, 8, -12]]", diagonalDifference([[11,2,4],[4,5,6],[10, 8, -12]]));
