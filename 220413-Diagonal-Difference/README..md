@@ -8,6 +8,10 @@ Given a square matrix, calculate the absolute difference between the sums of its
 
 JavaScript
 
+## Origin:
+
+HackerRank
+
 ## Example
 
 [[1 2 3],
