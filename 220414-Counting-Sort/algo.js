@@ -21,7 +21,8 @@ function countingSort(arr) {
     for (let x=0; x<100; x++) {
         freqArray[x] = 0;
     }
-    console.log({freqArray});
+
+    
 }
 
 console.log("Counting Sort [1,1,3,2,1]:", countingSort([1,1,3,2,1]));
