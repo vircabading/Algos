@@ -24,7 +24,8 @@ function countingSort(arr) {
 
     // Iterate through the original array
     for (let x=0; x<arr.length; x++) {
-        console.log(arr[x]);
+        // Tally each value in original into the frequency array
+        freqArray[arr[x]]++;
     }
 
     // Return the frequency Array
