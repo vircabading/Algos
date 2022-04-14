@@ -16,3 +16,5 @@ Next, the frequency array is used to create the sorted array:
 sorted = [1, 1, 1, 2, 3]
 
 Note: Always return an array with 100 elements.  The example above shows only the first 4 elements, the remainder being zeros.
+
+## Function Description
