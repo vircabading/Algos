@@ -17,7 +17,8 @@ function countingSort(arr) {
 
     // Create frequrency array
     let freqArray = [];
-    for () {
-        
+    // Initialize the freqArray to 100 zeroes
+    for (let x=0; x<100; x++) {
+        arr[x] = 0;
     }
 }
