@@ -22,3 +22,7 @@ Note: Always return an array with 100 elements.  The example above shows only th
 Input Parameters:
 
 arr: an array of integers
+
+Returns:
+
+int[100]: a frequency array
