@@ -11,3 +11,8 @@ arr = [1, 1, 3, 2, 1]
 All of the values are in the range [0 . . . 3], so create an array of zeroes that is 4 in length, result = [0 ,0, 0, 0].
 
 In the end the frequency array is [0, 3, 1, 1].
+
+Next, the frequency array is used to create the sorted array:
+sorted = [1, 1, 1, 2, 3]
+
+Note: Always return an array with 100 elements.  The example above shows only the first 4 elements, the remainder being zeros.
