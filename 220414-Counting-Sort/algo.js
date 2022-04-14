@@ -12,7 +12,7 @@
 function countingSort(arr) {
     // Pseudo-code
     // Create a frequenzy array which will be returned
-    // Iterate through the original code and tally the elements into the frequency array
+    // Iterate through the original array and tally the elements into the frequency array
     // Return the frequency array
 
     // Create frequrency array
