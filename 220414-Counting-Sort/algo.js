@@ -19,6 +19,8 @@ function countingSort(arr) {
     let freqArray = [];
     // Initialize the freqArray to 100 zeroes
     for (let x=0; x<100; x++) {
-        arr[x] = 0;
+        freqArray[x] = 0;
     }
+    console.log({freqArray});
 }
+
