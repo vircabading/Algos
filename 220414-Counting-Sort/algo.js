@@ -10,6 +10,5 @@
  */
 
 function countingSort(arr) {
-    // Write your code here
-
+    // Pseudo-code
 }
