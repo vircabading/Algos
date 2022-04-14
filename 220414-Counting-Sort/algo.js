@@ -14,4 +14,10 @@ function countingSort(arr) {
     // Create a frequenzy array which will be returned
     // Iterate through the original code and tally the elements into the frequency array
     // Return the frequency array
+
+    // Create frequrency array
+    let freqArray = [];
+    for () {
+        
+    }
 }
