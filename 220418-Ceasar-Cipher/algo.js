@@ -25,7 +25,13 @@ function caesarCipher(s, k) {
     //     console.log(char);
     // }
 
-    //
+    console.log(alphabet.indexOf('c'));
+
+    // Rotate the alphabet
+    let rotatedAlphabet = "";
+    for (let count=1; count <= 26; count++) {
+        
+    }
 }
 
 console.log("/////////////////////////////");
