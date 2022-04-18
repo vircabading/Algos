@@ -12,7 +12,11 @@
  */
 
 function caesarCipher(s, k) {
-    // Write your code here
-    console.log({s});
-    console.log({k});
+    // Pseudo Code
 }
+
+console.log("/////////////////////////////");
+console.log("// Ceasar Cipher Also.js");
+console.log("/////////////////////////////\n");
+
+console.log("ceasarCipher('middle-Outz', 2):", caesarCipher('middle-Outz', 2));
