@@ -13,6 +13,16 @@
 
 function caesarCipher(s, k) {
     // Pseudo Code
+    // Rotate the Alphabet
+    // Convert the inputed string according to the rotated alphabet
+
+    // Create Original Alphabet
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    
+    // Traverse original alphabet
+    for (char of alphabet) {
+        console.log(char);
+    }
 }
 
 console.log("/////////////////////////////");
