@@ -12,7 +12,40 @@
  */
 
 function caesarCipher(s, k) {
-    // Write your code here
-    console.log({s});
-    console.log({k});
+    // Pseudo Code
+    // Rotate the Alphabet
+    // Convert the inputed string according to the rotated alphabet
+
+    // Create Original Alphabet
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+    // Rotate the alphabet
+    let rotatedAlphabet = "";
+    for (let count=0; count < 26; count++) {
+        rotatedAlphabet += alphabet.charAt(((count+k-1))%26);
+    }
+
+    // Convert the inputed string according to the rotated alphabet
+    let result = "";
+    for (char of s) {                                   // iterate through string s
+        let lowerChar = char.toLowerCase();
+        let idxOfChar = alphabet.indexOf(lowerChar);
+        let rotatedChar = char;
+        if (idxOfChar >= 0) {
+            if (char == char.toLowerCase()) {
+                rotatedChar = rotatedAlphabet[idxOfChar];
+            } else {
+                rotatedChar = rotatedAlphabet[idxOfChar];
+                rotatedChar = rotatedChar.toUpperCase();
+            }
+        }
+        result += rotatedChar;
+    }
+    return result;
 }
+
+console.log("/////////////////////////////");
+console.log("// Ceasar Cipher Also.js");
+console.log("/////////////////////////////\n");
+
+console.log("ceasarCipher('middle-Outz', 2):", caesarCipher('middle-Outz', 3));
