@@ -14,3 +14,7 @@ The alphabet is rotated by 3, matching the mapping aboce.  The encrypted string 
 Note: The cipher only encryptes letters; symbols such as '-', remain unencrypted
 
 ## Function Description
+
+ceasarCipher has the following parameters:
+- String s: clear text
+- int k: the alphabet rotation factor
