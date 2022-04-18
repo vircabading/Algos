@@ -28,12 +28,29 @@ function caesarCipher(s, k) {
     // Rotate the alphabet
     let rotatedAlphabet = "";
     for (let count=0; count < 26; count++) {
-        if (k>25) {
-            k = k % 26;
-        }
-        rotatedAlphabet += alphabet.charAt(count+k);
+        rotatedAlphabet += alphabet.charAt(((count+k-1))%26);
     }
     console.log({rotatedAlphabet});
+
+    // Convert the inputed string according to the rotated alphabet
+    let result = "";
+    for (char of s) {                                   // iterate through string s
+        let lowerChar = char.toLowerCase();
+        let idxOfChar = alphabet.indexOf(lowerChar);
+        let rotatedChar = char;
+        if (idxOfChar >= 0) {
+            if (char == char.toLowerCase()) {
+                rotatedChar = rotatedAlphabet[idxOfChar];
+            } else {
+                rotatedChar = rotatedAlphabet[idxOfChar];
+                rotatedChar = rotatedChar.toUpperCase();
+            }
+        }
+        console.log("char:", char, "|| rotated:", rotatedChar);
+        console.log({lowerChar});
+        console.log({idxOfChar});
+    }
+    return result;
 }
 
 console.log("/////////////////////////////");
