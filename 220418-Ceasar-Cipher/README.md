@@ -18,3 +18,6 @@ Note: The cipher only encryptes letters; symbols such as '-', remain unencrypted
 ceasarCipher has the following parameters:
 - String s: clear text
 - int k: the alphabet rotation factor
+
+returns:
+- String: the encrypted string
