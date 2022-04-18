@@ -18,11 +18,14 @@ function caesarCipher(s, k) {
 
     // Create Original Alphabet
     let alphabet = "abcdefghijklmnopqrstuvwxyz";
-    
+        console.log("Original Alphabet:", alphabet);
+
     // Traverse original alphabet
-    for (char of alphabet) {
-        console.log(char);
-    }
+    // for (char of alphabet) {
+    //     console.log(char);
+    // }
+
+    //
 }
 
 console.log("/////////////////////////////");
