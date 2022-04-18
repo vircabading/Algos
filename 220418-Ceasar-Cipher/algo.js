@@ -18,19 +18,12 @@ function caesarCipher(s, k) {
 
     // Create Original Alphabet
     let alphabet = "abcdefghijklmnopqrstuvwxyz";
-        console.log("Original Alphabet:", alphabet);
-
-    // Traverse original alphabet
-    // for (char of alphabet) {
-    //     console.log(char);
-    // }
 
     // Rotate the alphabet
     let rotatedAlphabet = "";
     for (let count=0; count < 26; count++) {
         rotatedAlphabet += alphabet.charAt(((count+k-1))%26);
     }
-    console.log({rotatedAlphabet});
 
     // Convert the inputed string according to the rotated alphabet
     let result = "";
@@ -46,9 +39,6 @@ function caesarCipher(s, k) {
                 rotatedChar = rotatedChar.toUpperCase();
             }
         }
-        console.log("char:", char, "|| rotated:", rotatedChar);
-        console.log({lowerChar});
-        console.log({idxOfChar});
         result += rotatedChar;
     }
     return result;
