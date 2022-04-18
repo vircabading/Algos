@@ -23,3 +23,5 @@ returns:
 - String: the encrypted string
 
 ## Language:
+
+JavaScript
