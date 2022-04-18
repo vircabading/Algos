@@ -12,3 +12,5 @@ k = 3
 The alphabet is rotated by 3, matching the mapping aboce.  The encrypted string is Wkhuh'v-d-dvwdupdq-zdlwlqj-lq-wkh-vnb
 
 Note: The cipher only encryptes letters; symbols such as '-', remain unencrypted
+
+## Function Description
