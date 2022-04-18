@@ -25,17 +25,19 @@ function caesarCipher(s, k) {
     //     console.log(char);
     // }
 
-    console.log(alphabet.indexOf('c'));
-
     // Rotate the alphabet
     let rotatedAlphabet = "";
-    for (let count=1; count <= 26; count++) {
-        
+    for (let count=0; count < 26; count++) {
+        if (k>25) {
+            k = k % 26;
+        }
+        rotatedAlphabet += alphabet.charAt(count+k);
     }
+    console.log({rotatedAlphabet});
 }
 
 console.log("/////////////////////////////");
 console.log("// Ceasar Cipher Also.js");
 console.log("/////////////////////////////\n");
 
-console.log("ceasarCipher('middle-Outz', 2):", caesarCipher('middle-Outz', 2));
+console.log("ceasarCipher('middle-Outz', 2):", caesarCipher('middle-Outz', 3));
