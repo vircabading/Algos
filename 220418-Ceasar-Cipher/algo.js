@@ -49,6 +49,7 @@ function caesarCipher(s, k) {
         console.log("char:", char, "|| rotated:", rotatedChar);
         console.log({lowerChar});
         console.log({idxOfChar});
+        result += rotatedChar;
     }
     return result;
 }
