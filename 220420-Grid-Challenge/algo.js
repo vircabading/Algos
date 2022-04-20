@@ -16,4 +16,6 @@ function gridChallenge(grid) {
 
 console.log("************************");
 console.log("Algo.js");
-console.log("************************");
+console.log("************************\n");
+
+console.log(gridChallenge([ 'eabcd', 'fghij', 'olkmn', 'trpqs', 'xywuv' ]));
