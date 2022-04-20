@@ -14,6 +14,16 @@
     // 4. If the element is already in the map, it means duplicate is found
     // 5. If duplicate is found return true
     // 6. If no duplicate found in the array, return false
+
+    // Create a hashmap
+    const dupMap = new Map();
+
+    // Go throught the nums array
+    for (num of nums) {
+        console.log({num});
+    }
+
+    console.log({dupMap});
 };
 
 console.log("////////////////////////////");
