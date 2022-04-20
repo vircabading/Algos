@@ -7,3 +7,7 @@ Give an integer array (nums), return true if any value appears at least twice in
 ## Language
 
 JavaScript
+
+## Origin
+
+LeetCode
