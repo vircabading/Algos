@@ -17,6 +17,11 @@ function gridChallenge(grid) {
     // 4. If any vertical grid is found not sorted, return NO
     // 5. Otherwise, return YES
     console.log({grid});
+
+    // Sort thr grids horizontally
+    for (item of grid) {
+        console.log({item});
+    }
 }
 
 console.log("************************");
