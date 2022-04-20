@@ -9,3 +9,7 @@
  var containsDuplicate = function(nums) {
     
 };
+
+console.log("////////////////////////////");
+console.log("Contains Duplicate Algorithm");
+console.log("////////////////////////////\n");
