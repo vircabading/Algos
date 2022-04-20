@@ -14,3 +14,5 @@ LeetCode
 
 ## Examples
 
+Input: nums = [1, 2, 3, 1]
+Output: True
