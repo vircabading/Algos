@@ -7,7 +7,7 @@
  * @return {boolean}
  */
  var containsDuplicate = function(nums) {
-    
+    // Pseudo Code
 };
 
 console.log("////////////////////////////");
