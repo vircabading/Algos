@@ -11,6 +11,11 @@
 
 function gridChallenge(grid) {
     // Pseudo code section
+    // 1. Sort the grids horizontally
+    // 2. Go through the grids vertically
+    // 3. See if they are sorted
+    // 4. If any vertical grid is found not sorted, return NO
+    // 5. Otherwise, return YES
     console.log({grid});
 }
 
