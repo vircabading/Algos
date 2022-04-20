@@ -22,14 +22,10 @@
     for (num of nums) {
         // See if each num is in the hash map
         if (dupMap.has(num)) {      // Duplicate found --> return true
-            console.log("*** Duplicate found:", num);
             return true;
         } else {                    // Not Duplicate --> add num to hash map
             dupMap.set(num, 1);
         }
-
-        console.log({num});
-        console.log({dupMap});
     }
     
     // If no duplicate found in the array, return false
@@ -42,3 +38,4 @@ console.log("////////////////////////////\n");
 
 console.log("containsDuplicate([1,2,3,1]):", containsDuplicate([1,2,3,1]));
 console.log("containsDuplicate([1,2,3,4]):", containsDuplicate([1,2,3,4]));
+console.log("containsDuplicate([1,1,1,3,3,4,3,2,4,2]):", containsDuplicate([1,1,1,3,3,4,3,2,4,2]));
