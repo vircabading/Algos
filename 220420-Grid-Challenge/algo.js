@@ -10,7 +10,7 @@
  */
 
 function gridChallenge(grid) {
-    // Write your code here
+    // Pseudo code section
     console.log({grid});
 }
 
