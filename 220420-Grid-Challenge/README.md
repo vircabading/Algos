@@ -7,3 +7,7 @@ Given a square grid of chatracters in the range ascii[a-z], rearrange elements o
 ## Language
 
 JavaScript
+
+## Origin
+
+HackerRank
