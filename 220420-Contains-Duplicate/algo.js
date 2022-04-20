@@ -20,10 +20,18 @@
 
     // Go throught the nums array
     for (num of nums) {
+        // See if each num is in the hash map
+        if (dupMap.has(num)) {      // Duplicate found --> return true
+            console.log("*** Duplicate found:", num);
+            return true;
+        } else {                    // Not Duplicate --> add num to hash map
+            dupMap.set(num, 1);
+        }
+
         console.log({num});
+        console.log({dupMap});
     }
 
-    console.log({dupMap});
 };
 
 console.log("////////////////////////////");
