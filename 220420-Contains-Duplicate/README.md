@@ -19,3 +19,6 @@ Output: True
 
 Input: nums = [1, 2, 3, 4]
 Output: False
+
+Input: nums = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
+Output: True
