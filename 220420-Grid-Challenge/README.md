@@ -27,3 +27,7 @@ The rows are already in alphabetical order.  The columns a a e, b d f, and c e g
 ## Input Params
 
 string grid[n]: an array of strings
+
+## Returns
+
+string: either "YES" or "NO"
