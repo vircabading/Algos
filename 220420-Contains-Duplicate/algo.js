@@ -31,7 +31,9 @@
         console.log({num});
         console.log({dupMap});
     }
-
+    
+    // If no duplicate found in the array, return false
+    return false;
 };
 
 console.log("////////////////////////////");
@@ -39,3 +41,4 @@ console.log("Contains Duplicate Algorithm");
 console.log("////////////////////////////\n");
 
 console.log("containsDuplicate([1,2,3,1]):", containsDuplicate([1,2,3,1]));
+console.log("containsDuplicate([1,2,3,4]):", containsDuplicate([1,2,3,4]));
