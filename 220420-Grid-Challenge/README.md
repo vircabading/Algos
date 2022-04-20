@@ -13,3 +13,13 @@ JavaScript
 HackerRank
 
 ## Example
+
+grid = ['abc', 'ade', 'efg']
+
+```
+a b c
+a d e
+e f g
+```
+
+The rows are already in alphabetical order.  The columns a a e, b d f, and c e g are also in alphabetical order, so the answer would be YES.  Only elements withib the same row can be rearranged.  They cannoyt be movedf to a difference row.
