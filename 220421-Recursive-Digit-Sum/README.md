@@ -15,3 +15,7 @@ For example, the super digit of  will be calculated as:
 	super_digit(11)		1 + 1 = 2
 	super_digit(2)		= 2  
 ```
+
+## Language
+
+JavaScript
