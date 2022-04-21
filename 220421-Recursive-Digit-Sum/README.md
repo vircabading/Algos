@@ -23,3 +23,13 @@ JavaScript
 ## Origin
 
 HackerRank
+
+## Input
+
+string n: a string representtion of an integer
+
+int k: the times to concatenate n to make p
+
+## Returns
+
+int: the super digit of n repeated k times
