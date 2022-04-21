@@ -23,6 +23,21 @@ function superDigit(n, k) {
     // B. Recursive Case
     //      Recursively call superDigit on the sum of all the digits of p
 
+    // Construct p by concatenating string n k times
+    let p = "";
+    for (let x=0; x<k; x++) {
+        p += n;
+    }
+    console.log({p});
+
+    // Retrieve each digit from p
+    let digits = [];
+    for (const char of p) {
+        digits.push(parseInt(char));
+        console.log({char});
+        console.log({digits});
+
+    }
 }
 
 
