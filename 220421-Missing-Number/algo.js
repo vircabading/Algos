@@ -38,3 +38,5 @@ console.log("Missing Number Algorithm")
 console.log("******************************\n");
 
 console.log("expectNums([3,0,1]):", missingNumber([3,0,1]));
+console.log("expectNums([0,1]):", missingNumber([0,1]));
+console.log("expectNums([3,0,1]):", missingNumber([3,0,1]));
