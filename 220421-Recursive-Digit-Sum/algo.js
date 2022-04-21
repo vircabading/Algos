@@ -23,6 +23,11 @@ function superDigit(n, k) {
     // B. Recursive Case
     //      Recursively call superDigit on the sum of all the digits of p
 
+    // Recursive Base Case
+    if (n.length == 1 && k == 1) {
+        return parseInt(n);
+    }
+
     // Construct p by concatenating string n k times
     let p = "";
     for (let x=0; x<k; x++) {
@@ -44,7 +49,12 @@ function superDigit(n, k) {
     });
     console.log({sum});
 
-    
+    // Recursive Case: Recursively call superDigit on the sum
+    if (sum < 10) {
+        return sum;
+    } else {
+        return superDigit(sum.toString(), 1);
+    }
 }
 
 
