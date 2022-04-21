@@ -34,10 +34,17 @@ function superDigit(n, k) {
     let digits = [];
     for (const char of p) {
         digits.push(parseInt(char));
-        console.log({char});
-        console.log({digits});
-
     }
+    console.log({digits});
+
+    // Get the sum of all the digits
+    let sum = 0;
+    digits.map((digit) =>{
+        sum += digit;
+    });
+    console.log({sum});
+
+    
 }
 
 
