@@ -39,4 +39,4 @@ console.log("******************************\n");
 
 console.log("expectNums([3,0,1]):", missingNumber([3,0,1]));
 console.log("expectNums([0,1]):", missingNumber([0,1]));
-console.log("expectNums([3,0,1]):", missingNumber([3,0,1]));
+console.log("expectNums([9,6,4,2,3,5,7,0,1]):", missingNumber([9,6,4,2,3,5,7,0,1]));
