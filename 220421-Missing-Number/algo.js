@@ -7,7 +7,7 @@
  * @return {number}
  */
  var missingNumber = function(nums) {
-    
+    // Pseudo Code
 };
 
 console.log("******************************");
