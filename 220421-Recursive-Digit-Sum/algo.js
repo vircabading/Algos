@@ -33,21 +33,18 @@ function superDigit(n, k) {
     for (let x=0; x<k; x++) {
         p += n;
     }
-    // console.log({p});
 
     // Retrieve each digit from p
     let digits = [];
     for (const char of p) {
         digits.push(parseInt(char));
     }
-    // console.log({digits});
 
     // Get the sum of all the digits
     let sum = 0;
     digits.map((digit) =>{
         sum += digit;
     });
-    // console.log({sum});
 
     // Recursive Case: Recursively call superDigit on the sum
     if (sum < 10) {         // Edge case, sum is only on digit
