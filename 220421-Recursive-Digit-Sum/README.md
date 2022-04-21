@@ -19,3 +19,7 @@ For example, the super digit of  will be calculated as:
 ## Language
 
 JavaScript
+
+## Origin
+
+HackerRank
