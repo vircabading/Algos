@@ -19,8 +19,6 @@ function minimumBribes(q) {
     //      expected position, print "Too chaotic"
     // 5. After having finished iterating through all elements in array q
     //      print the total # of bribes
-    console.log({q});
-
     let numBribes = 0;
 
     for (let x=0; x<q.length; x++) {
