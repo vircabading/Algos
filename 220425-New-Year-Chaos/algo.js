@@ -40,3 +40,5 @@ function minimumBribes(q) {
 
 minimumBribes([ 2, 1, 5, 3, 4 ] );
 minimumBribes([ 2, 5, 1, 3, 4 ] );
+minimumBribes([ 1, 2, 3, 5, 4, 6, 7, 8 ] );
+minimumBribes([ 4, 1, 2, 3 ] );
