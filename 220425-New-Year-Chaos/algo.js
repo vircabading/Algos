@@ -33,9 +33,6 @@ function minimumBribes(q) {
         } else if (diff > 0) {
             numBribes += diff;
         }
-        console.log({num});
-        console.log({position});
-        console.log({diff});
     }
 
     console.log(numBribes);
