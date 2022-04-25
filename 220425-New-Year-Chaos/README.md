@@ -27,3 +27,6 @@ q = [4, 1, 2, 3]
 Person 4 had to bribe 3 people to get to the curremt p[osition.  Print "Too Chaotic"
 
 ## Input parameters
+
+int [] q: array of integer describing the final state of the queue
+
