@@ -23,6 +23,21 @@ function minimumBribes(q) {
 
     let numBribes = 0;
 
+    for (let x=0; x<q.length; x++) {
+        const num = q[x];
+        const position = x+1;
+        const diff = num-position;
+        if (diff > 2) {
+            console.log("Too chaotic");
+            return;
+        } else if (diff > 0) {
+            numBribes += diff;
+        }
+        console.log({num});
+        console.log({position});
+        console.log({diff});
+    }
+
     console.log(numBribes);
 }
 
