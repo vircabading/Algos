@@ -13,3 +13,5 @@ JavaScript
 ## Origin
 
 HackerRank
+
+## Example
