@@ -9,3 +9,5 @@ Determine the minimum number of bribes that took place to get a to a given queue
 ## Language
 
 JavaScript
+
+## Origin
