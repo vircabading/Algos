@@ -20,6 +20,10 @@ function minimumBribes(q) {
     // 5. After having finished iterating through all elements in array q
     //      print the total # of bribes
     console.log({q});
+
+    let numBribes = 0;
+
+    console.log(numBribes);
 }
 
 minimumBribes([ 2, 1, 5, 3, 4 ] );
