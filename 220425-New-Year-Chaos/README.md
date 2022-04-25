@@ -30,3 +30,4 @@ Person 4 had to bribe 3 people to get to the curremt p[osition.  Print "Too Chao
 
 int [] q: array of integer describing the final state of the queue
 
+## Return
