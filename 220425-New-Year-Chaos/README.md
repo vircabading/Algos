@@ -31,3 +31,5 @@ Person 4 had to bribe 3 people to get to the curremt p[osition.  Print "Too Chao
 int [] q: array of integer describing the final state of the queue
 
 ## Return
+
+No value is returned.  Print the minimum number of bribes necessary or "Too chaotic" ios someone has bribed more than 2 people
