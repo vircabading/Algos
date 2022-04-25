@@ -9,7 +9,7 @@
  */
 
 function minimumBribes(q) {
-    // Write your code here
+    // Pseudo Code
     console.log({q});
 }
 
