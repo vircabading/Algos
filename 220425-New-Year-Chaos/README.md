@@ -7,3 +7,5 @@ It's New Year's Day and people are in line for the Wonderland rollercoaster ride
 Determine the minimum number of bribes that took place to get a to a given queue order.  Print the number of bribes, or if anyone has bribed more than two people, print "Too chaotic"
 
 ## Language
+
+JavaScript
