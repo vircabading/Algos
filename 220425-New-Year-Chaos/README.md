@@ -25,3 +25,5 @@ If person 5 bribes person 4, the que will look like this:
 q = [4, 1, 2, 3]
 
 Person 4 had to bribe 3 people to get to the curremt p[osition.  Print "Too Chaotic"
+
+## Input parameters
