@@ -12,3 +12,6 @@ function minimumBribes(q) {
     // Write your code here
     console.log({q});
 }
+
+minimumBribes([ 2, 1, 5, 3, 4 ] );
+minimumBribes([ 2, 5, 1, 3, 4 ] );
