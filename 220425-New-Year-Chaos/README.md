@@ -15,3 +15,13 @@ JavaScript
 HackerRank
 
 ## Example
+
+q = [1, 2, 3, 5, 4, 6, 7, 8]
+
+If person 5 bribes person 4, the que will look like this:
+
+1, 2, 3, 5, 4, 6, 7, 8  Only 1 bribe is required.  Print 1
+
+q = [4, 1, 2, 3]
+
+Person 4 had to bribe 3 people to get to the curremt p[osition.  Print "Too Chaotic"
