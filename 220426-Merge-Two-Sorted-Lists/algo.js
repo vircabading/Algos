@@ -91,8 +91,19 @@ function mergeLists(head1, head2) {
         }
     }
 
-    printSinglyLinkedList(output, " --> ", "Output");
-    console.log({output});
+    // 4. Figure out which list is still not empty
+    // 5. Move the remaining data from the remaining non-empty list to the Output
+    while (runner1) {
+        output.insertNode(runner1.data);
+        runner1 = runner1.next;
+    }
+    while (runner2) {
+        output.insertNode(runner2.data);
+        runner2 = runner2.next;
+    }
+
+    // 6. Return the Output SinglyLinkedList
+    return output;
 }
 
 console.log("*********************************");
@@ -113,4 +124,4 @@ headB.insertNode(2);
 printSinglyLinkedList(headB, " --> ", "headB");
 
 let headAB = mergeLists(headA, headB);
-console.log({headAB});
+printSinglyLinkedList(headAB, " --> ", "headAB merged list");
