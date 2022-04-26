@@ -21,16 +21,27 @@ function minimumBribes(q) {
     //      print the total # of bribes
     let numBribes = 0;
 
-    for (let x=0; x<q.length; x++) {
-        const num = q[x];
-        const position = x+1;
-        const diff = num-position;
-        if (diff > 2) {
+    for (let x=q.length-1; x>=0; x--) {
+        let expected = x+1;
+        if (q[x] == expected) {
+            continue;
+        } else if (q[x-1] == expected) {
+            numBribes++;
+            const temp = q[x-1];
+            q[x-1] = q[x];
+            q[x] = temp;
+        } else if (q[x-2] == expected) {
+            numBribes += 2;
+            let temp = q[x-2];
+            q[x-2] = q[x-1];
+            q[x-1] = temp;
+            temp = q[x-1];
+            q[x-1] = q[x];
+            q[x] = temp;
+        } else {
             console.log("Too chaotic");
             return;
-        } else if (diff > 0) {
-            numBribes += diff;
-        }
+        }    
     }
 
     console.log(numBribes);
@@ -40,3 +51,4 @@ minimumBribes([ 2, 1, 5, 3, 4 ] );
 minimumBribes([ 2, 5, 1, 3, 4 ] );
 minimumBribes([ 1, 2, 3, 5, 4, 6, 7, 8 ] );
 minimumBribes([ 4, 1, 2, 3 ] );
+minimumBribes([ 1, 2, 5, 3, 7, 8, 6, 4 ] );
