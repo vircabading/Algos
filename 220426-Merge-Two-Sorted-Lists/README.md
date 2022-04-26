@@ -26,3 +26,11 @@ The new list is:
 1 --> 1 --> 2 --> 3 --> 7 --> Null
 ```
 
+# Input Parameters
+
+head A: Singly Linked List node pointer referencing head of list
+hard B: Singly Linked List node pointer referencing head of list
+
+# Returns
+
+Singly Linked List Node pointer: a reference to the head of a list
