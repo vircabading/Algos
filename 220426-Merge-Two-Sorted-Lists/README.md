@@ -1,15 +1,28 @@
 # Merge Two Sorted Lists Algorithm Read Me
 
-## Description
+# Description
 
 This challenge is part of a tutorial track by MyCodeSchool
 
 Given pointers to the heads of two sorted linked lists, merge them into a single, sorted linked list. Either head pointer may be null meaning that the corresponding list is empty
 
-## Language
+# Language
 
 JavaScript
 
-## Origin
+# Origin
 
 HackerRank
+
+# Example
+
+```
+head A: 1 --> 3 --> 7 --> Null
+head B: 1 --> 2 --> Null
+```
+
+The new list is:
+```
+1 --> 1 --> 2 --> 3 --> 7 --> Null
+```
+
