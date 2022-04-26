@@ -31,7 +31,6 @@ const SinglyLinkedList = class {
 function printSinglyLinkedList(node, sep, name) {
     let output = "";
     let runner = node.head;
-    console.log({runner});
     while (runner != null) {
         output += runner.data;
 
@@ -44,8 +43,19 @@ function printSinglyLinkedList(node, sep, name) {
     console.log(name + ": " + output);
 }
 
+console.log("*********************************");
+console.log("Merge two sorted lists Algorithm");
+console.log("*********************************\n");
+
+// *** head A ***
 let headA = new SinglyLinkedList();
 headA.insertNode(1);
 headA.insertNode(3);
 headA.insertNode(7);
 printSinglyLinkedList(headA, " --> ", "headA");
+
+// *** head B ***
+let headB = new SinglyLinkedList();
+headB.insertNode(1);
+headB.insertNode(2);
+printSinglyLinkedList(headB, " --> ", "headB");
