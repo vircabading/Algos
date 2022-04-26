@@ -43,6 +43,21 @@ function printSinglyLinkedList(node, sep, name) {
     console.log(name + ": " + output);
 }
 
+/**
+ * For your reference:
+ *
+ * SinglyLinkedListNode {
+ *     int data;
+ *     SinglyLinkedListNode next;
+ * }
+ *
+ */
+function mergeLists(head1, head2) {
+
+    console.log({head1});
+    console.log({head2});
+}
+
 console.log("*********************************");
 console.log("Merge two sorted lists Algorithm");
 console.log("*********************************\n");
@@ -59,3 +74,6 @@ let headB = new SinglyLinkedList();
 headB.insertNode(1);
 headB.insertNode(2);
 printSinglyLinkedList(headB, " --> ", "headB");
+
+let headAB = mergeLists(headA, headB);
+console.log({headAB});
