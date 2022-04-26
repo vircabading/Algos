@@ -28,15 +28,24 @@ const SinglyLinkedList = class {
     }
 };
 
-function printSinglyLinkedList(node, sep, ws) {
-    while (node != null) {
-        ws.write(String(node.data));
+function printSinglyLinkedList(node, sep, name) {
+    let output = "";
+    let runner = node.head;
+    console.log({runner});
+    while (runner != null) {
+        output += runner.data;
 
-        node = node.next;
+        runner = runner.next;
 
-        if (node != null) {
-            ws.write(sep);
+        if (runner != null) {
+            output += sep;
         }
     }
+    console.log(name + ": " + output);
 }
 
+let headA = new SinglyLinkedList();
+headA.insertNode(1);
+headA.insertNode(3);
+headA.insertNode(7);
+printSinglyLinkedList(headA, " --> ", "headA");
