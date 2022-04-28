@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 let getPhoneNumbers = (country, phoneNumber) => {
-  console.log("*** Testing ****");
+  console.log({country});
+  console.log({phoneNumber});
 };
 
-getPhoneNumbers("country", "numbrer");
+getPhoneNumbers("country", "number");
 
 function App() {
   return (
