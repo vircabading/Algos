@@ -119,8 +119,8 @@ printSinglyLinkedList(headA, " --> ", "headA");
 
 // *** head B ***
 let headB = new SinglyLinkedList();
-headB.insertNode(1);
-headB.insertNode(2);
+headB.insertNode(3);
+headB.insertNode(4);
 printSinglyLinkedList(headB, " --> ", "headB");
 
 let headAB = mergeLists(headA, headB);
