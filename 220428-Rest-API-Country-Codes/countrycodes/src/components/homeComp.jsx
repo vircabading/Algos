@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+//////////////////////////
+//  Home Component
+
 const HomeComp = () => {
     let [countryCode, setCountryCode] = useState([]);
     const [fullPhoneNumber, setfullPhoneNumber] = useState("")
