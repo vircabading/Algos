@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
-const homeComp = () => {
+const HomeComp = () => {
     const [countryCode, setCountryCode] = useState([]);
 
     const getPhoneNumbers = (country, phoneNumber) => {
@@ -17,4 +17,4 @@ const homeComp = () => {
     )
 }
 
-export default homeComp
+export default HomeComp
