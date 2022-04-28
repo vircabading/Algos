@@ -16,7 +16,7 @@ const HomeComp = () => {
 
                 let thisCountryCode = -1;
                 // Get the highest indexed Country Code
-                if (callingCodes > 0) {
+                if (callingCodes.length > 0) {
                     thisCountryCode = callingCodes[callingCodes.length - 1];
                 }
 
