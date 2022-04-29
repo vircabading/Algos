@@ -27,7 +27,7 @@ function processData(input) {
         operation = operations[x];
         if (operation == 1) {
             x++;
-            let number = operation[x];
+            let number = operations[x];
             console.log("Operation:", operation, "| action: enqueue", number);
         } else if (operation == 2) {
             console.log("Operation:", operation, "| action: dequeue");
