@@ -3,9 +3,6 @@
 ////////////////////////////////////////////
 
 function processData(input) {
-    //Enter your code here
-    console.log({input});
-    
     // Retrieve list of operations from the input
     let operations = [];
     let operation = "";
@@ -13,14 +10,12 @@ function processData(input) {
         let char = input[x];
         if (char != '\n' && char != ' ') {
             operation += char;
-            console.log("char:", char, "| operation:", operation);
         } else {
             operations.push(parseInt(operation));
             operation = "";
         }
     }
     operations.push( parseInt(operation));
-    console.log({operations});
 
     let queue = [];
     // Iterate through the operations
@@ -30,12 +25,10 @@ function processData(input) {
             x++;
             let number = operations[x];
             queue.push(number);
-            console.log("Operation:", operation, "| action: enqueue", number, "| queue", queue);
         } else if (operation == 2) {
             queue.shift();
-            console.log("Operation:", operation, "| action: dequeue | queue", queue);
         } else if (operation == 3) {
-            console.log("Operation:", operation, "| action: print", queue[0]);
+            console.log(queue[0]);
         }
     }
 } 
