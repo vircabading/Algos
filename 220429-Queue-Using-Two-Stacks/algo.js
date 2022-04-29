@@ -22,17 +22,20 @@ function processData(input) {
     operations.push( parseInt(operation));
     console.log({operations});
 
+    let queue = [];
     // Iterate through the operations
     for (let x = 1; x<operations.length; x++) {
         operation = operations[x];
         if (operation == 1) {
             x++;
             let number = operations[x];
-            console.log("Operation:", operation, "| action: enqueue", number);
+            queue.push(number);
+            console.log("Operation:", operation, "| action: enqueue", number, "| queue", queue);
         } else if (operation == 2) {
-            console.log("Operation:", operation, "| action: dequeue");
+            queue.shift();
+            console.log("Operation:", operation, "| action: dequeue | queue", queue);
         } else if (operation == 3) {
-            console.log("Operation:", operation, "| action: print");
+            console.log("Operation:", operation, "| action: print", queue[0]);
         }
     }
 } 
