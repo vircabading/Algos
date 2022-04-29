@@ -15,3 +15,5 @@ In this challenge, you must first implement a queue using two stacks. Then proce
 3: Print the element at the front of the queue.
 
 # Language
+
+JavaScript
