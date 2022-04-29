@@ -11,15 +11,15 @@ function processData(input) {
     let operation = "";
     for (let x=0; x<input.length; x++) {
         let char = input[x];
-        if (char != '\n') {
+        if (char != '\n' && char != ' ') {
             operation += char;
             console.log("char:", char, "| operation:", operation);
         } else {
-            operations.push(operation);
+            operations.push(parseInt(operation));
             operation = "";
         }
     }
-    operations.push(operation);
+    operations.push( parseInt(operation));
     console.log({operations});
 } 
 
