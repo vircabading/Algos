@@ -15,6 +15,8 @@ function processData(input) {
     for (let x=0; x<input.length; x++) {
         let char = input[x];
         console.log({char});
+
+        // If the current char is '\n' or ' ' then found an operation
         if (char == "\n" || char == " ") {
             console.log("got an element", element);
 
@@ -23,7 +25,7 @@ function processData(input) {
             if (element == "1") {
                 console.log("Append");
                 // find string to append
-                let appendStr = ""
+                let appendStr = "";
                 x++;
                 while (input[x] != "\n") {
                     appendStr += input[x];
@@ -40,6 +42,13 @@ function processData(input) {
             else if (element == "2") {
                 console.log("Delete");
                 // find specified number of chars
+                let undoChars = "";
+                x++;
+                while (input[x] != "\n") {
+                    undoChars += input[x];
+                    x++;
+                }
+                const undoNum = parseInt(undoChars);
 
                 // delete last k chars of S
 
