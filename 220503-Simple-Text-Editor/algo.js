@@ -2,3 +2,7 @@
 //  220503 Simple Text Editor algo.js
 /////////////////////////////////////////////
 
+function processData(input) {
+    //Enter your code here
+    console.log({input});
+} 
