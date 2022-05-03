@@ -23,11 +23,18 @@ function processData(input) {
             if (element == "1") {
                 console.log("Append");
                 // find string to append
+                let appendStr = ""
+                x++;
+                while (input[x] != "\n") {
+                    appendStr += input[x];
+                    x++;
+                }
 
                 // append string
+                S += appendStr;
 
                 // memorize last operation
-                listOfOperations.push(element);
+                listOfOperations.push([element,appendStr]);
             } 
             // 2. Delete
             else if (element == "2") {
@@ -40,6 +47,13 @@ function processData(input) {
                 listOfOperations.push(element);
             }
             // 3. Print
+            else if (element == "3") {
+                console.log("Print");
+            }
+            // 4. Delete
+            else if (element == "4") {
+                console.log("Undo");
+            }
 
 
             element = "";
@@ -48,6 +62,7 @@ function processData(input) {
         }
     }
 
+    console.log({S});
     console.log({listOfOperations});
 }
 
