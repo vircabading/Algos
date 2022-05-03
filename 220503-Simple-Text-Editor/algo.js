@@ -11,7 +11,10 @@ function processData(input) {
     for (char of input) {
         console.log({char});
         if (char == "\n" || char == " ") {
-            console.log("got an element");
+            console.log("got an element", element);
+            element = "";
+        } else {
+            element += char;
         }
     }
 } 
