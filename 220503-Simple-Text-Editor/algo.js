@@ -32,6 +32,12 @@ function processData(input) {
             // 2. Delete
             else if (element == "2") {
                 console.log("Delete");
+                // find specified number of chars
+
+                // delete last k chars of S
+
+                // memorize last operation
+                listOfOperations.push(element);
             }
             // 3. Print
 
