@@ -9,6 +9,7 @@ function processData(input) {
     let operations = [];
     let element = "";
     let S = "";
+    let listOfOperations = [];
 
     // Iterate through the input
     for (let x=0; x<input.length; x++) {
@@ -17,17 +18,31 @@ function processData(input) {
         if (char == "\n" || char == " ") {
             console.log("got an element", element);
 
+            // Determine which operation to perform
+            // 1. Append
             if (element == "1") {
                 console.log("Append");
-            } else if (element == "2") {
+                // find string to append
+
+                // append string
+
+                // memorize last operation
+                listOfOperations.push(element);
+            } 
+            // 2. Delete
+            else if (element == "2") {
                 console.log("Delete");
             }
+            // 3. Print
+
 
             element = "";
         } else {
             element += input[x];
         }
     }
+
+    console.log({listOfOperations});
 }
 
 
