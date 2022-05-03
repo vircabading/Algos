@@ -9,4 +9,6 @@ function processData(input) {
 
 console.log("*****************************");
 console.log("Simple Text Editor Algorithm");
-console.log("*****************************\n");
+console.log("*****************************\n\n");
+
+processData("");
