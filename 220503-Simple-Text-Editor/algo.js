@@ -8,16 +8,28 @@ function processData(input) {
     
     let operations = [];
     let element = "";
-    for (char of input) {
+    let S = "";
+
+    // Iterate through the input
+    for (let x=0; x<input.length; x++) {
+        let char = input[x];
         console.log({char});
         if (char == "\n" || char == " ") {
             console.log("got an element", element);
+
+            if (element == "1") {
+                console.log("Append");
+            } else if (element == "2") {
+                console.log("Delete");
+            }
+
             element = "";
         } else {
-            element += char;
+            element += input[x];
         }
     }
-} 
+}
+
 
 console.log("*****************************");
 console.log("Simple Text Editor Algorithm");
