@@ -27,7 +27,7 @@ function processData(input) {
                 // find string to append
                 let appendStr = "";
                 x++;
-                while (input[x] != "\n") {
+                while (input[x] != "\n" && x < input.length) {
                     appendStr += input[x];
                     x++;
                 }
@@ -44,11 +44,12 @@ function processData(input) {
                 // find specified number of chars
                 let undoChars = "";
                 x++;
-                while (input[x] != "\n") {
+                while (input[x] != "\n" && x < input.length) {
                     undoChars += input[x];
                     x++;
                 }
                 const undoNum = parseInt(undoChars);
+                console.log({undoNum});
 
                 // delete last k chars of S
 
@@ -58,6 +59,19 @@ function processData(input) {
             // 3. Print
             else if (element == "3") {
                 console.log("Print");
+
+                // find char to print
+                let charLoc = "";
+                x++;
+                while (input[x] != "\n" && x < input.length) {
+                    charLoc += input[x];
+                    x++;
+                }
+                const LocNum = parseInt(charLoc);
+                console.log({charLoc});
+
+                // print char
+                console.log(S[charLoc-1]);
             }
             // 4. Delete
             else if (element == "4") {
