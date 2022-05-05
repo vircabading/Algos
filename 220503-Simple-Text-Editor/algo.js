@@ -53,7 +53,7 @@ function processData(input) {
                 console.log({delNum});
 
                 // memorize delete operation
-                listOfOperations.push(element, S.slice((S.length-delNum) , S.length));
+                listOfOperations.push([element, S.slice((S.length-delNum) , S.length)]);
 
                 // delete last k chars of S
                 S = S.slice(0, S.length-delNum);
