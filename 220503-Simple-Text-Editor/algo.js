@@ -4,7 +4,7 @@
 
 function processData(input) {
     //Enter your code here
-    console.log({input});
+    // console.log({input});
     
     let operations = [];
     let element = "";
@@ -14,16 +14,16 @@ function processData(input) {
     // Iterate through the input
     for (let x=0; x<input.length; x++) {
         let char = input[x];
-        console.log({char});
+        // console.log({char});
 
         // If the current char is '\n' or ' ' then found an operation
         if (char == "\n" || char == " ") {
-            console.log("got an element", element);
+            // console.log("got an element", element);
 
             // Determine which operation to perform
             // 1. Append
             if (element == "1") {
-                console.log("Append");
+                // console.log("Append");
                 // find string to append
                 let appendStr = "";
                 x++;
@@ -34,14 +34,14 @@ function processData(input) {
 
                 // append string
                 S += appendStr;
-                console.log("Append occured, S is now:", S);
+                // console.log("Append occured, S is now:", S);
 
                 // memorize last operation
                 listOfOperations.push([element,appendStr]);
             } 
             // 2. Delete
             else if (element == "2") {
-                console.log("Delete");
+                // console.log("Delete");
                 // find specified number of chars
                 let delChars = "";
                 x++;
@@ -50,19 +50,19 @@ function processData(input) {
                     x++;
                 }
                 const delNum = parseInt(delChars);
-                console.log({delNum});
+                // console.log({delNum});
 
                 // memorize delete operation
                 listOfOperations.push([element, S.slice((S.length-delNum) , S.length)]);
 
                 // delete last k chars of S
                 S = S.slice(0, S.length-delNum);
-                console.log("Delete occured, S is now:", S);
+                // console.log("Delete occured, S is now:", S);
 
             }
             // 3. Print
             else if (element == "3") {
-                console.log("Print");
+                // console.log("Print");
 
                 // find char to print
                 let charLoc = "";
@@ -72,29 +72,29 @@ function processData(input) {
                     x++;
                 }
                 const LocNum = parseInt(charLoc);
-                console.log({charLoc});
+                // console.log({charLoc});
 
                 // print char
                 console.log(S[charLoc-1]);
             }
             // 4. Undo
             else if (element == "4") {
-                console.log("Undo needs to be done");
+                // console.log("Undo needs to be done");
 
                 // Recover last operation that can be undone
                 if (listOfOperations) {
                     let [lastOperation, operString] = listOfOperations[listOfOperations.length-1];
-                    console.log("Last Operation:", lastOperation, "| String:", operString);
+                    // console.log("Last Operation:", lastOperation, "| String:", operString);
                     // If last operation was an appened, delete what was appended
                     if (lastOperation == "1") {
                         let delNum = operString.length;
                         S = S.slice(0, S.length-delNum);
-                        console.log("Delete occured, S is now:", S);
+                        // console.log("Delete occured, S is now:", S);
                     }
                     // If last operation was a delete, appened what was deleted
                     else {
                         S += operString;
-                        console.log("Append occured, S is now:", S);
+                        // console.log("Append occured, S is now:", S);
                     }
 
                     // Remove undone operation from list of operations
@@ -109,8 +109,8 @@ function processData(input) {
         }
     }
 
-    console.log({S});
-    console.log({listOfOperations});
+    // console.log({S});
+    // console.log({listOfOperations});
 }
 
 
