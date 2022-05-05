@@ -77,9 +77,18 @@ function processData(input) {
                 // print char
                 console.log(S[charLoc-1]);
             }
-            // 4. Delete
+            // 4. Undo
             else if (element == "4") {
-                console.log("Undo");
+                console.log("Undo needs to be done");
+
+                // Recover last operation that can be undone
+                if (listOfOperations) {
+                    let [lastOperation, operString] = listOfOperations[listOfOperations.length-1];
+                    console.log("Last Operation:", lastOperation, "| String:", operString);
+                    // If last operation was an appened, delete what was appended
+
+                    // If last operation was a delete, appened what was deleted
+                }
             }
 
 
