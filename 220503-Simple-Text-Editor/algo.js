@@ -34,6 +34,7 @@ function processData(input) {
 
                 // append string
                 S += appendStr;
+                console.log("Append occured, S is now:", S);
 
                 // memorize last operation
                 listOfOperations.push([element,appendStr]);
@@ -51,10 +52,11 @@ function processData(input) {
                 const undoNum = parseInt(undoChars);
                 console.log({undoNum});
 
+                // memorize delete operation
+                listOfOperations.push(element, S.slice((S.length-undoNum) , S.length));
+
                 // delete last k chars of S
 
-                // memorize last operation
-                listOfOperations.push(element);
             }
             // 3. Print
             else if (element == "3") {
