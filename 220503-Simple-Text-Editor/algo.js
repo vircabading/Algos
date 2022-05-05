@@ -86,6 +86,9 @@ function processData(input) {
                     let [lastOperation, operString] = listOfOperations[listOfOperations.length-1];
                     console.log("Last Operation:", lastOperation, "| String:", operString);
                     // If last operation was an appened, delete what was appended
+                    let delNum = operString.length;
+                    S = S.slice(0, S.length-delNum);
+                    console.log("Delete occured, S is now:", S);
 
                     // If last operation was a delete, appened what was deleted
                 }
