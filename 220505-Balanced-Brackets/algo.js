@@ -8,5 +8,9 @@
  */
 
 function isBalanced(s) {
-    
+
 }
+
+console.log("************************");
+console.log("Balanced Brackets algo.js");
+console.log("************************\n");
