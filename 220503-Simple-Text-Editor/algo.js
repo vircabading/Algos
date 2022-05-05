@@ -43,19 +43,21 @@ function processData(input) {
             else if (element == "2") {
                 console.log("Delete");
                 // find specified number of chars
-                let undoChars = "";
+                let delChars = "";
                 x++;
                 while (input[x] != "\n" && x < input.length) {
-                    undoChars += input[x];
+                    delChars += input[x];
                     x++;
                 }
-                const undoNum = parseInt(undoChars);
-                console.log({undoNum});
+                const delNum = parseInt(delChars);
+                console.log({delNum});
 
                 // memorize delete operation
-                listOfOperations.push(element, S.slice((S.length-undoNum) , S.length));
+                listOfOperations.push(element, S.slice((S.length-delNum) , S.length));
 
                 // delete last k chars of S
+                S = S.slice(0, S.length-delNum);
+                console.log("Delete occured, S is now:", S);
 
             }
             // 3. Print
