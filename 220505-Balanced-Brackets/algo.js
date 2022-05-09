@@ -58,7 +58,12 @@ function isBalanced(s) {
         }
     }
 
-    return 'YES';
+    // 4.   If iterated through entire string and stack is empty, return YES
+    // 4.A  If iterated through entire string and stack is NOT empty, return NO
+    if (openBracketStack.length === 0) {
+        return 'YES';
+    }
+    return 'NO';
 }
 
 console.log("************************");
