@@ -21,3 +21,5 @@ JavaScript
 # Origin
 
 HackerRank
+
+# Input
