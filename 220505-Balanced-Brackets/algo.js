@@ -34,15 +34,18 @@ function isBalanced(s) {
             }
             return false;
         }
-
-    let openBracketStack = [];
-
-    
-
         return false;
     }
+    let openBracketStack = [];
 
-    console.log(isCorrespondingBracket("A", "]"));
+    for (let char of s) {
+        console.log({char});
+        if ( (char == "(") || (char == "{") || (char == "[") ) {
+            console.log("Open bracket found");
+        } else {
+            console.log("Close bracket found");
+        }
+    }
 
     return 'YES';
 }
