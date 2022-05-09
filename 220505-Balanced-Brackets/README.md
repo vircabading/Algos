@@ -23,3 +23,5 @@ JavaScript
 HackerRank
 
 # Input
+
+string s: a string of brackets
