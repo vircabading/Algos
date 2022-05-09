@@ -40,11 +40,11 @@ function isBalanced(s) {
 
     // 1. Iterate through string S
     for (let char of s) {
-        console.log({char});
+        // console.log({char});
         // 2. For each opening bracket, add it to a stack
         if ( (char == "(") || (char == "{") || (char == "[") ) {
             openBracketStack.push(char);
-            console.log("Open bracket found, bracket stack:", openBracketStack);
+            // console.log("Open bracket found, bracket stack:", openBracketStack);
         } 
         // 3. For each closing backet, check to see if the corresponding bracket is last on the stack
         else {
@@ -54,7 +54,7 @@ function isBalanced(s) {
             } else {
                 return 'NO';
             }
-            console.log("Close bracket found | top of stack:", topOfStack, "| bracket stack:", openBracketStack);
+            // console.log("Close bracket found | top of stack:", topOfStack, "| bracket stack:", openBracketStack);
         }
     }
 
@@ -71,3 +71,5 @@ console.log("Balanced Brackets algo.js");
 console.log("************************\n");
 
 console.log("is balanced '{[()]}':", isBalanced('{[()]}'));
+console.log("is balanced '{[()]':", isBalanced('{[()]'));
+console.log("is balanced '{()]':", isBalanced('{()]'));
