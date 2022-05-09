@@ -73,3 +73,5 @@ console.log("************************\n");
 console.log("is balanced '{[()]}':", isBalanced('{[()]}'));
 console.log("is balanced '{[()]':", isBalanced('{[()]'));
 console.log("is balanced '{()]':", isBalanced('{()]'));
+console.log("is balanced '{[(])}':", isBalanced('{[(])}'));
+console.log("is balanced '{{[[(())]]}}':", isBalanced('{{[[(())]]}}'));
