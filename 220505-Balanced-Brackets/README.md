@@ -27,3 +27,5 @@ HackerRank
 string s: a string of brackets
 
 # Returns
+
+string: either YES or NO
