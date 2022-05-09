@@ -24,14 +24,25 @@ function isBalanced(s) {
             }
             return false;
         } else if (close == ']') {
-
+            if (open == "[") {
+                return true;
+            }
+            return false;
         } else if (close == '}') {
-
+            if (open == "{") {
+                return true;
+            }
+            return false;
         }
+
+    let openBracketStack = [];
+
+    
+
         return false;
     }
 
-    console.log(isCorrespondingBracket("]", ")"));
+    console.log(isCorrespondingBracket("A", "]"));
 
     return 'YES';
 }
