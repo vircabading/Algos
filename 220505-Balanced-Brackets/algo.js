@@ -17,6 +17,22 @@ function isBalanced(s) {
     // 4.   If iterated through entire string and stack is empty, return YES
     // 4.A  If iterated through entire string and stack is NOT empty, return NO
 
+    let isCorrespondingBracket = (open, close) => {
+        if (close == ")") {
+            if (open == "(") {
+                return true;
+            }
+            return false;
+        } else if (close == ']') {
+
+        } else if (close == '}') {
+
+        }
+        return false;
+    }
+
+    console.log(isCorrespondingBracket("]", ")"));
+
     return 'YES';
 }
 
