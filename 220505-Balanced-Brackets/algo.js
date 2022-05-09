@@ -38,12 +38,23 @@ function isBalanced(s) {
     }
     let openBracketStack = [];
 
+    // 1. Iterate through string S
     for (let char of s) {
         console.log({char});
+        // 2. For each opening bracket, add it to a stack
         if ( (char == "(") || (char == "{") || (char == "[") ) {
-            console.log("Open bracket found");
-        } else {
-            console.log("Close bracket found");
+            openBracketStack.push(char);
+            console.log("Open bracket found, bracket stack:", openBracketStack);
+        } 
+        // 3. For each closing backet, check to see if the corresponding bracket is last on the stack
+        else {
+            let topOfStack = openBracketStack[ openBracketStack.length-1 ];
+            if (isCorrespondingBracket(topOfStack, char)) {
+                openBracketStack.pop();
+            } else {
+                return 'NO';
+            }
+            console.log("Close bracket found | top of stack:", topOfStack, "| bracket stack:", openBracketStack);
         }
     }
 
