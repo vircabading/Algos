@@ -6,6 +6,7 @@ Jesse loves cookies and wants the sweetness of some cookies to be greater than v
 ```
 sweetness = (1 x least sweet cookie) + (2 x 2nd least sweet cookie)
 ```
+Given the sweetness of a number of cookies, determine the minimum number of operations required. If it is not possible, return -1
 
 # Language
 
