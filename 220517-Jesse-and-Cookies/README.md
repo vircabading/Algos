@@ -17,3 +17,11 @@ JavaScript
 HackerRank
 
 # Example
+
+k= 9
+A= [2, 7, 3, 6, 4, 6]
+
+The smallest values are 2, 3
+Remove them then return 2+(2x3)=8 to the array.
+
+Now A = [7, 6, 4, 6]
