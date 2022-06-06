@@ -14,6 +14,12 @@
     // 4. Return any items left in the hash as an array of missing numbers
 
     console.log({nums});
+
+    // Find the Expected array range
+    let largestNum = 1;
+    for (let x of nums) {   // Retrieve each value in the array
+        console.log({x});
+    }
 };
 
 console.log("******************************");
