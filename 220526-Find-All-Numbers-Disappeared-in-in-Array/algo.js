@@ -26,7 +26,7 @@
     // Recreate the expected array as a hash map
     const expectedNums = new Map();
     for (let x= 1; x<= largestNum; x++) {
-        console.log({x});
+        expectedNums.set(x, 1);
     }
 };
 
