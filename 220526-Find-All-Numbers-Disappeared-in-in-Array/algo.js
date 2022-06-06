@@ -28,6 +28,11 @@
     for (let x= 1; x<= largestNum; x++) {
         expectedNums.set(x, 1);
     }
+
+    // Iterate through the nums array and remove each item from the hash
+    for (let value of nums) { 
+        console.log({value});
+    }
 };
 
 console.log("******************************");
