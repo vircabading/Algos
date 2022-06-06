@@ -10,7 +10,7 @@
     // Pseudo Code
     // Create hash map of expected numbers in array
     // Iterate throught the nums array
-    //     and note which values are in the epected numbers array
+    //     and note which values are in the expected numbers array
     // Return the value in the expected numbers hash map that were not found
 
     console.log({nums});
@@ -21,6 +21,12 @@
         expectedNums.set(x, 1);
     }
     console.log({expectedNums});
+
+    // Iterate throught the nums array
+    //     and note which values are in the expected numbers array
+    for (let value of nums) {
+        console.log({value});
+    }
 };
 
 console.log("******************************");
