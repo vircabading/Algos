@@ -28,8 +28,10 @@
         console.log({value});
         if (expectedNums.has(value)) {
             console.log("Found", value, " in expeted nums");
+            expectedNums.delete(value);
         }
     }
+    return expectedNums;
 };
 
 console.log("******************************");
