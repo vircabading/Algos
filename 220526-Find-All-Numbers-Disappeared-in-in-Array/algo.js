@@ -7,7 +7,7 @@
  * @return {number[]}
  */
  var findDisappearedNumbers = function(nums) {
-    
+    // Pseudo Code
 
     console.log({nums});
 };
