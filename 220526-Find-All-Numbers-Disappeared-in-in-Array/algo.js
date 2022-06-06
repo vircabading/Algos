@@ -8,6 +8,10 @@
  */
  var findDisappearedNumbers = function(nums) {
     // Pseudo Code
+    // 1. Find the expected array range
+    // 2. Recreate the expected array as a hash
+    // 3. Iterate throuigh the nums array and remove each item from the hash
+    // 4. Return any items left in the hash as an array of missing numbers
 
     console.log({nums});
 };
