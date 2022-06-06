@@ -26,6 +26,9 @@
     //     and note which values are in the expected numbers array
     for (let value of nums) {
         console.log({value});
+        if (expectedNums.has(value)) {
+            console.log("Found", value, " in expeted nums");
+        }
     }
 };
 
