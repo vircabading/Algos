@@ -15,11 +15,15 @@
 
     console.log({nums});
 
-    // Find the Expected array range
+    // Find the Expected array range by finding largest number in nums array
     let largestNum = 1;
     for (let x of nums) {   // Retrieve each value in the array
-        console.log({x});
+        if (x > largestNum) {
+            largestNum = x;
+        }
     }
+
+    // Recreate the expected array as a hash map
 };
 
 console.log("******************************");
