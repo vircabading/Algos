@@ -8,6 +8,8 @@
  */
  var singleNumber = (nums) => {
     console.log({nums});
+
+    return null;    // Nothing found
 };
 
 console.log("***********************************");
