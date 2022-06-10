@@ -31,7 +31,11 @@
         console.log({foundNums});
     }
 
-    
+    // Iterate through the hash map and return any number
+    //      that occured an odd number of times
+    foundNums.forEach((val,key) => {
+        console.log("val", val, "| key", key);
+    });
 
     return null;    // Nothing found
 };
