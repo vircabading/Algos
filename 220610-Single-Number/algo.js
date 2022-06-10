@@ -9,3 +9,6 @@
  var singleNumber = (nums) => {
     console.log({nums});
 };
+
+console.log("***********************************");
+console.log("Single Number Algorithm\n");
