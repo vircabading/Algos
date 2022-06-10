@@ -17,6 +17,7 @@
 
     // Create an empty hash map
     let foundNums = new Map();
+    let output = null;
 
     // Iterate through the nums array
     for (let num of nums) {
@@ -35,9 +36,13 @@
     //      that occured an odd number of times
     foundNums.forEach((val,key) => {
         console.log("val", val, "| key", key);
+        if (val % 2 != 0) {
+            console.log("Found one", key);
+            output = key;
+        }
     });
 
-    return null;    // Nothing found
+    return output;
 };
 
 console.log("***********************************");
