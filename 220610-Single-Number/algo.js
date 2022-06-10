@@ -12,3 +12,5 @@
 
 console.log("***********************************");
 console.log("Single Number Algorithm\n");
+
+console.log("singleNumber([2,2,1]):", singleNumber([2,2,1]));
