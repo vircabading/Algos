@@ -29,15 +29,12 @@
             const count = foundNums.get(num);
             foundNums.set(num, count+1);
         }
-        console.log({foundNums});
     }
 
     // Iterate through the hash map and return any number
     //      that occured an odd number of times
     foundNums.forEach((val,key) => {
-        console.log("val", val, "| key", key);
         if (val % 2 != 0) {
-            console.log("Found one", key);
             output = key;
         }
     });
