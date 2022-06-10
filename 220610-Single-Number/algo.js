@@ -14,7 +14,24 @@
     //      Add that number and count to the hash map
     // Iterate through the hash map and return any number
     //      that occured an odd number of times
-    console.log({nums});
+
+    // Create an empty hash map
+    let foundNums = new Map();
+
+    // Iterate through the nums array
+    for (let num of nums) {
+        // For each number in nums array
+        //      Add that number and count to the hash map
+        if (!foundNums.has(num)) {
+            foundNums.set(num, 1);
+        } else {
+            const count = foundNums.get(num);
+            foundNums.set(num, count+1);
+        }
+        console.log({foundNums});
+    }
+
+    
 
     return null;    // Nothing found
 };
