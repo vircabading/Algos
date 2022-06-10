@@ -7,6 +7,7 @@
  * @return {number}
  */
  var singleNumber = (nums) => {
+    // Pseudo Code
     console.log({nums});
 
     return null;    // Nothing found
