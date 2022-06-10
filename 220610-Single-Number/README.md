@@ -7,3 +7,5 @@ Given a non-empty array of integers nums, every element appears twice except for
 A solution must be implemented with a linear runtime complexity and use only constant extra space.
 
 # Language
+
+JavaScript
