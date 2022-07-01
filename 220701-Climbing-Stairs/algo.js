@@ -8,6 +8,10 @@
  */
  var climbStairs = function(n) {
     // Pseudocode
+    // for each number until 1
+    // add either a 1 or 0 to each possible answer
+    // if the possible answer adds up to n, then increase the number of answers
+    // after all posibilities tried return the number of answers
 };
 
 console.log("*****************************");
