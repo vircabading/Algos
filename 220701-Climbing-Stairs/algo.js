@@ -41,7 +41,7 @@
                 newPosAns.push([2]);
             }
         } else {
-            console.log("Found non empty posAnd", posAns);
+            console.log("Found non empty posAns", posAns);
         }
 
         posAns = newPosAns;
