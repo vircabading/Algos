@@ -72,3 +72,4 @@ console.log("Climbing Stairs Algorithm");
 console.log("*****************************\n");
 
 console.log("climbStairs(2)", climbStairs(2));
+console.log("climbStairs(3)", climbStairs(3));
