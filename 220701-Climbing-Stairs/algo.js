@@ -44,6 +44,20 @@
             console.log("Found non empty posAns", posAns);
             for (curPosAns of posAns) {
                 console.log({curPosAns});
+                if ((curPosAns + 1) == n) {
+                    numAns++;
+                } else {
+                    if ((curPosAns + 1) < n) {
+                        newPosAns.push(curPosAns + 1)
+                    }
+                }
+                if ((curPosAns + 2) == n) {
+                     numAns++;
+                } else {
+                    if ((curPosAns + 2) < n) {
+                        newPosAns.push(curPosAns + 2);
+                    }
+                }
             }
         }
 
