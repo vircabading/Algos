@@ -7,9 +7,11 @@
  * @return {number}
  */
  var climbStairs = function(n) {
-    
+    // Pseudocode
 };
 
 console.log("*****************************");
 console.log("Climbing Stairs Algorithm");
-console.log("*****************************");
+console.log("*****************************\n");
+
+console.log("climbStairs(2)", climbStairs(2));
