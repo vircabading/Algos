@@ -12,6 +12,18 @@
     // add either a 1 or 0 to each possible answer
     // if the possible answer adds up to n, then increase the number of answers
     // after all posibilities tried return the number of answers
+    let numAns = 0;
+    let posAns = [];
+
+    for (let x=1; x<=n; x++) {
+        console.log({x});
+        console.log({posAns});
+        let newPosAns = [];
+
+        posAns = newPosAns;
+    }
+
+    return numAns;
 };
 
 console.log("*****************************");
