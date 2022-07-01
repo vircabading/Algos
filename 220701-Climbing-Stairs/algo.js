@@ -9,3 +9,7 @@
  var climbStairs = function(n) {
     
 };
+
+console.log("*****************************");
+console.log("Climbing Stairs Algorithm");
+console.log("*****************************");
