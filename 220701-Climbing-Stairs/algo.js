@@ -18,7 +18,7 @@
     for (let x=1; x<=n; x++) {
         let newPosAns = [];
 
-        if (posAns.length == 0) {
+        if (posAns.length === 0) {
             if (1 == n) {
                 numAns++;
             } else {
@@ -30,7 +30,7 @@
                 newPosAns.push(2);
             }
         } else {
-            for (curPosAns of posAns) {
+            for (let curPosAns of posAns) {
                 if ((curPosAns + 1) == n) {
                     numAns++;
                 } else {
@@ -59,4 +59,4 @@ console.log("Climbing Stairs Algorithm");
 console.log("*****************************\n");
 
 console.log("climbStairs(2)", climbStairs(2));
-console.log("climbStairs(3)", climbStairs(3));
+console.log("climbStairs(3)", climbStairs(38));
