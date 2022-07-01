@@ -33,15 +33,18 @@
             if (1 == n) {
                 numAns++;
             } else {
-                newPosAns.push([1]);
+                newPosAns.push(1);
             }
             if (2 == n) {
                 numAns++;
             } else {
-                newPosAns.push([2]);
+                newPosAns.push(2);
             }
         } else {
             console.log("Found non empty posAns", posAns);
+            for (curPosAns of posAns) {
+                console.log({curPosAns});
+            }
         }
 
         posAns = newPosAns;
