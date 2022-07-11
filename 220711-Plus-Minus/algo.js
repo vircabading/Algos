@@ -31,9 +31,9 @@ function plusMinus(arr) {
     const ZeroRatio = numZero / totNum;
 
     // Output Ratios
-    console.log("Positive Ratio:", posRatio.toFixed(6));
-    console.log("Negative Ratio:", negRatio.toFixed(6));
-    console.log("Zero Ratio:", ZeroRatio.toFixed(6));
+    console.log(posRatio.toFixed(6));
+    console.log(negRatio.toFixed(6));
+    console.log(ZeroRatio.toFixed(6));
 }
 
 console.log("************************************");
