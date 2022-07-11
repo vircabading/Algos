@@ -9,3 +9,5 @@ Given an array of integers, calculate the ratios of its elements that are positi
 JavaScript (Node.js)
 
 # Origin
+
+Hacker Rank
