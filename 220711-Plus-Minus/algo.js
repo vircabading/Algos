@@ -14,3 +14,6 @@ function plusMinus(arr) {
 console.log("************************************");
 console.log("Plus Minus Algorithm");
 console.log("************************************\n");
+
+console.log("plusMinus([1, 1, 0, -1, -1]):");
+plusMinus([1, 1, 0, -1, -1])
