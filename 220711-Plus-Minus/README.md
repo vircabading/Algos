@@ -23,3 +23,12 @@ There are 5 elements, two positive, two negative and one zero. Their ratios are 
 0.400000
 0.200000
 ```
+
+```
+arr = [-4, -3, -9, 0, 4, 1]
+
+expected output:
+0.500000
+0.333333
+0.166667
+```
