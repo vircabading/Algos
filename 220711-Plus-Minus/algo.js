@@ -15,7 +15,6 @@ function plusMinus(arr) {
 
     // Iterate through the array
     for (let val of arr) {
-        console.log({val});
         // count if positive, negative or zero
         if (val > 0) {
             numPos++;
@@ -31,6 +30,16 @@ function plusMinus(arr) {
     console.log({numPos});
     console.log({numNeg});
     console.log({numZero});
+
+    // Calculaste Ratios
+    const posRatio = numPos / totNum;
+    const negRatio = numNeg / totNum;
+    const ZeroRatio = numZero / totNum;
+
+    // Output Ratios
+    console.log("Positive Ratio:", posRatio.toFixed(6));
+    console.log("Negative Ratio:", negRatio.toFixed(6));
+    console.log("Zero Ratio:", ZeroRatio.toFixed(6));
 }
 
 console.log("************************************");
