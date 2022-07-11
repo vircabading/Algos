@@ -45,3 +45,6 @@ plusMinus([1, 1, 0, -1, -1])
 
 console.log("\nplusMinus([-4, -3, -9, 0, 4, 1]):");
 plusMinus([-4, -3, -9, 0, 4, 1])
+
+console.log("\nplusMinus([1, 2, 3, -1, -2, -3, 0, 0]):");
+plusMinus([1, 2, 3, -1, -2, -3, 0, 0])
