@@ -13,3 +13,13 @@ JavaScript (Node.js)
 Hacker Rank
 
 # Example
+
+```
+arr = [1, 1, 0, -1, -1]
+
+There are 5 elements, two positive, two negative and one zero. Their ratios are 2/5, 2/5 and 1/5. Results are printed as:
+
+0.400000
+0.400000
+0.200000
+```
