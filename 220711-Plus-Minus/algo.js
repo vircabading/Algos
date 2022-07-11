@@ -25,12 +25,6 @@ function plusMinus(arr) {
         }
     }
 
-    console.log({arr});
-    console.log({totNum});
-    console.log({numPos});
-    console.log({numNeg});
-    console.log({numZero});
-
     // Calculaste Ratios
     const posRatio = numPos / totNum;
     const negRatio = numNeg / totNum;
@@ -48,3 +42,6 @@ console.log("************************************\n");
 
 console.log("plusMinus([1, 1, 0, -1, -1]):");
 plusMinus([1, 1, 0, -1, -1])
+
+console.log("\nplusMinus([-4, -3, -9, 0, 4, 1]):");
+plusMinus([-4, -3, -9, 0, 4, 1])
