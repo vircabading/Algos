@@ -10,3 +10,7 @@ function plusMinus(arr) {
     // Write your code here
     console.log({arr});
 }
+
+console.log("************************************");
+console.log("Plus Minus Algorithm");
+console.log("************************************\n");
