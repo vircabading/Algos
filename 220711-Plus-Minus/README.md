@@ -11,3 +11,5 @@ JavaScript (Node.js)
 # Origin
 
 Hacker Rank
+
+# Example
