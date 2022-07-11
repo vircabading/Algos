@@ -7,8 +7,9 @@
  */
 
 function plusMinus(arr) {
-    // Write your code here
+    const totNum = arr.length;
     console.log({arr});
+    console.log({totNum});
 }
 
 console.log("************************************");
