@@ -9,3 +9,5 @@ Given five positive integers, find the minimum and maximum values that can be ca
 JavaScript (Node.js)
 
 # Origin
+
+HackerRank
