@@ -10,3 +10,7 @@ function miniMaxSum(arr) {
     
 
 }
+
+console.log("*****************************************");
+console.log("Min Max Algorithm");
+console.log("*****************************************");
