@@ -25,8 +25,13 @@ function miniMaxSum(arr) {
     
     // Iterate through the array
     for (let val of arr) {
-        console.log({val});
-        total = total + val;
+        total = total + val;    // Find the total of all integers in array
+        if (val < minNum) {     // Find smallest integer in array
+            minNum = val;
+        }
+        if (val > maxNum) {     // Find largest integer in array
+            maxNum = val;
+        }
     }
 
     console.log({ total });
