@@ -17,6 +17,13 @@ HackerRank
 ```
 arr = [1, 3, 5, 7, 9]
 
-The minimum sum is 1+3+5+7=16
-The maximum sum is 3+5+7+9=24
+The minimum sum is 1+3+5+7= 16
+The maximum sum is 3+5+7+9= 24
+```
+
+```
+arr = [1, 2, 3, 4, 5]
+
+The minimum sum is 1+2+3+4= 10
+The maximum sum is 2+3+4+5= 14
 ```
