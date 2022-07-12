@@ -26,6 +26,7 @@ function miniMaxSum(arr) {
     // Iterate through the array
     for (let val of arr) {
         console.log({val});
+        total = total + val;
     }
 
     console.log({ total });
