@@ -16,11 +16,21 @@ function miniMaxSum(arr) {
     // A. Smallest possible total = total - largest int in array
     // B. Largest possible total = total - smallest int in array
 
+    // Initialize variables
+    let total = 0;
+    let minNum = arr[0];
+    let maxNum = arr[0];
+
     console.log({arr});
+    
     // Iterate through the array
     for (let val of arr) {
         console.log({val});
     }
+
+    console.log({ total });
+    console.log({ minNum });
+    console.log({ maxNum });
 }
 
 console.log("*****************************************");
