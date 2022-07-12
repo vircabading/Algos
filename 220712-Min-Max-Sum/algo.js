@@ -17,6 +17,10 @@ function miniMaxSum(arr) {
     // B. Largest possible total = total - smallest int in array
 
     console.log({arr});
+    // Iterate through the array
+    for (let val of arr) {
+        console.log({val});
+    }
 }
 
 console.log("*****************************************");
