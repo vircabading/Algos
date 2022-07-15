@@ -13,12 +13,14 @@ function timeConversion(s) {
 
     // Convert string s into an array representing time
     time = s.split("");
-    console.log({time});
-    console.log("AM/PM:", time[8]+time[9]);
 
     // Determine if it's PM or not
     const isPM = time[8] === 'P';
     console.log({isPM});
+
+    // Retrieve the hour
+    let hour = parseInt(time[0] + time[1]);
+    console.log({hour});
 }
 
 console.log("*******************************");
