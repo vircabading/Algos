@@ -30,6 +30,12 @@ function timeConversion(s) {
     }
 
     console.log("Corrected hour:",  hour);
+
+    // Return the corrected time output
+    if (hour < 10) {
+        return "0" + hour + ":" + time[3] + time[4] + ":" + time[6] + time[7];
+    }
+    return hour + ":" + time[3] + time[4] + ":" + time[6] + time[7];
 }
 
 console.log("*******************************");
