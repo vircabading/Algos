@@ -38,3 +38,4 @@ console.log("*******************************\n");
 
 console.log("timeConversion('07:05:45PM'):", timeConversion('07:05:45PM'), "\n");
 console.log("timeConversion('12:01:00PM'):", timeConversion('12:01:00PM'), "\n");
+console.log("timeConversion('12:01:00AM'):", timeConversion('12:01:00AM'), "\n");
