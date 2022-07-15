@@ -15,3 +15,5 @@ function timeConversion(s) {
 console.log("*******************************");
 console.log("Time Conversion Algorithm");
 console.log("*******************************\n");
+
+console.log("timeConversion('07:05:45PM'):", timeConversion('07:05:45PM'));
