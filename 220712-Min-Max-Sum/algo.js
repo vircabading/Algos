@@ -20,8 +20,6 @@ function miniMaxSum(arr) {
     let total = 0;
     let minNum = arr[0];
     let maxNum = arr[0];
-
-    console.log({arr});
     
     // Iterate through the array
     for (let val of arr) {
@@ -33,10 +31,6 @@ function miniMaxSum(arr) {
             maxNum = val;
         }
     }
-
-    console.log({ total });
-    console.log({ minNum });
-    console.log({ maxNum });
 
     // Calculate min and max possible sums
     const minSum = total - maxNum;
@@ -50,3 +44,6 @@ console.log("*****************************************");
 
 console.log("miniMaxSum([1, 3, 5, 7, 9])");
 miniMaxSum([1, 3, 5, 7, 9]);
+
+console.log("miniMaxSum([1, 2, 3, 4, 5])");
+miniMaxSum([1, 2, 3, 4, 5]);
