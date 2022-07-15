@@ -40,7 +40,7 @@ function miniMaxSum(arr) {
 
 console.log("*****************************************");
 console.log("Min Max Algorithm");
-console.log("*****************************************");
+console.log("*****************************************/n");
 
 console.log("miniMaxSum([1, 3, 5, 7, 9])");
 miniMaxSum([1, 3, 5, 7, 9]);
