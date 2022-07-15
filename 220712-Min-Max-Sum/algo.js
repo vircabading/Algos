@@ -37,6 +37,11 @@ function miniMaxSum(arr) {
     console.log({ total });
     console.log({ minNum });
     console.log({ maxNum });
+
+    // Calculate min and max possible sums
+    const minSum = total - maxNum;
+    const maxSum = total - minNum;
+    console.log(minSum, maxSum);
 }
 
 console.log("*****************************************");
