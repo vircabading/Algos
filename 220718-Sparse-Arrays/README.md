@@ -20,3 +20,10 @@ queries = ['ab', 'abc', 'bc']
 
 returns [2, 1, 0]
 ```
+
+```
+strings = ['aba', 'baba', 'aba', 'xzxb']
+queries = ['aba', 'xzxb', 'ab']
+
+returns [2, 1, 0]
+```
