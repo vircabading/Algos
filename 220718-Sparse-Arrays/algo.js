@@ -26,6 +26,10 @@ function matchingStrings(strings, queries) {
         console.log("Query:", queries[x]);
         // Create a difault count for this query
         counts.push(0);
+        // Iterate through the strings
+        for (const string of strings) {
+            console.log({string});
+        }
     }
 
     return counts;
@@ -36,5 +40,5 @@ console.log('Sparse Arrays Algorithm');
 console.log('*******************************\n');
 
 console.log("Strings: ['ab', 'ab', 'abc']");
-console.log("Queries: ['aba', 'xzxb', 'ab']");
-console.log("Matching Strings:", matchingStrings(['ab', 'ab', 'abc'], ['aba', 'xzxb', 'ab']), '\n');
+console.log("Queries: ['ab', 'abc', 'bc']");
+console.log("Matching Strings:", matchingStrings(['ab', 'ab', 'abc'], ['ab', 'abc', 'bc']), '\n');
