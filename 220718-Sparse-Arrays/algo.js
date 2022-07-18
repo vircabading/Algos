@@ -51,3 +51,7 @@ console.log('*******************************\n');
 console.log("Strings: ['ab', 'ab', 'abc']");
 console.log("Queries: ['ab', 'abc', 'bc']");
 console.log("Matching Strings:", matchingStrings(['ab', 'ab', 'abc'], ['ab', 'abc', 'bc']), '\n');
+
+console.log("Strings: ['aba', 'baba', 'aba', 'xzxb']");
+console.log("Queries: ['aba', 'xzxb', 'ab']");
+console.log("Matching Strings:", matchingStrings(['aba', 'baba', 'aba', 'xzxb'], ['aba', 'xzxb', 'ab']), '\n');
