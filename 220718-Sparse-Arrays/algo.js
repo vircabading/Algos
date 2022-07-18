@@ -14,3 +14,7 @@ function matchingStrings(strings, queries) {
     console.log({strings});
     console.log({queries});
 }
+
+console.log("*******************************");
+console.log('Sparse Arrays Algorithm');
+console.log('*******************************\n');
