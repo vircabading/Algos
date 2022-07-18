@@ -6,6 +6,8 @@ There is a collection of input strings and a collection of query strings. For ea
 
 # Language
 
+JavaScript (Node.js)
+
 # Origin
 
 # Example
