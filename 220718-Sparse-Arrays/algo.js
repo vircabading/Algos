@@ -20,6 +20,8 @@ function matchingStrings(strings, queries) {
 
     console.log({strings});
     console.log({queries});
+
+    return counts;
 }
 
 console.log("*******************************");
