@@ -29,6 +29,15 @@ function matchingStrings(strings, queries) {
         // Iterate through the strings
         for (const string of strings) {
             console.log({string});
+            // Check to see if query and string length is the same
+            if (string.length === queries[x].length) {
+                console.log("found equal length query");
+                // Check to see if query and string are the same
+                if (string == queries[x]) {
+                    console.log("found equal");
+                    counts[x] = counts[x] + 1;
+                }
+            }
         }
     }
 
