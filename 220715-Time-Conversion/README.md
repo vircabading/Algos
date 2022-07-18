@@ -13,3 +13,21 @@ JavaScript (Node.js)
 HackerRank
 
 # Example
+
+```
+s='12:01:00PM'
+
+return '12:01:00'
+```
+
+```
+s='12:01:00AM'
+
+return '00:01:00'
+```
+
+```
+s='07:05:45PM'
+
+return '19:05:45'
+```
