@@ -18,3 +18,7 @@ function matchingStrings(strings, queries) {
 console.log("*******************************");
 console.log('Sparse Arrays Algorithm');
 console.log('*******************************\n');
+
+console.log("Strings: ['ab', 'ab', 'abc']");
+console.log("Queries: ['aba', 'xzxb', 'ab']");
+console.log("Matching Strings:", matchingStrings(['ab', 'ab', 'abc'], ['aba', 'xzxb', 'ab']), '\n');
