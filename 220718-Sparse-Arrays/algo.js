@@ -11,7 +11,12 @@
 
 function matchingStrings(strings, queries) {
     // Pseudo Code
-    
+    // Go through each query to see if it matches any of the strings
+    // If the query matches a string, add one to count
+    // return the array of counts
+
+    // Variable Declaration Section
+    let counts = [];
 
     console.log({strings});
     console.log({queries});
