@@ -24,6 +24,8 @@ function matchingStrings(strings, queries) {
     // Go through the queries
     for (let x=0; x<queries.length; x++) {
         console.log("Query:", queries[x]);
+        // Create a difault count for this query
+        counts.push(0);
     }
 
     return counts;
