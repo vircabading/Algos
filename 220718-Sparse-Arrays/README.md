@@ -13,3 +13,10 @@ JavaScript (Node.js)
 HackerRank
 
 # Example
+
+```
+strings = ['ab', 'ab', 'abc']
+queries = ['ab', 'abc', 'bc']
+
+returns [2, 1, 0]
+```
