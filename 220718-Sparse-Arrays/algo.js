@@ -21,6 +21,11 @@ function matchingStrings(strings, queries) {
     console.log({strings});
     console.log({queries});
 
+    // Go through the queries
+    for (let x=0; x<queries.length; x++) {
+        console.log("Query:", queries[x]);
+    }
+
     return counts;
 }
 
