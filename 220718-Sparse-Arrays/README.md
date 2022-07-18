@@ -27,3 +27,10 @@ queries = ['aba', 'xzxb', 'ab']
 
 returns [2, 1, 0]
 ```
+
+```
+strings = ['abcde', 'sdaklfj', 'asdjf', 'na', 'basdn', 'sdaklfj', 'asdjf', 'na', 'asdjf', 'na', 'basdn', 'sdaklfj', 'asdjf']
+queries = ['abcde', 'sdaklfj', 'asdjf', 'na', 'basdn']
+
+returns [1, 3, 4, 3, 2]
+```
