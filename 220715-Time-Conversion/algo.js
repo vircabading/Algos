@@ -8,19 +8,14 @@
  */
 
 function timeConversion(s) {
-    // Write your code here
-    console.log({s});
-
     // Convert string s into an array representing time
-    time = s.split("");
+    let time = s.split("");
 
     // Determine if it's PM or not
     const isPM = time[8] === 'P';
-    console.log({isPM});
 
     // Retrieve the hour
     let hour = parseInt(time[0] + time[1]);
-    console.log({hour});
     
     // Convert the hour to the corrected hour
     if (isPM && hour < 12) {
@@ -28,8 +23,6 @@ function timeConversion(s) {
     } else if (!isPM && hour === 12) {
         hour = 0;
     }
-
-    console.log("Corrected hour:",  hour);
 
     // Return the corrected time output
     if (hour < 10) {
