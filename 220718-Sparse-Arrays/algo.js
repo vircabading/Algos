@@ -18,23 +18,16 @@ function matchingStrings(strings, queries) {
     // Variable Declaration Section
     let counts = [];
 
-    //console.log({strings});
-    //console.log({queries});
-
     // Go through the queries
     for (let x=0; x<queries.length; x++) {
-        //console.log("Query:", queries[x]);
         // Create a difault count for this query
         counts.push(0);
         // Iterate through the strings
         for (const string of strings) {
-            //console.log({string});
             // Check to see if query and string length is the same
             if (string.length === queries[x].length) {
-                //console.log("found equal length query");
                 // Check to see if query and string are the same
                 if (string == queries[x]) {
-                    //console.log("found equal");
                     counts[x] = counts[x] + 1;
                 }
             }
