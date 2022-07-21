@@ -6,6 +6,8 @@ Given an array of integers, where all elements but one occur twice, find the uni
 
 # Language
 
+JavaScript
+
 # Origin
 
 # Examples
