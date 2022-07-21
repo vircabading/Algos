@@ -13,3 +13,9 @@ JavaScript
 HackerRank
 
 # Examples
+
+```
+a = [1, 2, 3, 4, 3, 2, 1]
+
+Returns 4
+```
