@@ -15,3 +15,5 @@ function lonelyinteger(a) {
 console.log("******************************");
 console.log("Lone Integer Algorithm");
 console.log("******************************\n");
+
+console.log(lonelyinteger([1,2,3,4,3,2,1]));
