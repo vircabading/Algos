@@ -11,3 +11,7 @@ function lonelyinteger(a) {
    
 
 }
+
+console.log("******************************");
+console.log("Lone Integer Algorithm");
+console.log("******************************\n");
