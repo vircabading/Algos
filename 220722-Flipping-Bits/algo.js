@@ -21,4 +21,8 @@ console.log("********************************");
 console.log("Flipping Bits Algorithm");
 console.log("********************************\n");
 
-console.log("flippingBits(9):", flippingBits(9));
+console.log("flippingBits(9):", flippingBits(9), "\n");
+
+console.log("flippingBits(1):", flippingBits(1), "\n");
+
+console.log("flippingBits(0):", flippingBits(0), "\n");
