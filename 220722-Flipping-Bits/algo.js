@@ -8,7 +8,7 @@
  */
 
 function flippingBits(n) {
-    // 
+    // Pseudo Code
     console.log({n});
 }
 
