@@ -9,7 +9,12 @@
 
 function flippingBits(n) {
     // Pseudo Code
+    // subtract n from maximum 32 bit int (4294967295)
+    // return the answer
     console.log({n});
+
+    const maxNum = 4294967295;
+    return maxNum - n;
 }
 
 console.log("********************************");
