@@ -15,7 +15,17 @@ function lonelyinteger(a) {
     //          if int on map, then delete it
     // return the lone mapped int
 
-    
+    const lonelyIntMap = new Map();
+
+    for (let num of a) {
+        console.log({num});
+        if (lonelyIntMap.has(num)) {
+            lonelyIntMap.delete(num)
+        } else {
+            lonelyIntMap.set(num, 1);
+        }
+        console.log("Map:", lonelyIntMap)
+    }
 
    
     console.log({a});
