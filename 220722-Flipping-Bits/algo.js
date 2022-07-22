@@ -8,10 +8,12 @@
  */
 
 function flippingBits(n) {
-    // Write your code here
+    // 
     console.log({n});
 }
 
 console.log("********************************");
 console.log("Flipping Bits Algorithm");
 console.log("********************************\n");
+
+console.log("flippingBits(9):", flippingBits(9));
