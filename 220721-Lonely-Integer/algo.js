@@ -14,9 +14,11 @@ function lonelyinteger(a) {
     //          if int not on map, then map it
     //          if int on map, then delete it
     // return the lone mapped int
+    console.log({a});
 
     const lonelyIntMap = new Map();
 
+    // Iterate through the array and map each int
     for (let num of a) {
         console.log({num});
         if (lonelyIntMap.has(num)) {
@@ -27,8 +29,10 @@ function lonelyinteger(a) {
         console.log("Map:", lonelyIntMap)
     }
 
-   
-    console.log({a});
+    // Return the long mapped int
+    lonelyIntMap.forEach((value,key) => {
+        console.log("Key:", key, "| Value:", value);
+    })
 }
 
 console.log("******************************");
