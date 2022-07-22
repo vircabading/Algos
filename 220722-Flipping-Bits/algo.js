@@ -11,3 +11,7 @@ function flippingBits(n) {
     // Write your code here
     console.log({n});
 }
+
+console.log("********************************");
+console.log("Flipping Bits Algorithm");
+console.log("********************************\n");
