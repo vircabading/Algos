@@ -8,6 +8,7 @@
  */
 
 function lonelyinteger(a) {
+    // Pseudo Code
    
     console.log({a});
 }
