@@ -13,3 +13,11 @@ JavaScript
 HackerRank
 
 # Examles
+
+```
+n = 9
+
+9 = 00000000000000000000000000001001
+
+return 4294967286
+```
