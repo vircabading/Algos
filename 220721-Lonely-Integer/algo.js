@@ -9,6 +9,14 @@
 
 function lonelyinteger(a) {
     // Pseudo Code
+    // Iterate through the array
+    //      map each integer
+    //          if int not on map, then map it
+    //          if int on map, then delete it
+    // return the lone mapped int
+
+    
+
    
     console.log({a});
 }
