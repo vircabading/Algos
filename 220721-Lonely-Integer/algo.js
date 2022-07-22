@@ -29,14 +29,17 @@ function lonelyinteger(a) {
         console.log("Map:", lonelyIntMap)
     }
 
-    // Return the long mapped int
+    // Return the lone mapped int
+    let lonelyInt = 0;
     lonelyIntMap.forEach((value,key) => {
-        console.log("Key:", key, "| Value:", value);
+        lonelyInt = key;
     })
+    return lonelyInt;
 }
 
 console.log("******************************");
 console.log("Lone Integer Algorithm");
 console.log("******************************\n");
 
-console.log(lonelyinteger([1,2,3,4,3,2,1]));
+console.log("lonelyinteger([1,2,3,4,3,2,1]):", lonelyinteger([1,2,3,4,3,2,1]), "\n");
+console.log("lonelyinteger([1]):", lonelyinteger([1]));
