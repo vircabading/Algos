@@ -14,19 +14,16 @@ function lonelyinteger(a) {
     //          if int not on map, then map it
     //          if int on map, then delete it
     // return the lone mapped int
-    console.log({a});
 
     const lonelyIntMap = new Map();
 
     // Iterate through the array and map each int
     for (let num of a) {
-        console.log({num});
         if (lonelyIntMap.has(num)) {
             lonelyIntMap.delete(num)
         } else {
             lonelyIntMap.set(num, 1);
         }
-        console.log("Map:", lonelyIntMap)
     }
 
     // Return the lone mapped int
