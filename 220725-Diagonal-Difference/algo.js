@@ -14,31 +14,34 @@ function diagonalDifference(arr) {
     //    and an index moving from right to left
     //    while traversing the rows of the 2d array
     // Return the absolute Difference of the two sums
-    console.log({arr});
-
+    
     // Variables
     let l2rSum = 0;
     let r2lSum = 0;
     let l2rIndex = 0;
     let r2lIndex = arr.length - 1;
-
+    
     // Traverse the rows of the 2d array
     for (let row of arr) {
-        console.log({row});
         l2rSum = l2rSum + row[l2rIndex];
         r2lSum = r2lSum + row[r2lIndex];
         l2rIndex++;
         r2lIndex--;
-        console.log({l2rSum});
-        console.log({r2lSum});
     }
-    console.log({l2rSum});
-    console.log({r2lSum});
+    
+    // Return the absolute Difference of the two sums
+    let absDiff = 0;
+    if (l2rSum >= r2lSum) {
+        absDiff = l2rSum - r2lSum;
+    } else {
+        absDiff = r2lSum - l2rSum;
+    }
+    return absDiff;
 }
 
 console.log("****************************************");
 console.log("Diagonal Difference Algorithm");
 console.log("****************************************\n");
 
-console.log("Arr: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]");
-console.log("Diagonal Difference:", diagonalDifference([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
+console.log("Arr: [[1, 2, 3], [4, 5, 6], [9, 8, 9]]");
+console.log("Diagonal Difference:", diagonalDifference([[1, 2, 3], [4, 5, 6], [9, 8, 9]]));
