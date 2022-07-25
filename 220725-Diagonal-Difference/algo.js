@@ -14,3 +14,6 @@ function diagonalDifference(arr) {
 console.log("****************************************");
 console.log("Diagonal Difference Algorithm");
 console.log("****************************************\n");
+
+console.log("Arr: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]");
+console.log("Diagonal Difference:", diagonalDifference([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
