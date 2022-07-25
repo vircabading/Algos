@@ -25,7 +25,15 @@ function diagonalDifference(arr) {
     // Traverse the rows of the 2d array
     for (let row of arr) {
         console.log({row});
+        l2rSum = l2rSum + row[l2rIndex];
+        r2lSum = r2lSum + row[r2lIndex];
+        l2rIndex++;
+        r2lIndex--;
+        console.log({l2rSum});
+        console.log({r2lSum});
     }
+    console.log({l2rSum});
+    console.log({r2lSum});
 }
 
 console.log("****************************************");

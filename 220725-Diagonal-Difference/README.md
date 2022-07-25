@@ -18,7 +18,7 @@ HackerRank
 arr:
 1 2 3
 4 5 6
-7 8 9
+9 8 9
 
 The left to right diagonal = 1 + 5 + 9 = 15
 The right to left diagonal = 3 + 5 + 9 = 17
