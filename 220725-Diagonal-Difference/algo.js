@@ -9,6 +9,11 @@
 
 function diagonalDifference(arr) {
     // Pseudocode
+    // Add up the two diagonals from the 2d array
+    // Do this using an index moving left to right
+    //    and an index moving from right to left
+    //    while traversing the rows of the 2d array
+    // Return the absolute Difference of the two sums
     console.log({arr});
 }
 
