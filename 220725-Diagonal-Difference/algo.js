@@ -15,6 +15,17 @@ function diagonalDifference(arr) {
     //    while traversing the rows of the 2d array
     // Return the absolute Difference of the two sums
     console.log({arr});
+
+    // Variables
+    let l2rSum = 0;
+    let r2lSum = 0;
+    let l2rIndex = 0;
+    let r2lIndex = arr.length - 1;
+
+    // Traverse the rows of the 2d array
+    for (let row of arr) {
+        console.log({row});
+    }
 }
 
 console.log("****************************************");
