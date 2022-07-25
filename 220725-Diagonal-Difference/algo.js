@@ -43,5 +43,10 @@ console.log("****************************************");
 console.log("Diagonal Difference Algorithm");
 console.log("****************************************\n");
 
-console.log("Arr: [[1, 2, 3], [4, 5, 6], [9, 8, 9]]");
-console.log("Diagonal Difference:", diagonalDifference([[1, 2, 3], [4, 5, 6], [9, 8, 9]]));
+let arr1 = [[1, 2, 3], [4, 5, 6], [9, 8, 9]];
+let arr2 = [ [ 11, 2, 4 ], [ 4, 5, 6 ], [ 10, 8, -12 ] ];
+
+console.log("Arr:", arr1);
+console.log("Diagonal Difference:", diagonalDifference(arr1), "\n");
+console.log("Arr:", arr2);
+console.log("Diagonal Difference:", diagonalDifference(arr2), "\n");
