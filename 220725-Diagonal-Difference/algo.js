@@ -8,6 +8,7 @@
  */
 
 function diagonalDifference(arr) {
+    // Pseudocode
     console.log({arr});
 }
 
