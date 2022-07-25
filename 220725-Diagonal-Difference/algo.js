@@ -10,3 +10,7 @@
 function diagonalDifference(arr) {
     console.log({arr});
 }
+
+console.log("****************************************");
+console.log("Diagonal Difference Algorithm");
+console.log("****************************************\n");
