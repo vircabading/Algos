@@ -6,4 +6,4 @@
 
 # Origin
 
-# Exampl
+# Example
