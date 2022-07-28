@@ -13,3 +13,9 @@ JavaScript
 HackerRank
 
 # Example
+
+```
+arr = [1, 1, 3, 2, 1]
+
+The frequency array is [0, 3, 1, 1]. These values can be used to create the sorted array as well: sorted = [1, 1, 1, 2, 3].
+```
