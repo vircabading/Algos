@@ -6,6 +6,8 @@ The counting sort, does not require comparison. Instead, you create an integer a
 
 # Language
 
+JavaScript
+
 # Origin
 
 # Example
