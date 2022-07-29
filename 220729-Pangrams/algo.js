@@ -10,7 +10,12 @@
 function pangrams(s) {
     console.log({s});
     // Pseudo Code
-
+    // Create a map of all 26 letres initialized to value of zero
+    // Iterate through string s and each time a letter is encountered, add it to map
+    //     if when mapping a letter it's value is initially zero
+    //          then add one to the letters found count
+    // If the letters found count = 26, return "pangram"
+    //     otherwise return "not pangram"
 }
 
 console.log("***************************************");
