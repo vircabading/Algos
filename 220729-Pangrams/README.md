@@ -19,3 +19,9 @@ s = "The quick brown fox jumps over the lazy dog"
 
 returns: pangram
 ```
+
+```
+s = "We promptly judged antique ivory buckles for the next prize"
+
+returns: pangram
+```
