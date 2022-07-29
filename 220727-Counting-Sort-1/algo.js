@@ -8,7 +8,7 @@
  */
 
 function countingSort(arr) {
-    // Write your code here
+    // Pseudo Code
     console.log({arr});
 }
 
