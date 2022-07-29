@@ -8,7 +8,6 @@
  */
 
 function countingSort(arr) {
-    console.log({arr});
     // Pseudo Code
     // Create an outputArray of 100 elements initialized to 0
     // Iterate throuh arr and for each integer found increase the count
@@ -25,7 +24,6 @@ function countingSort(arr) {
     }
     
     // Return outputArray
-    
     return outputArr;
 }
 
