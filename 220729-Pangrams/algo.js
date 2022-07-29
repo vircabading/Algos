@@ -16,3 +16,8 @@ function pangrams(s) {
 console.log("***************************************");
 console.log("Pangrams Algorithm");
 console.log("***************************************\n");
+
+s1 = "The quick brown fox jumps over the lazy dog"
+
+console.log("s =", s1);
+console.log("", pangrams(s1), "\n");
