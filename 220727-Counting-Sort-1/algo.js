@@ -47,4 +47,7 @@ const arr2 = [
   ];
 
 console.log("arr: [1, 1, 3, 2, 1]");
-console.log("Counting Sort:", countingSort(arr1));
+console.log("Counting Sort:", countingSort(arr1), "\n");
+
+console.log("arr:", arr2);
+console.log("Counting Sort:", countingSort(arr2), "\n");
