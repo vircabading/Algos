@@ -15,3 +15,8 @@ function countingSort(arr) {
 console.log("**********************************");
 console.log("Counting Sort Algorithm");
 console.log("**********************************\n");
+
+const arr1 = [1, 1, 3, 2, 1];
+
+console.log("arr: [1, 1, 3, 2, 1]");
+console.log("Counting Sort:", countingSort(arr1));
