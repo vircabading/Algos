@@ -11,3 +11,7 @@ function countingSort(arr) {
     // Write your code here
     console.log({arr});
 }
+
+console.log("**********************************");
+console.log("Counting Sort Algorithm");
+console.log("**********************************\n");
