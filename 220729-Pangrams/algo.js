@@ -55,9 +55,13 @@ console.log("***************************************\n");
 
 const s1 = "The quick brown fox jumps over the lazy dog";
 const s2 = "We promptly judged antique ivory buckles for the next prize."
+const s3 = "We promptly judged 4ntique ivory buckles for the next prize."
 
 console.log("s =", s1);
 console.log("", pangrams(s1), "\n");
 
 console.log("s =", s2);
 console.log("", pangrams(s2), "\n");
+
+console.log("s =", s3);
+console.log("", pangrams(s3), "\n");
