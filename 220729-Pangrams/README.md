@@ -12,4 +12,10 @@ JavaScript (Node.js)
 
 HackerRank
 
-# Examples
+# Example
+
+```
+s = "The quick brown fox jumps over the lazy dog"
+
+returns: pangram
+```
