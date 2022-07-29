@@ -14,6 +14,12 @@ function countingSort(arr) {
     // Iterate throuh arr and for each integer found increase the count
     //    on the corresponding element of outputArray
     // Return outputArray
+    
+    // Create an outputArray of 100 elements initialized to 0
+    const outputArr = [...Array(100)]
+
+    // Return outputArray
+    return outputArr;
 }
 
 console.log("**********************************");
