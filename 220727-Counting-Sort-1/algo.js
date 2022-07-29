@@ -17,8 +17,15 @@ function countingSort(arr) {
     
     // Create an outputArray of 100 elements initialized to 0
     const outputArr = [...Array(100)].map((val) => 0);
-
+    
+    // Iterate throuh arr and for each integer found increase the count
+    //    on the corresponding element of outputArray
+    for (let val of arr) {
+        console.log({val});
+    }
+    
     // Return outputArray
+    
     return outputArr;
 }
 
