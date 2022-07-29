@@ -21,7 +21,7 @@ function countingSort(arr) {
     // Iterate throuh arr and for each integer found increase the count
     //    on the corresponding element of outputArray
     for (let val of arr) {
-        console.log({val});
+        outputArr[val]++;
     }
     
     // Return outputArray
