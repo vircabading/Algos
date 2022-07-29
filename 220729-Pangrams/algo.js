@@ -23,10 +23,22 @@ function pangrams(s) {
     }
     let lettersFound = 0;
 
-    console.log({letterMap});
+    // Iterate through string s and each time a letter is encountered, add it to map
+    //     if when mapping a letter it's value is initially zero
+    //          then add one to the letters found count
+    for (let letter of s) {
+        letter = letter.toLowerCase();
+        console.log({letter});
+        // Check if letter is an alphabetic char
+        if (letter.match(/[a-z]/i)) {
+            console.log(letter, "is an alphabetic character");
+        }
+    }
 
     // If the letters found count = 26, return "pangram"
     //     otherwise return "not pangram"
+    console.log({letterMap});
+    console.log({lettersFound});
     if (lettersFound >= 26) {
         return "pangram";
     }
