@@ -24,14 +24,18 @@ function pangrams(s) {
     let lettersFound = 0;
 
     // Iterate through string s and each time a letter is encountered, add it to map
-    //     if when mapping a letter it's value is initially zero
-    //          then add one to the letters found count
     for (let letter of s) {
         letter = letter.toLowerCase();
         console.log({letter});
         // Check if letter is an alphabetic char
         if (letter.match(/[a-z]/i)) {
             console.log(letter, "is an alphabetic character");
+            //     if when mapping a letter it's value is initially zero
+            //          then add one to the letters found count
+            if (letterMap[letter] === 0) {
+                lettersFound++;
+            }
+            letterMap[letter]++;
         }
     }
 
@@ -49,7 +53,11 @@ console.log("***************************************");
 console.log("Pangrams Algorithm");
 console.log("***************************************\n");
 
-s1 = "The quick brown fox jumps over the lazy dog"
+const s1 = "The quick brown fox jumps over the lazy dog";
+const s2 = "We promptly judged antique ivory buckles for the next prize."
 
 console.log("s =", s1);
 console.log("", pangrams(s1), "\n");
+
+console.log("s =", s2);
+console.log("", pangrams(s2), "\n");
