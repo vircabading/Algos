@@ -16,7 +16,7 @@ function countingSort(arr) {
     // Return outputArray
     
     // Create an outputArray of 100 elements initialized to 0
-    const outputArr = [...Array(100)]
+    const outputArr = [...Array(100)].map((val) => 0);
 
     // Return outputArray
     return outputArr;
