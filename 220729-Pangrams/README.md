@@ -6,6 +6,8 @@ A pangram is a string that contains every letter of the alphabet. Given a senten
 
 # Language
 
+JavaScript (Node.js)
+
 # Origin
 
 # Examples
