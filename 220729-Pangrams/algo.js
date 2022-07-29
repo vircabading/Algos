@@ -12,3 +12,7 @@ function pangrams(s) {
     // Write your code here
 
 }
+
+console.log("***************************************");
+console.log("Pangrams Algorithm");
+console.log("***************************************\n");
