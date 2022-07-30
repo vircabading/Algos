@@ -8,6 +8,8 @@ There will be q queries consisting of A, B, and k. For each query, return YES if
 
 # Language
 
+JavaScript (Node.js)
+
 # Origins
 
 # Example
