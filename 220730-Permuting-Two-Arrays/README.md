@@ -15,3 +15,14 @@ JavaScript (Node.js)
 HackerRank
 
 # Example
+
+```
+A = [0, 1]
+B = [0, 2]
+k = 1
+
+A valid A', B' is A'=[1, 0] and B'= [0, 2]
+because 1 + 0 >= 1 and 2 + 0 >= 1
+
+return: YES
+```
