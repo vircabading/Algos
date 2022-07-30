@@ -12,4 +12,6 @@ JavaScript (Node.js)
 
 # Origins
 
+HackerRank
+
 # Example
