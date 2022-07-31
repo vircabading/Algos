@@ -25,14 +25,18 @@ function twoArrays(k, A, B) {
 
     const sortedA = [...A].sort( (a,b) => b-a );
     const sortedB = [...B].sort();
+    
+        console.log({sortedA});
+        console.log({sortedB});
 
     for (let x=0; x<sortedA.length; x++) {
         console.log(sortedA[x], sortedB[x]);
+        if (sortedA[x] + sortedB[x] < k) {
+            return "NO";
+        }
     }
 
-    console.log({sortedA});
-    console.log({sortedB});
-
+    return "YES"
 }
 
 console.log("***********************************");
