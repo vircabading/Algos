@@ -51,8 +51,16 @@ const k2 = 10;
 const A2 = [2, 1, 3];
 const B2 = [7, 8, 9];
 
+const k3 = 5;
+const A3 = [1, 2, 2, 1];
+const B3 = [3, 3, 3, 4];
+
 console.log("Two Arrays: A", A1, "| B:", B1,"| k:", k1);
 console.log(twoArrays(k1, A1, B1), "\n");
 
 console.log("Two Arrays: A", A2, "| B:", B2,"| k:", k2);
 console.log(twoArrays(k2, A2, B2), "\n");
+
+
+console.log("Two Arrays: A", A3, "| B:", B3,"| k:", k3);
+console.log(twoArrays(k3, A3, B3), "\n");
