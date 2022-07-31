@@ -12,6 +12,10 @@ Determine how many ways she can divide the chocolate.
 
 # Language
 
+JavaSvcript (Node.js)
+
 # Origin
+
+HackerRank
 
 # Example
