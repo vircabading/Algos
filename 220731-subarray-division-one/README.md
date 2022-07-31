@@ -29,3 +29,13 @@ Lily wants to find segmentss summing to Ron's birthday, d= 4 wwith a length equa
 
 In this case, there are two segments meeting her criteria [2, 2] and [1, 3]
 ```
+
+```
+s: [ 1, 2, 1, 3, 2 ]
+d: 3
+m: 2
+
+valid segments: [1, 2], [2, 1]
+
+returns: 2
+```
