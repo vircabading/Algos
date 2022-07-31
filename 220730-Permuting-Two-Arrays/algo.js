@@ -20,3 +20,10 @@ function twoArrays(k, A, B) {
 console.log("***********************************");
 console.log("Permuting Two Arrays Algorithm");
 console.log("***********************************\n");
+
+const A1 = [0, 1];
+const B1 = [0, 2];
+const k1 = 1;
+
+console.log("Two Arrays: A", A1, "| B:", B1,"| k:", k1);
+console.log(twoArrays(A1, B1, k1));
