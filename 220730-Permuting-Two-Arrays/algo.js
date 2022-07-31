@@ -20,11 +20,15 @@ function twoArrays(k, A, B) {
     // if go through full length of arrays and no false comes up
     //      then return "YES"
 
-    const sortedA = [...A].sort( (a,b) => b-a );
-    const sortedB = [...B].sort();
+    const sortedA = A.sort( (a,b) => b-a );
+    const sortedB = B.sort( (a,b) => a-b );
+
+    console.log({sortedA});
+    console.log({sortedB});
     
     for (let x=0; x<sortedA.length; x++) {
         if (sortedA[x] + sortedB[x] < k) {
+            console.log(sortedA[x], sortedB[x]);
             return "NO";
         }
     }
@@ -48,9 +52,13 @@ const k3 = 5;
 const A3 = [1, 2, 2, 1];
 const B3 = [3, 3, 3, 4];
 
+const k5 = 94;
+const A5 = [84, 2, 50, 51, 19, 58, 12, 90, 81, 68, 54, 73, 81, 31, 79, 85, 39, 2];
+const B5 = [53, 102, 40, 17, 33, 92, 18, 79, 66, 23, 84, 25, 38, 43, 27, 55, 8, 19];
+
 const k4 = 91;
 const A4 = [18, 73, 55, 59, 37, 13, 1, 33];
-const B4 = [81, 11, 77, 49, 65, 26, 29, 4]
+const B4 = [81, 11, 77, 49, 65, 26, 29, 4];
 
 console.log("Two Arrays: A", A1, "| B:", B1,"| k:", k1);
 console.log(twoArrays(k1, A1, B1), "\n");
@@ -64,3 +72,6 @@ console.log(twoArrays(k3, A3, B3), "\n");
 
 console.log("Two Arrays: A", A4, "| B:", B4,"| k:", k4);
 console.log(twoArrays(k4, A4, B4), "\n");
+
+console.log("Two Arrays: A", A5, "| B:", B5,"| k:", k5);
+console.log(twoArrays(k5, A5, B5), "\n");
