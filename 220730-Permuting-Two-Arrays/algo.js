@@ -47,5 +47,12 @@ const A1 = [0, 1];
 const B1 = [0, 2];
 const k1 = 1;
 
+const k2 = 10;
+const A2 = [2, 1, 3];
+const B2 = [7, 8, 9];
+
 console.log("Two Arrays: A", A1, "| B:", B1,"| k:", k1);
-console.log(twoArrays(k1, A1, B1));
+console.log(twoArrays(k1, A1, B1), "\n");
+
+console.log("Two Arrays: A", A2, "| B:", B2,"| k:", k2);
+console.log(twoArrays(k2, A2, B2), "\n");
