@@ -15,6 +15,14 @@ function twoArrays(k, A, B) {
     console.log({A});
     console.log({B});
     // Pseudo Code
+    // Sort array A in descending order
+    // Sort array B in descending order
+    // Go through array A and B incrementally
+    //      check if A[x]]+ B[x] >= k
+    //          if false, return "NO"
+    // if go through full length of arrays and no false comes up
+    //      then return "YES"
+
 }
 
 console.log("***********************************");
