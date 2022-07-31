@@ -19,3 +19,13 @@ JavaSvcript (Node.js)
 HackerRank
 
 # Example
+
+```
+s = [2, 2, 1, 3, 2]
+d = 4
+m = 2
+
+Lily wants to find segmentss summing to Ron's birthday, d= 4 wwith a length equaling his birth month, m=2.
+
+In this case, there are two segments meeting her criteria [2, 2] and [1, 3]
+```
