@@ -11,10 +11,10 @@
  */
 
 function twoArrays(k, A, B) {
-    // Write your code here
     console.log({k});
     console.log({A});
     console.log({B});
+    // Pseudo Code
 }
 
 console.log("***********************************");
