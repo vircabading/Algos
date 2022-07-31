@@ -39,3 +39,11 @@ valid segments: [1, 2], [2, 1]
 
 returns: 2
 ```
+
+```
+s: [ 1, 1, 1, 1, 1, 1 ]
+d: 3
+m: 2
+
+returns: 0
+```
