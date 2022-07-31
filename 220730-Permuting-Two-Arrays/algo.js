@@ -23,6 +23,16 @@ function twoArrays(k, A, B) {
     // if go through full length of arrays and no false comes up
     //      then return "YES"
 
+    const sortedA = [...A].sort( (a,b) => b-a );
+    const sortedB = [...B].sort();
+
+    for (let x=0; x<sortedA.length; x++) {
+        console.log(sortedA[x], sortedB[x]);
+    }
+
+    console.log({sortedA});
+    console.log({sortedB});
+
 }
 
 console.log("***********************************");
@@ -34,4 +44,4 @@ const B1 = [0, 2];
 const k1 = 1;
 
 console.log("Two Arrays: A", A1, "| B:", B1,"| k:", k1);
-console.log(twoArrays(A1, B1, k1));
+console.log(twoArrays(k1, A1, B1));
