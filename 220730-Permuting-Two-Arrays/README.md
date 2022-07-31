@@ -26,3 +26,11 @@ because 1 + 0 >= 1 and 2 + 0 >= 1
 
 return: YES
 ```
+
+```
+k = 10
+A = [2, 1, 3]
+B = [7, 8, 9]
+
+return YES
+```
