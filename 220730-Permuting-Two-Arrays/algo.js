@@ -11,9 +11,6 @@
  */
 
 function twoArrays(k, A, B) {
-    console.log({k});
-    console.log({A});
-    console.log({B});
     // Pseudo Code
     // Sort array A in descending order
     // Sort array B in descending order
@@ -26,11 +23,7 @@ function twoArrays(k, A, B) {
     const sortedA = [...A].sort( (a,b) => b-a );
     const sortedB = [...B].sort();
     
-        console.log({sortedA});
-        console.log({sortedB});
-
     for (let x=0; x<sortedA.length; x++) {
-        console.log(sortedA[x], sortedB[x]);
         if (sortedA[x] + sortedB[x] < k) {
             return "NO";
         }
