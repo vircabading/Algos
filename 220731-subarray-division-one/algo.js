@@ -62,8 +62,22 @@ const s2 = [ 1, 2, 1, 3, 2 ];
 const d2 = 3;
 const m2 = 2;
 
+const s3 = [ 1, 1, 1, 1, 1, 1 ];
+const d3 = 3;
+const m3 = 2;
+
+const s4 = [ 4 ];
+const d4 = 4;
+const m4 = 1;
+
 console.log("S:", s1, "| Day:", d1, " | Month:", m1);
 console.log("Number of valid subarrays:", birthday(s1, d1, m1), "\n");
 
 console.log("S:", s2, "| Day:", d2, " | Month:", m2);
 console.log("Number of valid subarrays:", birthday(s2, d2, m2), "\n");
+
+console.log("S:", s3, "| Day:", d3, " | Month:", m3);
+console.log("Number of valid subarrays:", birthday(s3, d3, m3), "\n");
+
+console.log("S:", s4, "| Day:", d4, " | Month:", m4);
+console.log("Number of valid subarrays:", birthday(s4, d4, m4), "\n");
