@@ -23,3 +23,10 @@ JavaScript (Node.js)
 HackerRank
 
 # Example
+
+```
+s = "10101"
+t = "00101"
+
+returns: "10000"
+```
