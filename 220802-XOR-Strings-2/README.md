@@ -16,6 +16,8 @@ To restore the original code, click on the icon to the right of the language sel
 
 # Language
 
+JavaScript (Node.js)
+
 # Origin
 
 # Example
