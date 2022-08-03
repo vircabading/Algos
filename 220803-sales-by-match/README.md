@@ -33,6 +33,16 @@ ar: [
 returns: 3
 ```
 
+```
+n: 10
+ar: [
+    1, 1, 3, 1, 2,
+    1, 3, 3, 3, 3
+  ]
+
+returns: 4
+```
+
 # Input Parameters
 
 integer n: the number of socks represented in ar
