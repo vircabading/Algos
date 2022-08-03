@@ -12,7 +12,7 @@
 function sockMerchant(n, ar) {
     console.log({n});
     console.log({ar});
-    // Write your code here
+    // Pseudo Code
 }
 
 console.log("******************************");
