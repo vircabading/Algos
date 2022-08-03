@@ -25,4 +25,7 @@ returns: 2
 
 # Input Parameters
 
+integer n: the number of socks represented in ar
+array of integers ar: each integer represents a color of a sock
+
 # Returns
