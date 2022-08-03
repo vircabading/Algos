@@ -23,6 +23,16 @@ There is one pair of color 1 and one pair of color 2.  There are three off sock 
 returns: 2
 ```
 
+```
+n: 9
+ar: [
+    10, 20, 20, 10, 10,
+    30, 50, 10, 20
+  ]
+
+returns: 3
+```
+
 # Input Parameters
 
 integer n: the number of socks represented in ar
