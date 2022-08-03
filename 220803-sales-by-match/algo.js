@@ -20,6 +20,19 @@ function sockMerchant(n, ar) {
     //      1. Map it
     //      2. For each two socks mapped, increase the sales count
     // Return the sales count
+
+    let salesCount = 0;
+    const sockMap = {};
+
+    for (let sock of ar) {
+        console.log({sock});
+        if (!sockMap[sock]) {
+            sockMap[sock] = 1;
+        }
+    }
+
+    console.log({sockMap});
+    return salesCount;
 }
 
 console.log("******************************");
