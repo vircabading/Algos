@@ -10,8 +10,6 @@
  */
 
 function sockMerchant(n, ar) {
-    console.log({n});
-    console.log({ar});
     // Pseudo Code
     // Initialize sales count at 0
     // Create a map of socks
@@ -25,7 +23,6 @@ function sockMerchant(n, ar) {
     const sockMap = {};
 
     for (let sock of ar) {
-        console.log({sock});
         if (!sockMap[sock]) {
             sockMap[sock] = 1;
         } else {
@@ -37,7 +34,6 @@ function sockMerchant(n, ar) {
         }
     }
 
-    console.log({sockMap});
     return salesCount;
 }
 
@@ -48,5 +44,17 @@ console.log("******************************\n");
 const n1 = 7;
 const ar1 = [1, 2, 1, 2, 1, 3, 2];
 
+const n2 = 9;
+const ar2 = [10, 20, 20, 10, 10, 30, 50, 10, 20];
+
+const n3 = 10;
+const ar3 = [1, 1, 3, 1, 2, 1, 3, 3, 3, 3];
+
 console.log("N:", n1, "| ar:", ar1);
 console.log("Sales by match:", sockMerchant(n1, ar1), "\n");
+
+console.log("N:", n2, "| ar:", ar2);
+console.log("Sales by match:", sockMerchant(n2, ar2), "\n");
+
+console.log("N:", n3, "| ar:", ar3);
+console.log("Sales by match:", sockMerchant(n3, ar3), "\n");
