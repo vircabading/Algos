@@ -22,3 +22,5 @@ There is one pair of color 1 and one pair of color 2.  There are three off sock 
 
 returns: 2
 ```
+
+# Input Parameters
