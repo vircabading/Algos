@@ -14,3 +14,7 @@ function sockMerchant(n, ar) {
     console.log({ar});
     // Write your code here
 }
+
+console.log("******************************");
+console.log("Sales by Match Algorithm");
+console.log("******************************\n");
