@@ -13,6 +13,13 @@ function sockMerchant(n, ar) {
     console.log({n});
     console.log({ar});
     // Pseudo Code
+    // Initialize sales count at 0
+    // Create a map of socks
+    // Iterate through the array of socks
+    // For each sock
+    //      1. Map it
+    //      2. For each two socks mapped, increase the sales count
+    // Return the sales count
 }
 
 console.log("******************************");
