@@ -28,6 +28,12 @@ function sockMerchant(n, ar) {
         console.log({sock});
         if (!sockMap[sock]) {
             sockMap[sock] = 1;
+        } else {
+            let count = sockMap[sock] + 1
+            sockMap[sock] = count;
+            if (count % 2 === 0) {
+                salesCount++;
+            }
         }
     }
 
