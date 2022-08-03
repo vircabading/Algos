@@ -18,3 +18,9 @@ function sockMerchant(n, ar) {
 console.log("******************************");
 console.log("Sales by Match Algorithm");
 console.log("******************************\n");
+
+const n1 = 7;
+const ar1 = [1, 2, 1, 2, 1, 3, 2];
+
+console.log("N:", n1, "| ar:", ar1);
+console.log("Sales by match:", sockMerchant(n1, ar1), "\n");
