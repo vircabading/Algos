@@ -24,3 +24,5 @@ returns: 2
 ```
 
 # Input Parameters
+
+# Returns
