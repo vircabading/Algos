@@ -17,3 +17,9 @@ Python
 HackerRank
 
 # Example
+
+```
+a: [2, 3, 5, 1, 4]
+
+return: [1, 2, 5, 4, 3]
+```
