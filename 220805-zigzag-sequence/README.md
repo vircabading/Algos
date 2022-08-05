@@ -10,6 +10,8 @@ Given an array of n distinct integers, transform the array into a zig zag sequen
 
 # Language
 
+Python
+
 # Origin
 
 # Example
