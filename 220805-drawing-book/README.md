@@ -13,6 +13,8 @@ Given n and p, find and print the minimum number of pages that must be turned in
 
 # Language
 
+JavaScript (Node.js)
+
 # Origin
 
 # Example
