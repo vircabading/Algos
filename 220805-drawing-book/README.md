@@ -20,3 +20,10 @@ JavaScript (Node.js)
 HackerRank
 
 # Example
+
+```
+n = 5
+p =3
+
+return 1
+```
