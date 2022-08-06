@@ -40,6 +40,11 @@ function pageCount(n, p) {
     // Find out how far away p is from the back page
     const turnsFromBackPage = nPageTurn - pPageTurn;
     
+    console.log({pPageTurn});
+    console.log({nPageTurn});
+    console.log({turnsFromFrontPage});
+    console.log({turnsFromBackPage});
+
     // Return the smaller page distance
     if (turnsFromBackPage <= turnsFromBackPage) {
         return turnsFromBackPage;
@@ -54,5 +59,11 @@ console.log("*********************************\n");
 const n1 = 5;
 const p1 =3;
 
+const n2 = 6;
+const p2 = 2;
+
 console.log("N:", n1, "| P:", p1);
 console.log("Minimum page turns:", pageCount(n1, p1), "\n");
+
+console.log("N:", n2, "| P:", p2);
+console.log("Minimum page turns:", pageCount(n2, p2), "\n");
