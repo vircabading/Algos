@@ -62,8 +62,14 @@ const p1 =3;
 const n2 = 6;
 const p2 = 2;
 
+const n3 = 5;
+const p3 = 4;
+
 console.log("N:", n1, "| P:", p1);
 console.log("Minimum page turns:", pageCount(n1, p1), "\n");
 
 console.log("N:", n2, "| P:", p2);
 console.log("Minimum page turns:", pageCount(n2, p2), "\n");
+
+console.log("N:", n3, "| P:", p3);
+console.log("Minimum page turns:", pageCount(n3, p3), "\n");
