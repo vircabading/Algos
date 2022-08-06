@@ -14,3 +14,7 @@ function pageCount(n, p) {
     console.log({n});
     console.log({p});
 }
+
+console.log("*********************************");
+console.log("Drawing Book Algorithm");
+console.log("*********************************\n");
