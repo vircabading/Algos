@@ -19,7 +19,6 @@ function pageCount(n, p) {
     //      if page number is even:
     //          page turn number = x/2
     // Find out how far away p is from the front page
-    // Find out how far away p is from the back page
     // Return the smaller page distance
     
     const getPageTurn = (x) => {
@@ -34,10 +33,21 @@ function pageCount(n, p) {
     
     // Determine what page p is on
     const pPageTurn = getPageTurn(p);
-
+    
+    // Find out how far away p is from the front page
+    const turnsFromFrontPage = pPageTurn;
+    
+    // Find out how far away p is from the back page
+    const turnsFromBackPage = nPageTurn - pPageTurn;
     
     console.log({nPageTurn});
     console.log({pPageTurn});
+    
+    // Return the smaller page distance
+    if (turnsFromBackPage <= turnsFromBackPage) {
+        return turnsFromBackPage;
+    }
+    return turnsFromBackPage;
 }
 
 console.log("*********************************");
