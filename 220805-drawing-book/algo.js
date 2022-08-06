@@ -21,13 +21,23 @@ function pageCount(n, p) {
     // Find out how far away p is from the front page
     // Find out how far away p is from the back page
     // Return the smaller page distance
-
+    
     const getPageTurn = (x) => {
         if ( x%2 > 0 ) {    // If is odd number
             return (x-1)/2;
         }
         return x/2;         // Else is even number
     }
+    
+    // Determine how many pages there are in the book
+    const nPageTurn = getPageTurn(n);
+    
+    // Determine what page p is on
+    const pPageTurn = getPageTurn(p);
+
+    
+    console.log({nPageTurn});
+    console.log({pPageTurn});
 }
 
 console.log("*********************************");
