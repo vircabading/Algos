@@ -15,6 +15,15 @@ function towerBreakers(n, m) {
     // otherwise:
     //      if n is odd, player 1 wins
     // else player 2 wins
+    const numTowers = n;
+    const towerHeight = m;
+
+    if (towerHeight === 1) {
+        return 2;
+    } else if (numTowers % 2 === 1) {
+        return 1;
+    }
+    return 2;
 }
 
 console.log("*******************************");
@@ -24,5 +33,11 @@ console.log("*******************************\n");
 const n1 = 2;
 const m1 = 6;
 
+const n2 = 2;
+const m2 = 2;
+
 console.log("*** N:", n1, "| M:", m1, "***");
 console.log("Tower Breaker:", towerBreakers(n1, m1), "\n");
+
+console.log("*** N:", n2, "| M:", m2, "***");
+console.log("Tower Breaker:", towerBreakers(n2, m2), "\n");
