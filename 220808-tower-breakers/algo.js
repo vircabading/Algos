@@ -12,7 +12,7 @@
 function towerBreakers(n, m) {
     console.log({n});
     console.log({m});
-    // Write your code here
+    // Pseudo Code
 }
 
 console.log("*******************************");
