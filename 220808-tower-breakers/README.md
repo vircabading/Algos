@@ -13,4 +13,6 @@ Given the values of n and m, determine which player will win. If the first playe
 
 # language
 
+JavaScript (Node.js)
+
 # example
