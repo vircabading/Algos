@@ -18,3 +18,9 @@ function towerBreakers(n, m) {
 console.log("*******************************");
 console.log("Tower Breakers Algorithm");
 console.log("*******************************\n");
+
+const n1 = 2;
+const m1 = 6;
+
+console.log("*** N:", n1, "| M:", m1, "***");
+console.log("Tower Breaker:", towerBreakers(n1, m1), "\n");
