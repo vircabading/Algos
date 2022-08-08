@@ -36,8 +36,14 @@ const m1 = 6;
 const n2 = 2;
 const m2 = 2;
 
+const n3 = 1;
+const m3 = 4;
+
 console.log("*** N:", n1, "| M:", m1, "***");
 console.log("Tower Breaker:", towerBreakers(n1, m1), "\n");
 
 console.log("*** N:", n2, "| M:", m2, "***");
 console.log("Tower Breaker:", towerBreakers(n2, m2), "\n");
+
+console.log("*** N:", n3, "| M:", m3, "***");
+console.log("Tower Breaker:", towerBreakers(n3, m3), "\n");
