@@ -43,3 +43,15 @@ Player 2 matches again. Towers are both 1 unit tall.
 
 Player  has no move and loses. Return 2.
 ```
+
+```
+n = 2;
+m = 2;
+
+return 2;
+
+reasoning:
+Playes 1 chooses one of the two towers and reduces it to 1.
+Then Player 2 reduces the remaining tower to height 1.
+As both towers are now at height 1, player 1 cannot make a move so player 2 is the winner
+```
