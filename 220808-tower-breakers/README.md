@@ -35,13 +35,11 @@ There are 2 towers, each 6 units tall. Player 1 has a choice of two moves:
 Let Player 1 remove 3. Now the towers are 3 and 6 units tall.
 
 Player 2 matches the move. Now the towers are both 3 units tall.
-
 Now Player 1 has only one move.
 
 Player 1 removes 2 pieces leaving 1. Towers are 1 and 2 units tall.
 Player 2 matches again. Towers are both 1 unit tall.
-
-Player  has no move and loses. Return 2.
+Player 1 has no move and loses (1 % 0 = undefined). Return 2.
 ```
 
 ```
@@ -54,4 +52,18 @@ reasoning:
 Playes 1 chooses one of the two towers and reduces it to 1.
 Then Player 2 reduces the remaining tower to height 1.
 As both towers are now at height 1, player 1 cannot make a move so player 2 is the winner
+```
+
+```
+n = 1;
+m = 4;
+
+return 1;
+
+reasoning:
+There is only one tower of height 4
+Player one can reduce height to either 1 or 2. 
+Player one chooes one as both players always choose optimally
+
+Because player two has no possible move, player one wins.
 ```
