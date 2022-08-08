@@ -10,9 +10,11 @@
  */
 
 function towerBreakers(n, m) {
-    console.log({n});
-    console.log({m});
     // Pseudo Code
+    // if m = 1, player 2 wins
+    // otherwise:
+    //      if n is odd, player 1 wins
+    // else player 2 wins
 }
 
 console.log("*******************************");
