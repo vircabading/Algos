@@ -17,3 +17,10 @@ JavaScript (Node.js)
 HackerRank
 
 # Example
+
+```
+arr = [1, 4, 7, 2]
+k = 2
+
+returns: 1
+```
