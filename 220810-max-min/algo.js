@@ -10,9 +10,7 @@
  */
 
 function maxMin(k, arr) {
-    console.log({k});
-    console.log({arr});
-    // Write your code here
+    // Pseudo Code
 }
 
 console.log("*************************************")
