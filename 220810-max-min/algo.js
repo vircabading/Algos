@@ -24,7 +24,6 @@ function maxMin(k, arr) {
 
     // Sort Array in ascending order
     arr.sort((a,b)=>{return a-b});
-    console.log({arr});
 
     // Initialize variables
     //      Variable to keep track of Minimum Unfairness found
@@ -61,8 +60,14 @@ const k1 = 2;
 const arr2 = [20, 30 , 40, 1, 2, 3, 4, 10, 100, 200]
 const k2 = 4
 
+const arr3 = [10, 100, 300, 200, 1000, 20, 30];
+const k3 = 3;
+
 console.log(".:: K:", k1, "| array:", arr1,"::.");
 console.log("Minimum unfairness:", maxMin(k1, arr1), "\n");
 
 console.log(".:: K:", k2, "| array:", arr2,"::.");
 console.log("Minimum unfairness:", maxMin(k2, arr2), "\n");
+
+console.log(".:: K:", k3, "| array:", arr3,"::.");
+console.log("Minimum unfairness:", maxMin(k3, arr3), "\n");
