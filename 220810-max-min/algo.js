@@ -42,12 +42,12 @@ function maxMin(k, arr) {
         if (unfairness < minUnfair) {
             minUnfair = unfairness;
         }
-
-        console.log("Min:", arr[startPtr], "| Max:", arr[endPtr]);
-        console.log({unfairness});
         startPtr++;
         endPtr++;
     }
+
+    // Return minimum unfairness found
+    return minUnfair;
 }
 
 console.log("*************************************")
