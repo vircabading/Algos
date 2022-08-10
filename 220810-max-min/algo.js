@@ -63,6 +63,9 @@ const k2 = 4
 const arr3 = [10, 100, 300, 200, 1000, 20, 30];
 const k3 = 3;
 
+const arr4 = [1, 2, 1, 2, 1];
+const k4 = 2;
+
 console.log(".:: K:", k1, "| array:", arr1,"::.");
 console.log("Minimum unfairness:", maxMin(k1, arr1), "\n");
 
@@ -71,3 +74,6 @@ console.log("Minimum unfairness:", maxMin(k2, arr2), "\n");
 
 console.log(".:: K:", k3, "| array:", arr3,"::.");
 console.log("Minimum unfairness:", maxMin(k3, arr3), "\n");
+
+console.log(".:: K:", k4, "| array:", arr4,"::.");
+console.log("Minimum unfairness:", maxMin(k4, arr4), "\n");
