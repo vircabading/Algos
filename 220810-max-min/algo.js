@@ -11,6 +11,16 @@
 
 function maxMin(k, arr) {
     // Pseudo Code
+    // Sort Array in ascending order
+    // Initialize variables
+    //      Variable to keep track of Minimum Unfairness found
+    //      Pointer to start of arr' being evaluated
+    //      Pointer to end of arr' that is k away from start pointer
+    // Iterate through array arr to find each possible arr' using the
+    //      start and end pointers
+    //          Evaluate each arr' for its amount of unfairness
+    //          Memorize the smallest unfairness found
+    // Return minimum unfairness found
 }
 
 console.log("*************************************")
