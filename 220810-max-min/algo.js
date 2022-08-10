@@ -32,9 +32,22 @@ function maxMin(k, arr) {
     let minUnfair = arr[arr.length-1];
     let startPtr = 0;
     let endPtr = k-1;
-    console.log({minUnfair});
-    console.log({startPtr});
-    console.log({endPtr});
+
+    // Iterate through array arr to find each possible arr' using the
+    //      start and end pointers
+    //          Evaluate each arr' for its amount of unfairness
+    //          Memorize the smallest unfairness found
+    while (endPtr < arr.length) {
+        const unfairness = arr[endPtr] - arr[startPtr];
+        if (unfairness < minUnfair) {
+            minUnfair = unfairness;
+        }
+
+        console.log("Min:", arr[startPtr], "| Max:", arr[endPtr]);
+        console.log({unfairness});
+        startPtr++;
+        endPtr++;
+    }
 }
 
 console.log("*************************************")
