@@ -15,4 +15,6 @@ function maxMin(k, arr) {
     // Write your code here
 }
 
-maxMin(3, []);
+console.log("*************************************")
+console.log("Max Min Algorithm")
+console.log("*************************************\n")
