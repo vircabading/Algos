@@ -18,3 +18,9 @@ function maxMin(k, arr) {
 console.log("*************************************")
 console.log("Max Min Algorithm")
 console.log("*************************************\n")
+
+const arr1 = [1, 4, 7, 2];
+const k1 = 2;
+
+console.log(".:: K:", k1, "| array:", arr1,"::.");
+console.log("Minimum unfairness:", maxMin(k1, arr1));
