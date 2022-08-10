@@ -24,6 +24,17 @@ function maxMin(k, arr) {
 
     // Sort Array in ascending order
     arr.sort();
+
+    // Initialize variables
+    //      Variable to keep track of Minimum Unfairness found
+    //      Pointer to start of arr' being evaluated
+    //      Pointer to end of arr' that is k away from start pointer
+    let minUnfair = arr[arr.length-1];
+    let startPtr = 0;
+    let endPtr = k-1;
+    console.log({minUnfair});
+    console.log({startPtr});
+    console.log({endPtr});
 }
 
 console.log("*************************************")
