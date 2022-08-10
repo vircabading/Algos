@@ -21,6 +21,9 @@ function maxMin(k, arr) {
     //          Evaluate each arr' for its amount of unfairness
     //          Memorize the smallest unfairness found
     // Return minimum unfairness found
+
+    // Sort Array in ascending order
+    arr.sort();
 }
 
 console.log("*************************************")
