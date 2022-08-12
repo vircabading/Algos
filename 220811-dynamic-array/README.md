@@ -1,0 +1,1 @@
+# Dynanmic Arry Algorithnm Reand Me
