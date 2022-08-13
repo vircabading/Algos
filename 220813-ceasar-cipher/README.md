@@ -18,3 +18,10 @@ JavaScript (Node.js)
 HackerRank
 
 # Examples
+
+```
+s = "There's-a-starman-waiting-in-the-sky
+k = 3
+
+returns: Wkhuh'v-d-vwdupdq-zdlwlqj-lq-wkh-vnb"
+```
