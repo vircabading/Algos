@@ -32,3 +32,10 @@ k = 2
 
 returns: okffng-Qwvb
 ```
+
+```
+s = "Always-Look-on-the-Bright-Side-of-Life"
+k = 5
+
+returns: "Fqbfdx-Qttp-ts-ymj-Gwnlmy-Xnij-tk-Qnkj"
+```
