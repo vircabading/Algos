@@ -11,6 +11,16 @@
 
 function caesarCipher(s, k) {
     // Pseudo Code
+    // Create a map of the alphabet
+    // Initialize variables
+    //      Output String
+    //      
+    // Iterate through the string
+    //      for each letter in the string
+    //          determine if it is a capital or lower case letter
+    //          shift the letter by #k
+    //          memorize the shifted letter to output string
+    // Return Output string
 }
 
 console.log("***********************************");
