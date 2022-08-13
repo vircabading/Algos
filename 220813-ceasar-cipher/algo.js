@@ -15,6 +15,14 @@ function caesarCipher(s, k) {
     console.log({k});
 }
 
-console.log("***********************************")
-console.log("Ceasar Cipher Algorithm")
-console.log("***********************************\n")
+console.log("***********************************");
+console.log("Ceasar Cipher Algorithm");
+console.log("***********************************\n");
+
+const s1 = "There's-a-starman-waiting-in-the-sky";
+const k1 = 3;
+const returns1 = "Wkhuh'v-d-vwdupdq-zdlwlqj-lq-wkh-vnb";
+
+console.log("String:", s1, "| K:", k1);
+console.log("Expected return:", returns1);
+console.log("Ceasar Cipher:", caesarCipher(s1, k1), "\n");
