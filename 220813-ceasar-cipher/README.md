@@ -25,3 +25,10 @@ k = 3
 
 returns: Wkhuh'v-d-vwdupdq-zdlwlqj-lq-wkh-vnb"
 ```
+
+```
+s = "middle-Outz"
+k = 2
+
+returns: okffng-Qwvb
+```
