@@ -34,7 +34,7 @@ function caesarCipher(s, k) {
     //          shift the letter by #k
     //          memorize the shifted letter to output string
     for (let currentLet of s) {
-        console.log({currentLet});
+        // console.log({currentLet});
         // Check if current letter is a letter
         if (currentLet.toLowerCase() != currentLet.toUpperCase()) {
             const isCapital = currentLet === currentLet.toUpperCase();
