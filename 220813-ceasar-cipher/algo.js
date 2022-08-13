@@ -10,9 +10,7 @@
  */
 
 function caesarCipher(s, k) {
-    // Write your code here
-    console.log({s});
-    console.log({k});
+    // Pseudo Code
 }
 
 console.log("***********************************");
