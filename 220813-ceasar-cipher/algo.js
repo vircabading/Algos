@@ -14,7 +14,6 @@ function caesarCipher(s, k) {
     // Create a map of the alphabet
     // Initialize variables
     //      Output String
-    //      
     // Iterate through the string
     //      for each letter in the string
     //          determine if it is a capital or lower case letter
@@ -29,8 +28,28 @@ function caesarCipher(s, k) {
     const alphaArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     let output = "";
 
-    
-
+    // Iterate through the string
+    //      for each letter in the string
+    //          determine if it is a capital or lower case letter
+    //          shift the letter by #k
+    //          memorize the shifted letter to output string
+    for (let currentLet of s) {
+        console.log({currentLet});
+        // Check if current letter is a letter
+        if (currentLet.toLowerCase() != currentLet.toUpperCase()) {
+            const isCapital = currentLet === currentLet.toUpperCase();
+            // console.log({isCapital});
+            const shiftAmt = (alphaMap[currentLet.toLowerCase()] + k) % 26;
+            // console.log({shiftAmt});
+            if (isCapital) {
+                output += alphaArray[shiftAmt].toUpperCase();
+            } else {
+                output += alphaArray[shiftAmt];
+            }
+        } else {
+            output += currentLet;
+        }
+    }
     return output;
 }
 
