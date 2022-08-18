@@ -61,9 +61,13 @@ console.log("*********************************\n");
 
 const grid1 = ['bac', 'eda', 'gef'];
 const grid2 = ['bac', 'gef', 'eda'];
+const grid3 = ['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']
 
 console.log("*** Grid:", grid1, "***");
 console.log("Grid Challenge:", gridChallenge(grid1), "\n");
 
 console.log("*** Grid:", grid2, "***");
 console.log("Grid Challenge:", gridChallenge(grid2), "\n");
+
+console.log("*** Grid:", grid3, "***");
+console.log("Grid Challenge:", gridChallenge(grid3), "\n");
