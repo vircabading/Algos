@@ -8,6 +8,7 @@
  */
 
 function gridChallenge(grid) {
+    console.log({grid});
     // Write your code here
 
 }
@@ -15,3 +16,8 @@ function gridChallenge(grid) {
 console.log("*********************************");
 console.log("Grid Challenge Algorithm");
 console.log("*********************************\n");
+
+const grid1 = ['abc', 'ade', 'efg'];
+
+console.log("*** Grid:", grid1, "***");
+console.log("Grid Challenge:", gridChallenge(grid1));
