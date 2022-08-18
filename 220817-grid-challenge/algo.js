@@ -61,7 +61,10 @@ console.log("*********************************\n");
 
 const grid1 = ['bac', 'eda', 'gef'];
 const grid2 = ['bac', 'gef', 'eda'];
-const grid3 = ['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']
+const grid3 = ['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv'];
+const grid4 = [ 'abc', 'lmp', 'qrt' ];
+const grid5 = [ 'mpxz', 'abcd', 'wlmf' ];
+const grid6 = [ 'abc', 'hjk', 'mpq', 'rtv' ];
 
 console.log("*** Grid:", grid1, "***");
 console.log("Grid Challenge:", gridChallenge(grid1), "\n");
@@ -71,3 +74,12 @@ console.log("Grid Challenge:", gridChallenge(grid2), "\n");
 
 console.log("*** Grid:", grid3, "***");
 console.log("Grid Challenge:", gridChallenge(grid3), "\n");
+
+console.log("*** Grid:", grid4, "***");
+console.log("Grid Challenge:", gridChallenge(grid4), "\n");
+
+console.log("*** Grid:", grid5, "***");
+console.log("Grid Challenge:", gridChallenge(grid5), "\n");
+
+console.log("*** Grid:", grid6, "***");
+console.log("Grid Challenge:", gridChallenge(grid6), "\n");
