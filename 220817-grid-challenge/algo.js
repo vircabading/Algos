@@ -42,6 +42,10 @@ function gridChallenge(grid) {
             console.log("Front ptr:", frontPtr, "| Back ptr:", backPtr);
             console.log("Front Letter:", frontLetter, "| Next Letter:", backLetter);
             
+            if (frontLetter.charCodeAt(0) > backLetter.charCodeAt(0)) {
+                return 'NO';
+            }
+
             frontPtr++;
             backPtr++;
         }
@@ -56,6 +60,10 @@ console.log("Grid Challenge Algorithm");
 console.log("*********************************\n");
 
 const grid1 = ['bac', 'eda', 'gef'];
+const grid2 = ['bac', 'gef', 'eda'];
 
 console.log("*** Grid:", grid1, "***");
-console.log("Grid Challenge:", gridChallenge(grid1));
+console.log("Grid Challenge:", gridChallenge(grid1), "\n");
+
+console.log("*** Grid:", grid2, "***");
+console.log("Grid Challenge:", gridChallenge(grid2), "\n");
