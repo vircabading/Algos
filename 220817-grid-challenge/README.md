@@ -23,3 +23,9 @@ e f g
 
 returns: YES
 ```
+
+```
+grid = ['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']
+
+returns: YES
+```
