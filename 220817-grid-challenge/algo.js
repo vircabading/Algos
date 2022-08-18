@@ -29,6 +29,24 @@ function gridChallenge(grid) {
     }
     console.log({twoDGrid});
 
+    // Iterate through each column of the grid
+    //      To check if they are in alphabetical order
+    // If any portion is not in alphabetical order, return 'NO'
+    for (let col = 0; col < twoDGrid[0].length; col++) {
+        console.log("Column:", col);
+        let frontPtr = 0;
+        let backPtr = 1;
+        while (backPtr < twoDGrid.length) {
+            const frontLetter =  twoDGrid[frontPtr][col];
+            const backLetter =  twoDGrid[backPtr][col];
+            console.log("Front ptr:", frontPtr, "| Back ptr:", backPtr);
+            console.log("Front Letter:", frontLetter, "| Next Letter:", backLetter);
+            
+            frontPtr++;
+            backPtr++;
+        }
+    }
+
     // Otherwise, return 'YES'
     return 'YES';
 }
