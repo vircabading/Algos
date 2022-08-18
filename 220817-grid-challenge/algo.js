@@ -11,11 +11,16 @@ function gridChallenge(grid) {
     console.log({grid});
     // Pseudo Code
     // Create a two dimensional grid
-    //      To create this two 2D grid, must sort each strin in parameter passed grid
+    //      To create this two 2D grid, must sort each string in parameter passed grid
     // Iterate through each column of the grid
     //      To check if they are in alphabetical order
     // If any portion is not in alphabetical order, return 'NO'
     //      Otherwise, return 'YES'
+
+    //      To create this two 2D grid, must sort each string in parameter passed grid
+
+    // Otherwise, return 'YES'
+    return 'YES';
 }
 
 console.log("*********************************");
