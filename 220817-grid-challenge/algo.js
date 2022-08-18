@@ -8,7 +8,7 @@
  */
 
 function gridChallenge(grid) {
-    console.log({grid});
+    // console.log({grid});
     // Pseudo Code
     // Create a two dimensional grid
     //      To create this two 2D grid, must sort each string in parameter passed grid
@@ -20,27 +20,27 @@ function gridChallenge(grid) {
 
     //      To create this two 2D grid, must sort each string in parameter passed grid
     for (let word of grid) {
-        console.log({word});
+        // console.log({word});
         twoDGrid.push(word.split(""));
         twoDGrid[twoDGrid.length-1].sort((a,b) => 
         {
             return a.charCodeAt(0) - b.charCodeAt(0);
         });
     }
-    console.log({twoDGrid});
+    // console.log({twoDGrid});
 
     // Iterate through each column of the grid
     //      To check if they are in alphabetical order
     // If any portion is not in alphabetical order, return 'NO'
     for (let col = 0; col < twoDGrid[0].length; col++) {
-        console.log("Column:", col);
+        // console.log("Column:", col);
         let frontPtr = 0;
         let backPtr = 1;
         while (backPtr < twoDGrid.length) {
             const frontLetter =  twoDGrid[frontPtr][col];
             const backLetter =  twoDGrid[backPtr][col];
-            console.log("Front ptr:", frontPtr, "| Back ptr:", backPtr);
-            console.log("Front Letter:", frontLetter, "| Next Letter:", backLetter);
+            // console.log("Front ptr:", frontPtr, "| Back ptr:", backPtr);
+            // console.log("Front Letter:", frontLetter, "| Next Letter:", backLetter);
             
             if (frontLetter.charCodeAt(0) > backLetter.charCodeAt(0)) {
                 return 'NO';
