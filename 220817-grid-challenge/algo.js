@@ -11,3 +11,7 @@ function gridChallenge(grid) {
     // Write your code here
 
 }
+
+console.log("*********************************");
+console.log("Grid Challenge Algorithm");
+console.log("*********************************\n");
