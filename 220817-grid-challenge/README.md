@@ -10,4 +10,16 @@ JavaScript.js (Node.js)
 
 # Origin
 
+HackerRank
+
 # Example
+
+```
+grid = ['abc', 'ade', 'efg']
+
+a b c
+a d e
+e f g
+
+returns: YES
+```
