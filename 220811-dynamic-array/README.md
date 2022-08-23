@@ -1,4 +1,4 @@
-# Dynanmic Arry Algorithnm Reand Me
+# Dynanmic Array Algorithnm Read Me
 
 # Description
 
@@ -26,3 +26,12 @@ JavaScript.js (Node.js)
 HackerRank
 
 # Examples
+
+```
+n = 2
+queries [ [ 1, 0, 5 ], [ 1, 1, 7 ], [ 1, 0, 3 ], [ 2, 1, 0 ], [ 2, 1, 1 ] ]
+
+returns:
+7
+3
+```
