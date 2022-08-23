@@ -15,6 +15,8 @@ function gridChallenge(grid) {
     //      To check if they are in alphabetical order
     // If any portion is not in alphabetical order, return 'NO'
     //      Otherwise, return 'YES'
+    
+    // Create a two dimensional grid
     let twoDGrid = [];
 
     //      To create this two 2D grid, must sort each string in parameter passed grid
