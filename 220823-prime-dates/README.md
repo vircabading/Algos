@@ -14,6 +14,10 @@ Given two dates each in the format dd-mm-yyyy, you have to find the number of lu
 
 # Language
 
+JavaScript
+
 # Origin
+
+
 
 # Example
