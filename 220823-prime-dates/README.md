@@ -12,6 +12,10 @@ Given two dates each in the format dd-mm-yyyy, you have to find the number of lu
 
     Now if x is divisible by either 4 or 7, then we call the date a lucky date.
 
+Debug the given function findPrimeDates and/or other lines of code, to find the correct lucky dates from the given input.
+
+Note: You can modify at most five lines in the given code and you cannot add or remove lines to the code.
+
 # Language
 
 JavaScript
@@ -21,3 +25,11 @@ JavaScript
 HackerRank
 
 # Example
+
+```
+date = "02-08-2024"
+
+After concatinating the day, month and year, we get x = 2082024. 
+
+As x is divisible by 4 so the date "02-08-2024" is called a lucky date.
+```
