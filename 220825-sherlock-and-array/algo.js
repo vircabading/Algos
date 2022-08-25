@@ -34,6 +34,15 @@ function balancedSums(arr) {
     let currentLoc = 0;     // Local pointer which will iterate array
     while (currentLoc < arr.length) {
         const num = arr[currentLoc];
+        const rightSum = totalSum - (num+leftSum);
+
+        // console.log({leftSum});
+        // console.log({rightSum});
+
+        if (leftSum === rightSum) {
+            return "YES";
+        }
+        
         leftSum += num;
         currentLoc++;
     }
