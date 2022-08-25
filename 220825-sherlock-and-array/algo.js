@@ -8,9 +8,10 @@
  */
 
 function balancedSums(arr) {
-    console.log({array1});
+    console.log({arr});
     // Write your code here
 
+    return "NO";
 }
 
 console.log("***********************************");
