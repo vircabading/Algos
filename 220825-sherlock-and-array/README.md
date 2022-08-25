@@ -6,6 +6,10 @@ Watson gives Sherlock an array of integers. His challenge is to find an element 
 
 # Language
 
+JavaScript
+
 # Origin
+
+HackerRank
 
 # Example
