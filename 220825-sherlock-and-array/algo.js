@@ -8,6 +8,7 @@
  */
 
 function balancedSums(arr) {
+    console.log({array1});
     // Write your code here
 
 }
@@ -15,3 +16,7 @@ function balancedSums(arr) {
 console.log("***********************************");
 console.log("Sherlock and Array Algorithm");
 console.log("***********************************\n");
+
+const array1 = [ 1, 2, 3, 3 ];
+console.log("Array:", array1);
+console.log("Balanced sums found:", balancedSums(array1));
