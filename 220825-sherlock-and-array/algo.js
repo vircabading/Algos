@@ -24,7 +24,21 @@ function balancedSums(arr) {
         totalSum += num;
     }
     console.log({totalSum});
-    
+
+        // Iterate through the array
+    //      while iterating array, get sum to left and right of current position
+    //          sum to left of current position: start at 0, add as pointer iterates
+    //          sum to right of current position: total - (current position's value + sum to left)
+    //      if find left sum and right sum are equal, return YES
+    let leftSum = 0;
+    let currentLoc = 0;     // Local pointer which will iterate array
+    while (currentLoc < arr.length) {
+        const num = arr[currentLoc];
+        leftSum += num;
+        currentLoc++;
+    }
+    console.log({leftSum});
+
     // If iterated through array and couldn't find a balanced sum, return NO
     return "NO";
 }
