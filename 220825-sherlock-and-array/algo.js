@@ -8,7 +8,6 @@
  */
 
 function balancedSums(arr) {
-    // console.log({arr});
     // Pseudo Code
     // Get the sum of the array
     // Iterate through the array
@@ -23,9 +22,8 @@ function balancedSums(arr) {
     for (let num of arr) {
         totalSum += num;
     }
-    // console.log({totalSum});
 
-        // Iterate through the array
+    // Iterate through the array
     //      while iterating array, get sum to left and right of current position
     //          sum to left of current position: start at 0, add as pointer iterates
     //          sum to right of current position: total - (current position's value + sum to left)
@@ -36,8 +34,6 @@ function balancedSums(arr) {
         const num = arr[currentLoc];
         const rightSum = totalSum - (num+leftSum);
 
-        // console.log({leftSum});
-        // console.log({rightSum});
 
         if (leftSum === rightSum) {
             return "YES";
@@ -46,7 +42,6 @@ function balancedSums(arr) {
         leftSum += num;
         currentLoc++;
     }
-    // console.log({leftSum});
 
     // If iterated through array and couldn't find a balanced sum, return NO
     return "NO";
