@@ -13,3 +13,11 @@ JavaScript
 HackerRank
 
 # Example
+
+```
+arr = [5, 6, 8, 11]
+
+8 is between two subarrays that sum to 11
+
+returns: YES
+```
