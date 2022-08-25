@@ -21,8 +21,9 @@ function balancedSums(arr) {
     // Get the total sum of the array
     let totalSum=0;
     for (let num of arr) {
-        console.log({num});
+        totalSum += num;
     }
+    console.log({totalSum});
     
     // If iterated through array and couldn't find a balanced sum, return NO
     return "NO";
