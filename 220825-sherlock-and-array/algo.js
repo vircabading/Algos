@@ -8,7 +8,7 @@
  */
 
 function balancedSums(arr) {
-    console.log({arr});
+    // console.log({arr});
     // Pseudo Code
     // Get the sum of the array
     // Iterate through the array
@@ -23,7 +23,7 @@ function balancedSums(arr) {
     for (let num of arr) {
         totalSum += num;
     }
-    console.log({totalSum});
+    // console.log({totalSum});
 
         // Iterate through the array
     //      while iterating array, get sum to left and right of current position
@@ -46,7 +46,7 @@ function balancedSums(arr) {
         leftSum += num;
         currentLoc++;
     }
-    console.log({leftSum});
+    // console.log({leftSum});
 
     // If iterated through array and couldn't find a balanced sum, return NO
     return "NO";
@@ -57,5 +57,10 @@ console.log("Sherlock and Array Algorithm");
 console.log("***********************************\n");
 
 const array1 = [ 1, 2, 3, 3 ];
-console.log("Array:", array1);
-console.log("Balanced sums found:", balancedSums(array1));
+const array2 = [ 1, 2, 3 ];
+
+console.log("Array:", array1, "Expected: Yes");
+console.log("Balanced sums found:", balancedSums(array1), "\n");
+
+console.log("Array:", array2, "Expected: No");
+console.log("Balanced sums found:", balancedSums(array2), "\n");
