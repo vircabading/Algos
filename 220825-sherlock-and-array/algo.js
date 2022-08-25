@@ -9,7 +9,7 @@
 
 function balancedSums(arr) {
     console.log({arr});
-    // Write your code here
+    // Pseudo Code
 
     return "NO";
 }
