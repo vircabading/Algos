@@ -58,9 +58,13 @@ console.log("***********************************\n");
 
 const array1 = [ 1, 2, 3, 3 ];
 const array2 = [ 1, 2, 3 ];
+const array3 = [5, 6, 8, 11];
 
 console.log("Array:", array1, "Expected: Yes");
 console.log("Balanced sums found:", balancedSums(array1), "\n");
 
 console.log("Array:", array2, "Expected: No");
 console.log("Balanced sums found:", balancedSums(array2), "\n");
+
+console.log("Array:", array3, "Expected: Yes");
+console.log("Balanced sums found:", balancedSums(array3), "\n");
