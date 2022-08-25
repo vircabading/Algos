@@ -21,3 +21,9 @@ arr = [5, 6, 8, 11]
 
 returns: YES
 ```
+
+```
+arr = [1]
+
+returns: YES
+```
