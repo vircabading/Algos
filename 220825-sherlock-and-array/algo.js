@@ -11,3 +11,7 @@ function balancedSums(arr) {
     // Write your code here
 
 }
+
+console.log("***********************************");
+console.log("Sherlock and Array Algorithm");
+console.log("***********************************\n");
