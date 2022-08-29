@@ -18,3 +18,15 @@ JavaScript.js (Node.js)
 HackerRank
 
 # Example
+
+```
+n = '9875'
+k = 1
+
+super digit(9875) = 9 + 8 + 7 + 5 = 29
+super digit(29) = 2 + 9 = 11
+super digit(11) = 1 + 1 = 2
+super digit(2) = 2
+
+returns = 2
+```
