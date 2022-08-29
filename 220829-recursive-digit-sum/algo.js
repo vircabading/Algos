@@ -55,3 +55,15 @@ const expect1 = 2
 
 console.log("N:", n1, "| K:", k1, "| Expected:", expect1);
 console.log("Super Digit:", superDigit(n1, k1), "\n");
+
+n = "148"
+k = 3
+
+returns = 3
+
+const n2 = '148';
+const k2 = 3;
+const expect2 = 3
+
+console.log("N:", n2, "| K:", k2, "| Expected:", expect2);
+console.log("Super Digit:", superDigit(n2, k2), "\n");
