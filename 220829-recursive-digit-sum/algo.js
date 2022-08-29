@@ -28,6 +28,10 @@ function superDigit(n, k) {
     }
 
     console.log({digitStr});
+    // recursive break
+    if (digitStr.length === 1) {
+        return parseInt(digitStr);
+    }
 }
 
 console.log("******************************");
@@ -39,4 +43,5 @@ const k1 = 1;
 const expect1 = 2
 
 console.log("N:", n1, "| K:", k1, "| Expected:", expect1);
-console.log("Super Digit:", superDigit(n1, k1), "\n");
+// console.log("Super Digit:", superDigit(n1, k1), "\n");
+console.log("Super Digit:", superDigit("3", 1), "\n");
