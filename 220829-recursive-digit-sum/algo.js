@@ -21,6 +21,13 @@ function superDigit(n, k) {
     // Variables
     let digitStr = "";
     let digitSum = 0;
+
+    // build digit string by concatenating string n, k times
+    for (let x=1; x <=k; x++) {
+        digitStr += n;
+    }
+
+    console.log({digitStr});
 }
 
 console.log("******************************");
