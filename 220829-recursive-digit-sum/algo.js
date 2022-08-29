@@ -9,8 +9,18 @@
  */
 
 function superDigit(n, k) {
-    // Write your code here
+    // Pseudo Code
+    // This will be recursive
+    // 1. build digit string by concatenating string n, k times
+    // 2. iterate through each digit of digit string
+    //      a. get the sum off the digits in digit string
+    // 3. recursively call this function on the sum of the digit string
+    console.log({n});
+    console.log({k});
 
+    // Variables
+    let digitStr = "";
+    let digitSum = 0;
 }
 
 console.log("******************************");
