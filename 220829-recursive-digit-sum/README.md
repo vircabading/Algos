@@ -11,6 +11,8 @@ Otherwise, the super digit of x is equal to the super digit of the sum of the di
 
 # Language
 
+JavaScript.js (Node.js)
+
 # Origin
 
 # Example
