@@ -21,7 +21,7 @@ function superDigit(n, k) {
     // Variables
     let digitStr = "";
     let digitSum = 0;
-
+    
     // build digit string by concatenating string n, k times
     for (let x=1; x <=k; x++) {
         digitStr += n;
@@ -32,6 +32,17 @@ function superDigit(n, k) {
     if (digitStr.length === 1) {
         return parseInt(digitStr);
     }
+    
+    // Get the sum of digit string
+    for (let digit of digitStr) {
+        console.log({digit});
+        digitSum += parseInt(digit);
+    }
+    console.log({digitSum});
+    
+    
+    // recursively call this function on the sum of the digit string
+    return superDigit(digitSum.toString(), 1);
 }
 
 console.log("******************************");
@@ -43,5 +54,4 @@ const k1 = 1;
 const expect1 = 2
 
 console.log("N:", n1, "| K:", k1, "| Expected:", expect1);
-// console.log("Super Digit:", superDigit(n1, k1), "\n");
-console.log("Super Digit:", superDigit("3", 1), "\n");
+console.log("Super Digit:", superDigit(n1, k1), "\n");
