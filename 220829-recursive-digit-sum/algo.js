@@ -15,8 +15,6 @@ function superDigit(n, k) {
     // 2. iterate through each digit of digit string
     //      a. get the sum off the digits in digit string
     // 3. recursively call this function on the sum of the digit string
-    console.log({n});
-    console.log({k});
 
     // Variables
     let digitStr = "";
@@ -27,7 +25,6 @@ function superDigit(n, k) {
         digitStr += n;
     }
 
-    console.log({digitStr});
     // recursive break
     if (digitStr.length === 1) {
         return parseInt(digitStr);
@@ -35,12 +32,9 @@ function superDigit(n, k) {
     
     // Get the sum of digit string
     for (let digit of digitStr) {
-        console.log({digit});
         digitSum += parseInt(digit);
     }
-    console.log({digitSum});
-    
-    
+        
     // recursively call this function on the sum of the digit string
     return superDigit(digitSum.toString(), 1);
 }
@@ -67,3 +61,10 @@ const expect2 = 3
 
 console.log("N:", n2, "| K:", k2, "| Expected:", expect2);
 console.log("Super Digit:", superDigit(n2, k2), "\n");
+
+const n3 = '9875';
+const k3 = 4;
+const expect3 = 8
+
+console.log("N:", n3, "| K:", k3, "| Expected:", expect3);
+console.log("Super Digit:", superDigit(n3, k3), "\n");
