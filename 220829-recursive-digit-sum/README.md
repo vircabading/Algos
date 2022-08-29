@@ -30,3 +30,10 @@ super digit(2) = 2
 
 returns = 2
 ```
+
+```
+n = "148"
+k = 3
+
+returns = 3
+```
