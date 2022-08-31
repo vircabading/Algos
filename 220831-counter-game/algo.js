@@ -36,6 +36,9 @@ function counterGame(n) {
         if (num == 1) {
             return numTurns;
         }
+        if (isPowerOf2(num)) {
+            return countTurns(num/2, numTurns+1)
+        }
     }
 
     numTurns = countTurns(n, numTurns);
@@ -47,7 +50,7 @@ console.log("*********************************");
 console.log("Counter Game Algorithm"); 
 console.log("*********************************\n"); 
 
-const n1 = 6;
+const n1 = 4;
 const expected1 = "Richard";
 
 console.log("N:", n1, "| Expected return:", expected1);
