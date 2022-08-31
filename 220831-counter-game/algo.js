@@ -20,6 +20,18 @@ function counterGame(n) {
     // Create a function which will play the game
     //      and returns the number of steps needed to end the game
 
+    let numTurns = 0;
+
+    const countTurns = (num, numTurns) => {
+        console.log("Num:", num, "| num turns:", numTurns);
+        if (num == 1) {
+            return numTurns;
+        }
+    }
+
+    numTurns = countTurns(n, numTurns);
+
+    return numTurns;
 }
 
 console.log("*********************************"); 
