@@ -38,19 +38,31 @@ function counterGame(n) {
         }
         if (isPowerOf2(num)) {
             return countTurns(num/2, numTurns+1)
+        } else {
+            let curNum = num - 1;
+            while (!isPowerOf2(curNum)) {
+                console.log({curNum});
+                curNum--;
+            }
+            console.log({curNum});
+            return countTurns( num-curNum , numTurns+1 );
         }
     }
 
     numTurns = countTurns(n, numTurns);
+    console.log({numTurns});
 
-    return numTurns;
+    if ((numTurns % 2) === 1) {
+        return "Louise";
+    }
+    return "Richard";
 }
 
 console.log("*********************************"); 
 console.log("Counter Game Algorithm"); 
 console.log("*********************************\n"); 
 
-const n1 = 4;
+const n1 = 6;
 const expected1 = "Richard";
 
 console.log("N:", n1, "| Expected return:", expected1);
