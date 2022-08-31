@@ -11,3 +11,7 @@ function counterGame(n) {
     // Write your code here
 
 }
+
+console.log("*********************************"); 
+console.log("Counter Game Algorithm"); 
+console.log("*********************************\n"); 
