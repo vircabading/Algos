@@ -8,7 +8,6 @@
  */
 
 function counterGame(n) {
-    console.log({n});
     // Pseudo Code
     // Game Mechanic
     //      if num is 1, game is overs
@@ -32,7 +31,6 @@ function counterGame(n) {
     let numTurns = 0;
 
     const countTurns = (num, numTurns) => {
-        console.log("Num:", num, "| num turns:", numTurns);
         if (num == 1) {
             return numTurns;
         }
@@ -41,16 +39,13 @@ function counterGame(n) {
         } else {
             let curNum = num - 1;
             while (!isPowerOf2(curNum)) {
-                console.log({curNum});
                 curNum--;
             }
-            console.log({curNum});
             return countTurns( num-curNum , numTurns+1 );
         }
     }
 
     numTurns = countTurns(n, numTurns);
-    console.log({numTurns});
 
     if ((numTurns % 2) === 1) {
         return "Louise";
@@ -67,3 +62,10 @@ const expected1 = "Richard";
 
 console.log("N:", n1, "| Expected return:", expected1);
 console.log("Counter Game:", counterGame(n1) , "\n")
+
+const n2 = 132;
+const expected2 = "Louise";
+
+console.log("N:", n2, "| Expected return:", expected2);
+console.log("Counter Game:", counterGame(n2) , "\n")
+
