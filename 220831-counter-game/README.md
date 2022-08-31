@@ -23,3 +23,9 @@ It's Louise's turn first. She determines that 132 is not a power of 2. The next 
 
 returns: Louise
 ```
+
+```
+n = 6
+
+returns: Richard
+```
