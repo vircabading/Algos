@@ -8,6 +8,8 @@ Given an initial value, determine who wins the game.
 
 # Language
 
+JavaScript.js (Node.js)
+
 # Origin
 
 # Examples
