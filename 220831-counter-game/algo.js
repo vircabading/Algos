@@ -20,6 +20,15 @@ function counterGame(n) {
     // Create a function which will play the game
     //      and returns the number of steps needed to end the game
 
+    /**
+     * Determines if a number is a power of 2
+     * @param {Integer} n 
+     * @returns {Boolean} True or False
+     */
+    const isPowerOf2 = (n) => {
+        return  (Math.log2(n) % 1) === 0;
+    }
+
     let numTurns = 0;
 
     const countTurns = (num, numTurns) => {
