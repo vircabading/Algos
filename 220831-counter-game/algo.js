@@ -31,17 +31,14 @@ function counterGame(n) {
     let numTurns = 0;
 
     const countTurns = (num, numTurns) => {
-        if (num == 1) {
+        if (num === 1) {
             return numTurns;
         }
         if (isPowerOf2(num)) {
             return countTurns(num/2, numTurns+1)
         } else {
-            let curNum = num - 1;
-            while (!isPowerOf2(curNum)) {
-                curNum--;
-            }
-            return countTurns( num-curNum , numTurns+1 );
+            let curNum = Math.pow(2, Math.trunc( Math.log2(num) ));
+            return countTurns( num- curNum, numTurns+1 );
         }
     }
 
