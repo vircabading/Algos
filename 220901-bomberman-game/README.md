@@ -49,3 +49,25 @@ JavaScript.js (Node.js)
 HackerRank
 
 # Examples
+
+```
+n = 3
+grid = ['.......', '...O...', '....O..''.......', 'OO.....', 'OO.....']
+
+which is:
+.......
+...O...
+....O..
+.......
+OO.....
+OO.....
+
+output gird = ['OOO.OOO', 'OO...OO', 'OOO...O', '..OO.OO', '...OOOO', '...OOOO']
+
+OOO.OOO
+OO...OO
+OOO...O
+..OO.OO
+...OOOO
+...OOOO
+```
