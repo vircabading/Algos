@@ -71,3 +71,22 @@ OOO...O
 ...OOOO
 ...OOOO
 ```
+
+```
+n = 5
+grid = [ '.......', '...O.O.', '....O..', '..O....', 'OO...OO', 'OO.O...' ]
+.......
+...O.O.
+....O..
+..O....
+OO...OO
+OO.O...
+
+grid output =
+.......
+...O.O.
+...OO..
+..OOOO.
+OOOOOOO
+OOOOOOO
+```
