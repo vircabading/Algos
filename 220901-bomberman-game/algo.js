@@ -12,7 +12,7 @@
 function bomberMan(n, grid) {
     console.log({n});
     console.log({grid});
-    // Write your code here
+    // Pseudo code
 }
 
 console.log("**********************************")
