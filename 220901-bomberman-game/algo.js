@@ -13,6 +13,19 @@ function bomberMan(n, grid) {
     console.log({n});
     console.log({grid});
     // Pseudo code
+    // If n is less than 2
+    //      just return the grid
+    // Create a full grid
+    // if n is an even number
+    //      return a full grid
+    // otherwise, iterate as long as iterator is <= n
+    //      iterator starts at 3
+    //      prevGrid is memorized from the grid
+    //      make the grid into a full grid
+    //      using the prevGrid is a map, explode the current Grid
+    //      increase iterator by 2
+    // in the end, return the grid
+
 }
 
 console.log("**********************************")
