@@ -104,7 +104,6 @@ function bomberMan(n, grid) {
         return fullGrid;
     }
 
-    console.log("Explode grid:");
     return explodeGrid(grid);
 }
 
