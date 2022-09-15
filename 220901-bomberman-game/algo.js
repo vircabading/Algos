@@ -3,6 +3,16 @@
 /////////////////////////////////////////////
 
 /**
+ * prints the grid in two dimensional format
+ * @param {array of Strings} grid 
+ */
+const printGrid = (grid) => {
+    for (let row of grid) {
+        console.log(row);
+    }
+}
+
+/**
 * The function accepts following parameters:
 *  1. INTEGER n
 *  2. STRING_ARRAY grid
@@ -36,4 +46,6 @@ const n1 = 3;
 const grid1 = ['.......', '...O...', '....O..','.......', 'OO.....', 'OO.....'];
 const expected1 = [];
 
-console.log(bomberMan(n1, grid1));
+console.log("**** N:", n1, "grid: ****");
+printGrid(grid1);
+console.log("\n", bomberMan(n1, grid1));
