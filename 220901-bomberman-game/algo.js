@@ -121,3 +121,16 @@ console.log("\nExpected grid:");
 printGrid(expected1);
 console.log("\nBomberman output:");
 printGrid(bomberMan(n1, grid1));
+console.log("\n");
+
+const n2 = 5;
+const grid2 = [ '.......', '...O.O.', '....O..', '..O....', 'OO...OO', 'OO.O...' ];
+const expected2 = ['.......', '...O.O.', '...OO..', '..OOOO.', 'OOOOOOO', 'OOOOOOO'];
+
+console.log("**** N:", n2, "grid: ****");
+printGrid(grid2);
+console.log("\nExpected grid:");
+printGrid(expected2);
+console.log("\nBomberman output:");
+printGrid(bomberMan(n2, grid2));
+console.log("\n");
