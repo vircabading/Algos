@@ -89,14 +89,14 @@ function bomberMan(n, grid) {
                     if (isInGrid(x,y-1)) {          // Explode to the left of bomb
                         outputGrid[x][y-1] = ".";
                     }
+                    if (isInGrid(x,y+1)) {          // Exploce to the right of bomb
+                        outputGrid[x][y+1] = ".";
+                    }
                 }
             }
         }
         return outputGrid.map((item, idx) => item.join(""));
     }
-
-    
-    
 
     // if n is an even number
     //      return a full grid
