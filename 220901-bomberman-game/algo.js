@@ -66,17 +66,11 @@ function bomberMan(n, grid) {
         for (let x=0; x<numRows; x++) {
             for (let y=0; y<numCols; y++) {
                 if (prevGrid[x][y] === "O") {
-                    console.log("fond a bomb");
                     outputGrid[x][y] = ".";
                 }
             }
         }
-        console.log("*** Map Output Grid ***");
-        outputGrid.map((item, idx) => {
-            console.log(item.join(""));
-        });
-        console.log("*** Done Mapping ***")
-        return outputGrid;
+        return outputGrid.map((item, idx) => item.join(""));
     }
 
     
