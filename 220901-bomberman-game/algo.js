@@ -31,3 +31,9 @@ function bomberMan(n, grid) {
 console.log("**********************************")
 console.log("Bomberman Game Algorithm");
 console.log("**********************************\n")
+
+const n1 = 3;
+const grid1 = ['.......', '...O...', '....O..','.......', 'OO.....', 'OO.....'];
+const expected1 = [];
+
+console.log(bomberMan(n1, grid1));
