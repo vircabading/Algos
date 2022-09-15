@@ -20,8 +20,6 @@ const printGrid = (grid) => {
  */
 
 function bomberMan(n, grid) {
-    console.log({n});
-    console.log({grid});
     // Pseudo code
     // If n is less than 2
     //      just return the grid
@@ -35,6 +33,23 @@ function bomberMan(n, grid) {
     //      using the prevGrid is a map, explode the current Grid
     //      increase iterator by 2
     // in the end, return the grid
+
+    // If n is less than 2
+    //      just return the grid
+    if (n<2) {
+        return grid;
+    }
+    
+    const numRows = grid.length;
+    const numCols = grid[0].length;
+    console.log({numRows});
+    console.log({numCols});
+    
+    let fullGrid = [];
+    for (let x=0; x<n; x++) {
+        
+    }
+    
     return [""];
 }
 
@@ -42,7 +57,7 @@ console.log("**********************************")
 console.log("Bomberman Game Algorithm");
 console.log("**********************************\n")
 
-const n1 = 3;
+const n1 = 2;
 const grid1 = ['.......', '...O...', '....O..','.......', 'OO.....', 'OO.....'];
 const expected1 = ['OOO.OOO', 'OO...OO', 'OOO...O', '..OO.OO', '...OOOO', '...OOOO'];
 
