@@ -86,6 +86,9 @@ function bomberMan(n, grid) {
                     if (isInGrid(x+1,y)) {          // Explode below bomb
                         outputGrid[x+1][y] = ".";
                     }
+                    if (isInGrid(x,y-1)) {          // Explode to the left of bomb
+                        outputGrid[x][y-1] = ".";
+                    }
                 }
             }
         }
