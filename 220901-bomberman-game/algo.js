@@ -39,12 +39,11 @@ function bomberMan(n, grid) {
     if (n<2) {
         return grid;
     }
-    
+
     const numRows = grid.length;
     const numCols = grid[0].length;
-    console.log({numRows});
-    console.log({numCols});
-    
+
+    // Create a full grid
     let fullGrid = [];
     for (let x=0; x<numRows; x++) {
         let gridRow = "";
@@ -53,17 +52,51 @@ function bomberMan(n, grid) {
         }
         fullGrid.push(gridRow);
     }
-    console.log("Full grid:");
-    printGrid(fullGrid);
 
-    return [""];
+    const explodeGrid = (prevGrid) => {
+        let outputGrid = [];
+        for (let x=0; x<numRows; x++) {
+            let gridRow = [];
+            for (let y=0; y<numCols; y++) {
+                gridRow.push("O");
+            }
+            outputGrid.push(gridRow);
+        }
+
+        for (let x=0; x<numRows; x++) {
+            for (let y=0; y<numCols; y++) {
+                if (prevGrid[x][y] === "O") {
+                    console.log("fond a bomb");
+                    outputGrid[x][y] = ".";
+                }
+            }
+        }
+        console.log("*** Map Output Grid ***");
+        outputGrid.map((item, idx) => {
+            console.log(item.join(""));
+        });
+        console.log("*** Done Mapping ***")
+        return outputGrid;
+    }
+
+    
+    
+
+    // if n is an even number
+    //      return a full grid
+    if (n%2 === 0) {
+        return fullGrid;
+    }
+
+    console.log("Explode grid:");
+    return explodeGrid(grid);
 }
 
 console.log("**********************************")
 console.log("Bomberman Game Algorithm");
 console.log("**********************************\n")
 
-const n1 = 2;
+const n1 = 3;
 const grid1 = ['.......', '...O...', '....O..','.......', 'OO.....', 'OO.....'];
 const expected1 = ['OOO.OOO', 'OO...OO', 'OOO...O', '..OO.OO', '...OOOO', '...OOOO'];
 
