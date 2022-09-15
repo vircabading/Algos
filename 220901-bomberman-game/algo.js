@@ -46,10 +46,16 @@ function bomberMan(n, grid) {
     console.log({numCols});
     
     let fullGrid = [];
-    for (let x=0; x<n; x++) {
-        
+    for (let x=0; x<numRows; x++) {
+        let gridRow = "";
+        for (let y=0; y<numCols; y++) {
+            gridRow += "O";
+        }
+        fullGrid.push(gridRow);
     }
-    
+    console.log("Full grid:");
+    printGrid(fullGrid);
+
     return [""];
 }
 
