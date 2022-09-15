@@ -104,7 +104,7 @@ function bomberMan(n, grid) {
         return fullGrid;
     }
 
-    return explodeGrid(grid);
+    return bomberMan(n-2, explodeGrid(grid));
 }
 
 console.log("**********************************")
