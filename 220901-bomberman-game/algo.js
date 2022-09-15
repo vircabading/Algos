@@ -53,6 +53,19 @@ function bomberMan(n, grid) {
         fullGrid.push(gridRow);
     }
 
+    const isInGrid =(x, y) => {
+        if (x<0) {
+            return false;
+        } else if (y<0) {
+            return false;
+        } else if (x>=numRows) {
+            return false;
+        } else if (y>=numCols) {
+            return false;
+        }
+        return true;
+    }
+
     const explodeGrid = (prevGrid) => {
         let outputGrid = [];
         for (let x=0; x<numRows; x++) {
@@ -62,11 +75,17 @@ function bomberMan(n, grid) {
             }
             outputGrid.push(gridRow);
         }
-
+        
         for (let x=0; x<numRows; x++) {
             for (let y=0; y<numCols; y++) {
-                if (prevGrid[x][y] === "O") {
-                    outputGrid[x][y] = ".";
+                if (prevGrid[x][y] === "O") {       // Bomb Found
+                    outputGrid[x][y] = ".";         // Explode bomb on it's spot
+                    if (isInGrid(x-1,y)) {          // Explode above bomb
+                        outputGrid[x-1][y] = ".";
+                    }
+                    if (isInGrid(x+1,y)) {          // Explode below bomb
+                        outputGrid[x+1][y] = ".";
+                    }
                 }
             }
         }
