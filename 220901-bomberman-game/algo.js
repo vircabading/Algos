@@ -35,7 +35,7 @@ function bomberMan(n, grid) {
     //      using the prevGrid is a map, explode the current Grid
     //      increase iterator by 2
     // in the end, return the grid
-
+    return [""];
 }
 
 console.log("**********************************")
@@ -44,8 +44,11 @@ console.log("**********************************\n")
 
 const n1 = 3;
 const grid1 = ['.......', '...O...', '....O..','.......', 'OO.....', 'OO.....'];
-const expected1 = [];
+const expected1 = ['OOO.OOO', 'OO...OO', 'OOO...O', '..OO.OO', '...OOOO', '...OOOO'];
 
 console.log("**** N:", n1, "grid: ****");
 printGrid(grid1);
-console.log("\n", bomberMan(n1, grid1));
+console.log("\nExpected grid:");
+printGrid(expected1);
+console.log("\nBomberman output:");
+printGrid(bomberMan(n1, grid1));
