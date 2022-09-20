@@ -13,3 +13,8 @@ JavaScript
 LeetCode
 
 # Examples
+
+```
+nums = [2, 2, 1]
+result = 1s
+```
