@@ -10,3 +10,6 @@
     
 };
 
+console.log("*****************************");
+console.log("Single Number Algorithm");
+console.log("*****************************\n");
