@@ -23,3 +23,8 @@ result = 1
 nums = [4, 1, 2, 1, 2]
 result = 4
 ```
+
+```
+nums = [1]
+result = 1
+```
