@@ -16,5 +16,10 @@ LeetCode
 
 ```
 nums = [2, 2, 1]
-result = 1s
+result = 1
+```
+
+```
+nums = [4, 1, 2, 1, 2]
+result = 4
 ```
