@@ -8,4 +8,6 @@ JavaScript
 
 # Origin
 
+LeetCode
+
 # Examples
