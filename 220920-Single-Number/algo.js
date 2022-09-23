@@ -7,7 +7,7 @@
  * @return {number}
  */
  const singleNumber = (nums) => {
-    
+    console.log({nums});
 };
 
 console.log("*****************************");
