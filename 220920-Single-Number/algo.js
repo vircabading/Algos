@@ -8,6 +8,7 @@
  */
  const singleNumber = (nums) => {
     console.log({nums});
+    // Pseudo Code
 };
 
 console.log("*****************************");
