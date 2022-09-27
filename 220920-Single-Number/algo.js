@@ -37,6 +37,13 @@
     }
 
     console.log({numsMap});
+
+    // Return the key from the hash map with a value of 1
+    numsMap.forEach((count, key) => {
+        console.log("Key:", key, "| Count:", count);
+    })
+
+    return 0;
 };
 
 console.log("*****************************");
