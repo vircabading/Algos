@@ -27,6 +27,13 @@
     //          increase the value (count) of that number's key by 1
     for (num of nums) {
         console.log({num});
+        if (!numsMap.has(num)) {
+            console.log("Found a new num:", num);
+            numsMap.set(num, 1);
+        } else {
+            const newCount = numsMap.get(num) + 1;
+            numsMap.set(num, newCount);
+        }
     }
 
     console.log({numsMap});
