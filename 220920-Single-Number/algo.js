@@ -39,11 +39,16 @@
     console.log({numsMap});
 
     // Return the key from the hash map with a value of 1
+    let output = 0;
     numsMap.forEach((count, key) => {
         console.log("Key:", key, "| Count:", count);
+        if (count === 1) {
+            console.log("*** found single number", key);
+            output = key;
+        }
     })
 
-    return 0;
+    return output;
 };
 
 console.log("*****************************");
