@@ -20,7 +20,14 @@
     // Create a nums hash map
     const numsMap = new Map();
 
-
+    // For each number in nums
+    //      if the number is not in the hash map
+    //          intialize the numbers as a key with a value (count) as 1
+    //      if the number is in the hash map
+    //          increase the value (count) of that number's key by 1
+    for (num of nums) {
+        console.log({num});
+    }
 
     console.log({numsMap});
 };
