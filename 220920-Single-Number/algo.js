@@ -7,7 +7,7 @@
  * @return {number}
  */
  const singleNumber = (nums) => {
-    console.log({nums});
+    // console.log({nums});
     // Pseudo Code
     // Create a nums hash map
     // For each number in nums
@@ -26,9 +26,9 @@
     //      if the number is in the hash map
     //          increase the value (count) of that number's key by 1
     for (num of nums) {
-        console.log({num});
+        // console.log({num});
         if (!numsMap.has(num)) {
-            console.log("Found a new num:", num);
+            // console.log("Found a new num:", num);
             numsMap.set(num, 1);
         } else {
             const newCount = numsMap.get(num) + 1;
@@ -36,14 +36,14 @@
         }
     }
 
-    console.log({numsMap});
+    // console.log({numsMap});
 
     // Return the key from the hash map with a value of 1
     let output = 0;
     numsMap.forEach((count, key) => {
-        console.log("Key:", key, "| Count:", count);
+        // console.log("Key:", key, "| Count:", count);
         if (count === 1) {
-            console.log("*** found single number", key);
+            // console.log("*** found single number", key);
             output = key;
         }
     })
