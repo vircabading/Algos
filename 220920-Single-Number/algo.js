@@ -16,6 +16,13 @@
     //      if the number is in the hash map
     //          increase the value (count) of that number's key by 1
     // Return the key from the hash map with a value of 1
+    
+    // Create a nums hash map
+    const numsMap = new Map();
+
+
+
+    console.log({numsMap});
 };
 
 console.log("*****************************");
