@@ -61,8 +61,14 @@ const expected1 = 1;
 const nums2 = [4, 1, 2, 1, 2];
 const expected2 = 4;
 
+const nums3 = [1];
+const expected3 = 1;
+
 console.log("Nums:", nums1, "| expected output:", expected1);
 console.log("Single number:", singleNumber(nums1), "\n");
 
 console.log("Nums:", nums2, "| expected output:", expected2);
 console.log("Single number:", singleNumber(nums2), "\n");
+
+console.log("Nums:", nums3, "| expected output:", expected3);
+console.log("Single number:", singleNumber(nums3), "\n");
