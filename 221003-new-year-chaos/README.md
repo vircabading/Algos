@@ -30,3 +30,8 @@ print: Too Chaotic
 q = [2, 1, 5, 3, 4]
 print: 3
 ```
+
+```
+q = [2, 5, 1, 3, 4]
+print: Too Chaotics
+```
