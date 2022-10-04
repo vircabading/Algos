@@ -25,3 +25,8 @@ print: 1
 q = [4, 1, 2, 3]
 print: Too Chaotic
 ```
+
+```
+q = [2, 1, 5, 3, 4]
+print: 3
+```
