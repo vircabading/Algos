@@ -20,3 +20,8 @@ Hacker Rank
 q = [1, 2, 3, 5, 4, 6, 7, 8]
 print: 1
 ```
+
+```
+q = [4, 1, 2, 3]
+print: Too Chaotic
+```
