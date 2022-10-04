@@ -104,7 +104,11 @@ function bomberMan(n, grid) {
         return fullGrid;
     }
 
-    return explodeGrid(grid);
+    while (n>1) {
+        grid = explodeGrid(grid);
+        n = n-2;
+    }
+    return grid;
 }
 
 console.log("**********************************")
@@ -121,3 +125,28 @@ console.log("\nExpected grid:");
 printGrid(expected1);
 console.log("\nBomberman output:");
 printGrid(bomberMan(n1, grid1));
+console.log("\n");
+
+const n2 = 5;
+const grid2 = [ '.......', '...O.O.', '....O..', '..O....', 'OO...OO', 'OO.O...' ];
+const expected2 = ['.......', '...O.O.', '...OO..', '..OOOO.', 'OOOOOOO', 'OOOOOOO'];
+
+console.log("**** N:", n2, "grid: ****");
+printGrid(grid2);
+console.log("\nExpected grid:");
+printGrid(expected2);
+console.log("\nBomberman output:");
+printGrid(bomberMan(n2, grid2));
+console.log("\n");
+
+const n3 = 1111111111;
+const grid3 = [ 'O..OO........O..O........OO.O.OO.OO...O.....OOO...OO.O..OOOOO...O.O..O..O.O..OOO..O..O..O....O...O....O...O..O..O....O.O.O.O.....O.....OOOO..O......O.O.....OOO....OO....OO....O.O...O..OO....OO..O...O'];
+const expected3 = ['OOOOO........OOOO........OOOOOOOOOO...O.....OOO...OOOOOOOOOOO...OOOOOOOOOOOOOOOOOOOOOOOOO....O...O....O...OOOOOOO....OOOOOOO.....O.....OOOOOOO......OOO.....OOO....OO....OO....OOO...OOOOO....OOOOO...O'];
+
+console.log("**** N:", n3, "grid: ****");
+printGrid(grid3);
+console.log("\nExpected grid:");
+printGrid(expected3);
+console.log("\nBomberman output:");
+printGrid(bomberMan(n3, grid3));
+console.log("\n");
