@@ -70,11 +70,11 @@ function minimumBribes(q) {
 
         console.log("Popping:", q[q.length-1]);
         q.pop();
-        console.log({q});
     }
 
     // After the queue has been reduce to a single digit
     //      return the number of moves used
+    console.log(numMoves);
     return numMoves;
 }
 
@@ -86,5 +86,17 @@ console.log("*******************************\n");
 const q1 = [1, 2, 3, 5, 4, 6, 7, 8];
 const expectedOut1 = 1;
 
+console.log("*******************************");
 console.log("Q:", q1, "| expected:", expectedOut1);
-console.log("minimumBribes:", minimumBribes(q1));
+console.log("minimumBribes:");
+minimumBribes(q1);
+console.log("\n");
+
+const q2 = [1, 2, 5, 3, 4, 6, 7, 8];
+const expectedOut2 = 2;
+
+console.log("*******************************");
+console.log("Q:", q2, "| expected:", expectedOut2);
+console.log("minimumBribes:");
+minimumBribes(q2);
+console.log("\n");
