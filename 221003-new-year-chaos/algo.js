@@ -44,13 +44,28 @@ function minimumBribes(q) {
             console.log("Popping:", q[q.length-1]);
             q.pop();
             continue;
-        } else {
-            console.log("Expected num is not at back");
+        } 
+        
+        // if the expected number is one away from the back of the queue
+        //      add one to the number of moves used
+        //      remove the expected number from where it's located in queue
+        else if (expectedNum === q[q.length-2]) {
+            numMoves++;
+            q.splice(q.length-2, 1);
+            console.log("expected num found one away from original position");
+            console.log({q});
+            continue;
         }
+        
 
         console.log("Popping:", q[q.length-1]);
         q.pop();
+        console.log({q});
     }
+
+    // After the queue has been reduce to a single digit
+    //      return the number of moves used
+    return numMoves;
 }
 
 
