@@ -7,10 +7,15 @@
  */
 
 function minimumBribes(q) {
-    // Write your code here
-    console.log({q});
+    //
 }
 
 console.log("*******************************");
 console.log("New Year Chaos Algorithm");
 console.log("*******************************\n");
+
+const q1 = [1, 2, 3, 5, 4, 6, 7, 8];
+const expectedOut1 = 1;
+
+console.log("Q:", q1, "| expected:", expectedOut1);
+console.log("minimumBribes:", minimumBribes(q1));
