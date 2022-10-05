@@ -137,3 +137,12 @@ console.log("Q:", q5, "| expected:", expectedOut5);
 console.log("minimumBribes:");
 minimumBribes(q5);
 console.log("\n");
+
+const q6 = [2, 5, 1, 3, 4];
+const expectedOut6 = "Too chaotic";
+
+console.log("*******************************");
+console.log("Q:", q6, "| expected:", expectedOut6);
+console.log("minimumBribes:");
+minimumBribes(q6);
+console.log("\n");
