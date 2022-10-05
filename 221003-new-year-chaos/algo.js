@@ -57,6 +57,16 @@ function minimumBribes(q) {
             continue;
         }
         
+        // if the expected number is two away from the back of the queue
+        //     add two to the number of moves used
+        //     remove the expected number from where it's located in queue
+        else if (expectedNum === q[q.length-3]) {
+            numMoves= numMoves + 2;
+            q.splice(q.length-3, 1);
+            console.log("expected num found two away from original position");
+            console.log({q});
+            continue;
+        }
 
         console.log("Popping:", q[q.length-1]);
         q.pop();
