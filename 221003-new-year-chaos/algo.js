@@ -52,8 +52,8 @@ function minimumBribes(q) {
         else if (expectedNum === q[q.length-2]) {
             numMoves++;
             q.splice(q.length-2, 1);
-            console.log("expected num found one away from original position");
-            console.log({q});
+            // console.log("expected num found one away from original position");
+            // console.log({q});
             continue;
         }
         
@@ -63,8 +63,8 @@ function minimumBribes(q) {
         else if (expectedNum === q[q.length-3]) {
             numMoves= numMoves + 2;
             q.splice(q.length-3, 1);
-            console.log("expected num found two away from original position");
-            console.log({q});
+            // console.log("expected num found two away from original position");
+            // console.log({q});
             continue;
         }
 
@@ -118,4 +118,13 @@ console.log("*******************************");
 console.log("Q:", q3, "| expected:", expectedOut3);
 console.log("minimumBribes:");
 minimumBribes(q3);
+console.log("\n");
+
+const q4 = [4, 1, 2, 3];
+const expectedOut4 = "Too chaotic";
+
+console.log("*******************************");
+console.log("Q:", q4, "| expected:", expectedOut4);
+console.log("minimumBribes:");
+minimumBribes(q4);
 console.log("\n");
