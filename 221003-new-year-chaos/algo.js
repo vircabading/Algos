@@ -8,6 +8,14 @@
 
 function minimumBribes(q) {
     // Pseudo Code
+    // Create place holder variables
+    //      keep track of number of moves used
+    // Iterate through the que from the back
+    //      Note: the expected number is the index of the array + 1
+    //      if the expected number is at the back
+    //          remove the number at the back of the queue
+    //          then move on to the next number at the back of the queue
+    //      
 }
 
 console.log("*******************************");
