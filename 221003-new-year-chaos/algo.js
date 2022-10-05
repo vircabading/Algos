@@ -28,6 +28,15 @@ function minimumBribes(q) {
     //                  exit the function
     // After the queue has been reduce to a single digit
     //      return the number of moves used
+
+    // Variables
+    let numMoves = 0;
+
+    // Iterate through the queue
+    while (q.length > 1) {
+        console.log("Popping:", q[q.length-1]);
+        q.pop();
+    }
 }
 
 
