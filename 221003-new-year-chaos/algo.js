@@ -146,3 +146,12 @@ console.log("Q:", q6, "| expected:", expectedOut6);
 console.log("minimumBribes:");
 minimumBribes(q6);
 console.log("\n");
+
+const q7 = [1];
+const expectedOut7 = 0;
+
+console.log("*******************************");
+console.log("Q:", q7, "| expected:", expectedOut7);
+console.log("minimumBribes:");
+minimumBribes(q7);
+console.log("\n");
