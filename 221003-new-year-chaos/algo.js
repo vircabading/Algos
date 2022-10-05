@@ -128,3 +128,12 @@ console.log("Q:", q4, "| expected:", expectedOut4);
 console.log("minimumBribes:");
 minimumBribes(q4);
 console.log("\n");
+
+const q5 = [2, 1, 5, 3, 4];
+const expectedOut5 = 3;
+
+console.log("*******************************");
+console.log("Q:", q5, "| expected:", expectedOut5);
+console.log("minimumBribes:");
+minimumBribes(q5);
+console.log("\n");
