@@ -35,13 +35,13 @@ function minimumBribes(q) {
     // Iterate through the queue
     while (q.length > 1) {
         const expectedNum = q.length;   // expected number is the index of the array + 1
-        console.log({expectedNum});
+        // console.log({expectedNum});
 
         // if the expected number is at the back
         //     remove the number at the back of the queue
         //     then move on to the next number at the back of the queue
         if (expectedNum === q[q.length-1]) {
-            console.log("Popping:", q[q.length-1]);
+            // console.log("Popping:", q[q.length-1]);
             q.pop();
             continue;
         } 
@@ -68,14 +68,24 @@ function minimumBribes(q) {
             continue;
         }
 
-        console.log("Popping:", q[q.length-1]);
+        // otherwise, then that means that the expected number
+        //     is more than two places away from its original location
+        //         therefore, 
+        //             print "Too chaotic"
+        //             exit the function
+        else {
+            console.log("Too chaotic");
+            return;
+        }
+
+        // console.log("Popping:", q[q.length-1]);
         q.pop();
     }
 
     // After the queue has been reduce to a single digit
     //      return the number of moves used
     console.log(numMoves);
-    return numMoves;
+    return;
 }
 
 
@@ -99,4 +109,13 @@ console.log("*******************************");
 console.log("Q:", q2, "| expected:", expectedOut2);
 console.log("minimumBribes:");
 minimumBribes(q2);
+console.log("\n");
+
+const q3 = [1, 5, 2, 3, 4, 6, 7, 8];
+const expectedOut3 = "Too chaotic";
+
+console.log("*******************************");
+console.log("Q:", q3, "| expected:", expectedOut3);
+console.log("minimumBribes:");
+minimumBribes(q3);
 console.log("\n");
