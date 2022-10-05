@@ -7,7 +7,7 @@
  */
 
 function minimumBribes(q) {
-    //
+    // Pseudo Code
 }
 
 console.log("*******************************");
