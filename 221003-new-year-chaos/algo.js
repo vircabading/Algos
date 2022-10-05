@@ -34,6 +34,20 @@ function minimumBribes(q) {
 
     // Iterate through the queue
     while (q.length > 1) {
+        const expectedNum = q.length;   // expected number is the index of the array + 1
+        console.log({expectedNum});
+
+        // if the expected number is at the back
+        //     remove the number at the back of the queue
+        //     then move on to the next number at the back of the queue
+        if (expectedNum === q[q.length-1]) {
+            console.log("Popping:", q[q.length-1]);
+            q.pop();
+            continue;
+        } else {
+            console.log("Expected num is not at back");
+        }
+
         console.log("Popping:", q[q.length-1]);
         q.pop();
     }
