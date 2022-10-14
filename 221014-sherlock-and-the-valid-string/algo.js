@@ -30,6 +30,20 @@ function isValid(s) {
         return "YES"
     }
 
+    // Create a hash map of all the letters in the string s
+    let letterMap = new Map();
+    for (let char of s) {
+        char = char.toLowerCase();
+        if (letterMap.has(char)) {
+            letterMap.set(char,letterMap.get(char)+1)
+        } else {
+            letterMap.set(char, 1);
+        }
+
+        console.log({char});
+    }
+    console.log({letterMap});
+
     return "NO";
 }
 
@@ -43,8 +57,14 @@ const expect1 = 'YES';
 console.log("String:", s1, "| Expected return:", expect1);
 console.log("Is Valid String:", isValid(s1), "\n");
 
-const s2 = 'abc';
+const s2 = 'aBc';
 const expect2 = 'YES';
 
 console.log("String:", s2, "| Expected return:", expect2);
 console.log("Is Valid String:", isValid(s2), "\n");
+
+const s3 = 'aBbc';
+const expect3 = 'YES';
+
+console.log("String:", s3, "| Expected return:", expect3);
+console.log("Is Valid String:", isValid(s3), "\n");
