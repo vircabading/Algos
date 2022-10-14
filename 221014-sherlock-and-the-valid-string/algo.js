@@ -70,6 +70,9 @@ function isValid(s) {
             highestCount = val;
         }
     });
+    console.log("Sum:", sumCount, "| Number of Letters:", numLetters);
+    console.log("Lowest Count:", lowestCount, "| Highest Count:", highestCount);
+    console.log("*** Done evaluating letters hash map ******")
 
     return "NO";
 }
