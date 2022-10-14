@@ -9,8 +9,9 @@
 
 function isValid(s) {
     console.log({s});
-    // Write your code here
+    // Pseudo Code
 
+    return "Default";
 }
 
 console.log("*******************************************");
