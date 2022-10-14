@@ -42,3 +42,9 @@ const expect1 = 'YES';
 
 console.log("String:", s1, "| Expected return:", expect1);
 console.log("Is Valid String:", isValid(s1), "\n");
+
+const s2 = 'abc';
+const expect2 = 'YES';
+
+console.log("String:", s2, "| Expected return:", expect2);
+console.log("Is Valid String:", isValid(s2), "\n");
