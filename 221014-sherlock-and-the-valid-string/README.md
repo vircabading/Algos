@@ -13,3 +13,10 @@ JavaScript
 HackerRank
 
 # Examples
+
+```
+s = 'abc'
+returns: 'YES'
+
+This is a valid string because the frequencies of all three strings are 1
+```
