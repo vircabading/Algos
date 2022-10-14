@@ -27,3 +27,10 @@ returns: 'YES'
 
 This is a valid string because we can remove one c from the string and have 1 of each character in the remaining string
 ```
+
+```
+s = 'abccc'
+returns: 'NO'
+
+This string is Not Valid as we can only remove 1 occurence of c.  That leaes character frequencies of {a:1, b:1, c:2}
+```
