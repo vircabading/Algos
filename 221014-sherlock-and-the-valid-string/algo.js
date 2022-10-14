@@ -119,3 +119,9 @@ const expect3 = 'YES';
 
 console.log("String:", s3, "| Expected return:", expect3);
 console.log("Is Valid String:", isValid(s3), "\n");
+
+const s4 = 'aBbcb';
+const expect4 = 'NO';
+
+console.log("String:", s4, "| Expected return:", expect4);
+console.log("Is Valid String:", isValid(s4), "\n");
