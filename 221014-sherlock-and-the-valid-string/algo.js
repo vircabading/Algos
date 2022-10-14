@@ -12,3 +12,10 @@ function isValid(s) {
     // Write your code here
 
 }
+
+console.log("*******************************************");
+console.log("Sherlock and the Valid String Algorithm");
+console.log("*******************************************\n");
+
+const s1 = 'abc';
+const expect1 = 'YES';
