@@ -26,7 +26,7 @@ function isValid(s) {
     //              Then return "Yes"
     //      3, All other cases return "No"
 
-    if (s.length === 1) {
+    if (s.length < 2) {
         return "YES"
     }
 
@@ -43,6 +43,33 @@ function isValid(s) {
         console.log({char});
     }
     console.log({letterMap});
+    console.log("*** Done Creating Hash Map ******");
+
+    // Iterate through the has map to find
+    //      1. Sum of number of occurences
+    //      2. Number of different letters
+    //      3. Highest number of occurences
+    //      4. Lowest number of occurences
+    let sumCount = 0;
+    let numLetters = 0;
+    let lowestCount = 0;
+    let highestCount = 0;
+
+    letterMap.forEach((val,key) => {
+        console.log("Value:", val, "| Key:", key);
+        sumCount = sumCount + val;
+        numLetters++;
+        if (lowestCount === 0) {
+            lowestCount = val;
+        } else if (val < lowestCount) {
+            lowestCount = val;
+        }
+        if (highestCount === 0) {
+            highestCount = val;
+        } else if (val > highestCount) {
+            highestCount = val;
+        }
+    });
 
     return "NO";
 }
