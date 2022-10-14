@@ -6,6 +6,8 @@ Sherlock considers a string to be valid if all characters of the string appear t
 
 # Language
 
+JavaScript
+
 # Origin
 
 # Examples
