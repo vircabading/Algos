@@ -20,3 +20,10 @@ returns: 'YES'
 
 This is a valid string because the frequencies of all three strings are 1
 ```
+
+```
+s = 'abcc'
+returns: 'YES'
+
+This is a valid string because we can remove one c from the string and have 1 of each character in the remaining string
+```
