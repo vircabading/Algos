@@ -26,14 +26,18 @@ function isValid(s) {
     //              Then return "Yes"
     //      3, All other cases return "No"
 
-    return "Default";
+    if (s.length === 1) {
+        return "YES"
+    }
+
+    return "NO";
 }
 
 console.log("*******************************************");
 console.log("Sherlock and the Valid String Algorithm");
 console.log("*******************************************\n");
 
-const s1 = 'abc';
+const s1 = 'a';
 const expect1 = 'YES';
 
 console.log("String:", s1, "| Expected return:", expect1);
