@@ -74,6 +74,21 @@ function isValid(s) {
     console.log("Lowest Count:", lowestCount, "| Highest Count:", highestCount);
     console.log("*** Done evaluating letters hash map ******")
 
+    // Evaluate the values found
+    //      1. If sum modulus number of letters equals zero
+    //          and the highest and lowest num of occurences is the same
+    //              Then return "YES"
+    //      2. If sum modulus numver of letters equals one
+    //          and the highest num of occurences is only one more than the
+    //          lowest number of occurences
+    //              Then return "Yes"
+    //      3. All other cases return "No"
+
+    // Evaluation #1
+    if (( sumCount % numLetters === 0 ) && ( lowestCount === highestCount )) {
+        return 'YES'
+    }
+
     return "NO";
 }
 
