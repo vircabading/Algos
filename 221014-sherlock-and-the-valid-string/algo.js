@@ -89,6 +89,12 @@ function isValid(s) {
         return 'YES'
     }
 
+    // Evaluation #2
+    else if (( sumCount % numLetters === 1 ) && ( highestCount - lowestCount === 1 )) {
+        return 'YES'
+    }
+
+    // Evaluation #3
     return "NO";
 }
 
