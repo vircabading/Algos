@@ -10,6 +10,21 @@
 function isValid(s) {
     console.log({s});
     // Pseudo Code
+    // Create a hash map of all the letters in the string s
+    // Iterate through the has map to find
+    //      1. Sum of number of occurences
+    //      2. Number of different letters
+    //      3. Highest number of occurences
+    //      4. Lowest number of occurences
+    // Evaluate the values found
+    //      1. If sum modulus number of letters equals zero
+    //          and the highest and lowest num of occurences is the same
+    //              Then return "YES"
+    //      2. If sum modulus numver of letters equals one
+    //          and the highest num of occurences is only one more than the
+    //          lowest number of occurences
+    //              Then return "Yes"
+    //      3, All other cases return "No"
 
     return "Default";
 }
