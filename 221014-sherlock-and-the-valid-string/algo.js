@@ -8,6 +8,7 @@
  */
 
 function isValid(s) {
+    console.log({s});
     // Pseudo Code
     // Create a hash map of all the letters in the string s
     // Iterate through the has map to find
@@ -38,7 +39,11 @@ function isValid(s) {
         } else {
             letterMap.set(char, 1);
         }
+
+        console.log({char});
     }
+    console.log({letterMap});
+    console.log("*** Done Creating Hash Map ******");
 
     // Iterate through the has map to find
     //      1. Sum of number of occurences
@@ -51,6 +56,7 @@ function isValid(s) {
     let highestCount = 0;
 
     letterMap.forEach((val,key) => {
+        console.log("Value:", val, "| Key:", key);
         sumCount = sumCount + val;
         numLetters++;
         if (lowestCount === 0) {
@@ -64,6 +70,9 @@ function isValid(s) {
             highestCount = val;
         }
     });
+    console.log("Sum:", sumCount, "| Number of Letters:", numLetters);
+    console.log("Lowest Count:", lowestCount, "| Highest Count:", highestCount);
+    console.log("*** Done evaluating letters hash map ******")
 
     // Evaluate the values found
     //      1. If sum modulus number of letters equals zero
@@ -80,24 +89,26 @@ function isValid(s) {
 
     // Evaluation #1
     if (( sumCount % numLetters === 0 ) && ( lowestCount === highestCount )) {
-        return 'YES'
+        return 'YES 1'
     }
 
     // Evaluation #2
     else if (( sumCount % numLetters === 1 ) && ( highestCount - lowestCount === 1 )) {
-        return 'YES'
+        return 'YES 2'
     }
 
     // Evaluation #3
-    else if (( (sumCount % numLetters) === (numLetters-1) ) && ( lowestCount === 1 )) {
+    else if (( ((sumCount-1) % (numLetters-1)) === 0 ) && ( lowestCount === 1 )) {
         let countArray = [];
         letterMap.forEach((val,key) => {
+            // console.log("Key:", key, "| Count:", val);
             countArray.push(val);
         });
         countArray.sort((a,b) => b-a);
         countArray.pop();
+        console.log(countArray);
         if (highestCount === countArray[countArray.length-1]) {
-            return 'YES'
+            return 'YES';
         }
     }
 
@@ -138,3 +149,9 @@ const expect5 = 'YES';
 
 console.log("String:", s5, "| Expected return:", expect5);
 console.log("Is Valid String:", isValid(s5), "\n");
+
+const s6 = 'ibfdgaeadiaefgbhbdghhhbgdfgeiccbiehhfcggchgghadhdhagfbahhddgghbdehidbibaeaagaeeigffcebfbaieggabcfbiiedcabfihchdfabifahcbhagccbdfifhghcadfiadeeaheeddddiecaicbgigccageicehfdhdgafaddhffadigfhhcaedcedecafeacbdacgfgfeeibgaiffdehigebhhehiaahfidibccdcdagifgaihacihadecgifihbebffebdfbchbgigeccahgihbcbcaggebaaafgfedbfgagfediddghdgbgehhhifhgcedechahidcbchebheihaadbbbiaiccededchdagfhccfdefigfibifabeiaccghcegfbcghaefifbachebaacbhbfgfddeceababbacgffbagidebeadfihaefefegbghgddbbgddeehgfbhafbccidebgehifafgbghafacgfdccgifdcbbbidfifhdaibgigebigaedeaaiadegfefbhacgddhchgcbgcaeaieiegiffchbgbebgbehbbfcebciiagacaiechdigbgbghefcahgbhfibhedaeeiffebdiabcifgccdefabccdghehfibfiifdaicfedagahhdcbhbicdgibgcedieihcichadgchgbdcdagaihebbabhibcihicadgadfcihdheefbhffiageddhgahaidfdhhdbgciiaciegchiiebfbcbhaeagccfhbfhaddagnfieihghfbaggiffbbfbecgaiiidccdceadbbdfgigibgcgchafccdchgifdeieicbaididhfcfdedbhaadedfageigfdehgcdaecaebebebfcieaecfagfdieaefdiedbcadchabhebgehiidfcgahcdhcdhgchhiiheffiifeegcfdgbdeffhgeghdfhbfbifgidcafbfcd';
+const expect6 = 'YES';
+
+console.log("String:", s6, "| Expected return:", expect6);
+console.log("Is Valid String:", isValid(s6), "\n");
