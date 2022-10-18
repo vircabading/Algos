@@ -82,7 +82,10 @@ function isValid(s) {
     //          and the highest num of occurences is only one more than the
     //          lowest number of occurences
     //              Then return "Yes"
-    //      3. All other cases return "No"
+    //      3. If sum modulus number of letters equals number of letters - 1
+    //          and the lowest number of occurences is one
+    //              Then return "YES"
+    //      4. All other cases return "No"
 
     // Evaluation #1
     if (( sumCount % numLetters === 0 ) && ( lowestCount === highestCount )) {
@@ -95,6 +98,11 @@ function isValid(s) {
     }
 
     // Evaluation #3
+    else if (( (sumCount % numLetters) === (numLetters-1) ) && ( lowestCount === 1 )) {
+        return 'YES'
+    }
+
+    // Evaluation #4
     return "NO";
 }
 
@@ -125,3 +133,9 @@ const expect4 = 'NO';
 
 console.log("String:", s4, "| Expected return:", expect4);
 console.log("Is Valid String:", isValid(s4), "\n");
+
+const s5 = 'aaBcb';
+const expect5 = 'YES';
+
+console.log("String:", s5, "| Expected return:", expect5);
+console.log("Is Valid String:", isValid(s5), "\n");
