@@ -8,7 +8,6 @@
  */
 
 function isValid(s) {
-    console.log({s});
     // Pseudo Code
     // Create a hash map of all the letters in the string s
     // Iterate through the has map to find
@@ -39,11 +38,10 @@ function isValid(s) {
         } else {
             letterMap.set(char, 1);
         }
-
-        console.log({char});
     }
-    console.log({letterMap});
-    console.log("*** Done Creating Hash Map ******");
+
+    // console.log({letterMap});
+    // console.log("*** Done Creating Hash Map ******");
 
     // Iterate through the has map to find
     //      1. Sum of number of occurences
@@ -56,7 +54,7 @@ function isValid(s) {
     let highestCount = 0;
 
     letterMap.forEach((val,key) => {
-        console.log("Value:", val, "| Key:", key);
+        // console.log("Value:", val, "| Key:", key);
         sumCount = sumCount + val;
         numLetters++;
         if (lowestCount === 0) {
@@ -70,9 +68,9 @@ function isValid(s) {
             highestCount = val;
         }
     });
-    console.log("Sum:", sumCount, "| Number of Letters:", numLetters);
-    console.log("Lowest Count:", lowestCount, "| Highest Count:", highestCount);
-    console.log("*** Done evaluating letters hash map ******")
+    // console.log("Sum:", sumCount, "| Number of Letters:", numLetters);
+    // console.log("Lowest Count:", lowestCount, "| Highest Count:", highestCount);
+    // console.log("*** Done evaluating letters hash map ******")
 
     // Evaluate the values found
     //      1. If sum modulus number of letters equals zero
@@ -106,7 +104,7 @@ function isValid(s) {
         });
         countArray.sort((a,b) => b-a);
         countArray.pop();
-        console.log(countArray);
+        // console.log(countArray);
         if (highestCount === countArray[countArray.length-1]) {
             return 'YES';
         }
