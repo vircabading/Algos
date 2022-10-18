@@ -80,8 +80,9 @@ function isValid(s) {
     //          and the highest num of occurences is only one more than the
     //          lowest number of occurences
     //              Then return "Yes"
-    //      3. If sum modulus number of letters equals number of letters - 1
+    //      3. If sum modulus (number of letters minus 1) equals number of letters - 1
     //          and the lowest number of occurences is one
+    //          and all the other occurences are equal
     //              Then return "YES"
     //      4. All other cases return "No"
 
