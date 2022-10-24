@@ -57,6 +57,14 @@ class LinkedList {
         return output;
     }
     console.log("Print head:", printCycle());
+
+    // Pseudo Code
+    // Create two pointers
+    //      A. A fast pointer that moves two nodes at a time
+    //      b. A slow pointer that moves one node at a time
+    // Keep moving the pointers until the fast pointer finds itself is null or the next node is null
+    //      If the fast and slow pointers ever point to the same node, then return true becuase there is a loop
+    //      if get to a null and no loop was detected return false
 };
 
 console.log("**************************************");
