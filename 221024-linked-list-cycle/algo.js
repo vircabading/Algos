@@ -114,3 +114,9 @@ b2.next = b1;
 
 console.log("*** Third Test Case:  head = [1,2], pos = 0 Expect Output: true ***");
 console.log("test case has a loop:", hasCycle(b1), "\n");
+
+// Fourth test  case: head = [1]. pos = -1 expected Output: false
+let c1 = new Node(1);
+
+console.log("*** Fourth Test Case: head = [1]. pos = -1 expected Output: false ***");
+console.log("test case has a loop:", hasCycle(c1), "\n");
