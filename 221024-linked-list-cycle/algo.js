@@ -47,3 +47,6 @@ class LinkedList {
     
 };
 
+console.log("**************************************");
+console.log("Linked List Cycle Algorithm");
+console.log("**************************************\n");
