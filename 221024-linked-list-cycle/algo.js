@@ -56,7 +56,7 @@ class LinkedList {
         }
         return output;
     }
-    console.log("Print head:", printCycle());
+    // console.log("Print head:", printCycle());
 
     // Pseudo Code
     // Create two pointers
@@ -92,3 +92,16 @@ n3.next = n4;
 
 const lList = new LinkedList(n1);
 console.log("n1 has a loop:",hasCycle(n1),"\n");
+
+// SAecond test case  head = [3,2,0,-4]
+let a1 = new Node(3);
+let a2 = new Node(2);
+let a3 = new Node(0);
+let a4 = new Node(-4);
+a1.next = a2;
+a2.next = a3;
+a3.next = a4;
+a4.next = a2;
+
+console.log("*** Second Test Case:  head = [3,2,0,-4] ***");
+console.log("second test case has a loop:", hasCycle(a1), "\n");
