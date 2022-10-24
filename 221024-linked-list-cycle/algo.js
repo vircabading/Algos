@@ -35,7 +35,7 @@ class LinkedList {
             }
             ptr = ptr.next;
         }
-        console.log(output);
+        return output;
     }
 }
 
@@ -44,7 +44,19 @@ class LinkedList {
  * @return {boolean}
  */
  let hasCycle = (head) => {
-    
+    let printCycle = () => {
+        let ptr = head
+        let output = "";
+        while (ptr) {
+            output = output + "[" + ptr.value + "]";
+            if (ptr.next != null) {
+                output = output + " -> ";
+            }
+            ptr = ptr.next;
+        }
+        return output;
+    }
+    console.log("Print head:", printCycle());
 };
 
 console.log("**************************************");
@@ -57,7 +69,7 @@ let n3 = new Node(3);
 let n4 = new Node(4);
 n1.next = n2;
 n2.next = n3;
-n2.next = n4;
+n3.next = n4;
 
 const lList = new LinkedList(n1);
-lList.print();
+hasCycle(n1);
