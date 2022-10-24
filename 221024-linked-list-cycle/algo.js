@@ -17,11 +17,11 @@ class Node {
 }
 
 class LinkedList {
-    constructor() {
-        this.head = null;
-    }
-
     constructor(node) {
+        this.head = node;
+    };
+
+    setHead(node) {
         this.head = node;
     }
 
@@ -29,7 +29,7 @@ class LinkedList {
         let ptr = this.head;
         let output = "";
         while (ptr) {
-            output = output + "[", + ptr.value + "]";
+            output = output + "[" + ptr.value + "]";
             if (ptr.next != null) {
                 output = output + " -> ";
             }
@@ -50,3 +50,14 @@ class LinkedList {
 console.log("**************************************");
 console.log("Linked List Cycle Algorithm");
 console.log("**************************************\n");
+
+let n1 = new Node(1);
+let n2 = new Node(2);
+let n3 = new Node(3);
+let n4 = new Node(4);
+n1.next = n2;
+n2.next = n3;
+n2.next = n4;
+
+const lList = new LinkedList(n1);
+lList.print();
