@@ -65,6 +65,17 @@ class LinkedList {
     // Keep moving the pointers until the fast pointer finds itself is null or the next node is null
     //      If the fast and slow pointers ever point to the same node, then return true becuase there is a loop
     //      if get to a null and no loop was detected return false
+    
+    let fastPtr = head;
+    let slowPtr = head;
+    while (fastPtr && fastPtr.next) {
+        slowPtr = slowPtr.next;         // Moves pointer one node at a time
+        fastPtr = fastPtr.next.next;    // Moves pointer two nodes at a time
+        if (slowPtr === fastPtr) {      // If the fast and slow pointers get to the same node, there is a loop
+            return true;
+        }
+    }
+    return false;
 };
 
 console.log("**************************************");
@@ -80,4 +91,4 @@ n2.next = n3;
 n3.next = n4;
 
 const lList = new LinkedList(n1);
-hasCycle(n1);
+console.log("n1 has a loop:",hasCycle(n1),"\n");
