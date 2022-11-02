@@ -12,4 +12,6 @@ JavaScript
 
 # Origin
 
+LeetCode
+
 # Exampless
