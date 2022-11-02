@@ -8,6 +8,8 @@ Each time you can either climb 1 or 2 steps.  In how many distinct ways can you 
 
 # Language
 
+JavaScript
+
 # Origin
 
 # Exampless
