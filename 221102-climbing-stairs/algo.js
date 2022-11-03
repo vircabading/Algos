@@ -36,3 +36,9 @@ const exp2 = 3
 
 console.log("N:", n2, "| expected output:", exp2);
 console.log("Solution:", climbStairs(n2), "\n");
+
+const n3 = 5;
+const exp3 = 8;
+
+console.log("N:", n3, "| expected output:", exp3);
+console.log("Solution:", climbStairs(n3), "\n");
