@@ -10,6 +10,10 @@ Return the maximum profit you can achieve from this transaction.  If you cannot 
 
 # Language
 
+JavaScript
+
 # Origin
+
+LeetCode
 
 # Examples
