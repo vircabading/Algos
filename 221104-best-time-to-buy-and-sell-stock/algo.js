@@ -45,4 +45,10 @@ const prices1 = [7, 1, 5, 3, 6, 4];
 const expOutput1 = 5;
 
 console.log("**** Prices:", prices1, "| Expected:", expOutput1, "********");
-console.log("Max profit:", maxProfit(prices1));
+console.log("Max profit:", maxProfit(prices1), "\n");
+
+const prices2 = [7, 6, 4, 3, 1];
+const expOutput2 = 0;
+
+console.log("**** Prices:", prices2, "| Expected:", expOutput2, "********");
+console.log("Max profit:", maxProfit(prices2), "\n");
