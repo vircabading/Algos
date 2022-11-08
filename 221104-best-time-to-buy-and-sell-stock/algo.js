@@ -23,6 +23,10 @@
     let minVal = prices[0];
     let maxProfit = 0;
 
+    for (curPrice of prices) {
+        console.log({curPrice});
+    }
+
     return maxProfit;
 };
 
