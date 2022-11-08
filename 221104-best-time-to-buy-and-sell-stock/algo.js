@@ -31,7 +31,6 @@
         if (curMaxProfit > maxProfit) {
             maxProfit = curMaxProfit;
         }
-        console.log("Current Price:", curPrice, "| Min Price:", minVal, "| Max Profit:", maxProfit);
     }
 
     return maxProfit;
