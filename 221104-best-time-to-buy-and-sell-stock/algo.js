@@ -19,6 +19,11 @@
     //      3. if currentMaxProfit is greater than maxProfit
     //          A. currentMaxProfit becomes the maxProfit
     // return the maxProfit
+
+    let minVal = prices[0];
+    let maxProfit = 0;
+
+    return maxProfit;
 };
 
 console.log("***********************************");
