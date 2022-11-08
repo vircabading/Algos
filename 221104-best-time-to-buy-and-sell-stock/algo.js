@@ -24,7 +24,14 @@
     let maxProfit = 0;
 
     for (curPrice of prices) {
-        console.log({curPrice});
+        if (curPrice < minVal) {
+            minVal = curPrice;
+        }
+        const curMaxProfit = curPrice - minVal;
+        if (curMaxProfit > maxProfit) {
+            maxProfit = curMaxProfit;
+        }
+        console.log("Current Price:", curPrice, "| Min Price:", minVal, "| Max Profit:", maxProfit);
     }
 
     return maxProfit;
