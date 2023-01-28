@@ -26,8 +26,8 @@ function solve(meal_cost, tip_percent, tax_percent) {
     let totalCost = meal_cost + tipAmount + taxAmount;
     // console.log({totalCost});
 
-    // Output the total cost
-    console.log(totalCost);
+    // Output the total cost rounded to the nearest integer
+    console.log(Math.round(totalCost));
 
     return;
 }
@@ -42,3 +42,11 @@ let taxPercent1 = 8;
 console.log("*****************************");
 console.log("Meal Cost:", mealCost1, "| tip percent:", tipPercent1, "| tax percent: ", taxPercent1);
 solve(mealCost1, tipPercent1, taxPercent1);
+
+let mealCost2 = 12.00;
+let tipPercent2 = 20;
+let taxPercent2 = 8;
+
+console.log("\n*****************************");
+console.log("Meal Cost:", mealCost2, "| tip percent:", tipPercent2, "| tax percent: ", taxPercent2);
+solve(mealCost2, tipPercent2, taxPercent2);
