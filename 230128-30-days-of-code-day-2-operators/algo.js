@@ -50,3 +50,11 @@ let taxPercent2 = 8;
 console.log("\n*****************************");
 console.log("Meal Cost:", mealCost2, "| tip percent:", tipPercent2, "| tax percent: ", taxPercent2);
 solve(mealCost2, tipPercent2, taxPercent2);
+
+let mealCost3 = 15.5;
+let tipPercent3 = 15;
+let taxPercent3 = 10;
+
+console.log("\n*****************************");
+console.log("Meal Cost:", mealCost3, "| tip percent:", tipPercent3, "| tax percent: ", taxPercent3);
+solve(mealCost3, tipPercent3, taxPercent3);
