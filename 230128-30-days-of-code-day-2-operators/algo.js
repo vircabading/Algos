@@ -14,17 +14,22 @@ function solve(meal_cost, tip_percent, tax_percent) {
     tip_percent = tip_percent / 100;
     tax_percent = tax_percent / 100;
 
-    console.log({meal_cost});
-    console.log({tip_percent});
-    console.log({tax_percent});
-
     // Calculate tip amount
     let tipAmount = meal_cost * tip_percent;
-    console.log({tipAmount});
+    // console.log({tipAmount});
 
     // Calculate tax amount
     let taxAmount = meal_cost * tax_percent;
-    console.log({taxAmount});
+    // console.log({taxAmount});
+
+    // Calculate Total Cost of Meal
+    let totalCost = meal_cost + tipAmount + taxAmount;
+    // console.log({totalCost});
+
+    // Output the total cost
+    console.log(totalCost);
+
+    return;
 }
 
 console.log("*****************************");
