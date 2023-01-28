@@ -4,7 +4,7 @@
 
 ## Objective
 
-In this challenge, you will work with arithmetic operators. Check out the Tutorial tab for learning materials and an instructional video.
+In this challenge, you will work with arithmetic operators.
 
 ## Task
 
@@ -12,6 +12,19 @@ Given the meal price (base cost of a meal), tip percent (the percentage of the m
 
 # Language
 
+JavaScript
+
 # Origin
 
+HackerRank
+
 # Examples
+
+```
+mealCost = 100
+tipPercent = 15
+taxPercent = 8
+
+A tip of 15% * 100 = 15, and the taxes are 8% * 100 = 8.
+Print the value 123
+```
