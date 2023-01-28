@@ -10,6 +10,10 @@
  */
 
 function solve(meal_cost, tip_percent, tax_percent) {
+    // Convert tip and tax from integers to percentages
+    tip_percent = tip_percent / 100;
+    tax_percent = tax_percent / 100;
+
     console.log({meal_cost});
     console.log({tip_percent});
     console.log({tax_percent});
