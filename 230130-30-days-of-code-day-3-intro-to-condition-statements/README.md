@@ -17,6 +17,8 @@ If n is even and greater than 20, print Not Weird
 
 # Language
 
+JavaScript
+
 # Origin
 
 # Examples
