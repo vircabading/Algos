@@ -10,10 +10,10 @@ Learn about conditional statements
 
 Given an integer, n , perform the following conditional actions:
 
-If n is odd, print Weird
-If n is even and in the inclusive range of 2 to 5, print Not Weird
-If n is even and in the inclusive range of 6 to 20, print Weird
-If n is even and greater than 20, print Not Weird
+1. If n is odd, print Weird
+2. If n is even and in the inclusive range of 2 to 5, print Not Weird
+3. If n is even and in the inclusive range of 6 to 20, print Weird
+4. If n is even and greater than 20, print Not Weird
 
 # Language
 
@@ -21,6 +21,11 @@ JavaScript
 
 # Origin
 
-Hacker Rank
+HackerRank
 
 # Examples
+
+```
+In:     3
+Out:    Weird
+```
