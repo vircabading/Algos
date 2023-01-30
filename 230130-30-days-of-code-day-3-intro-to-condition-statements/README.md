@@ -29,3 +29,8 @@ HackerRank
 In:     3
 Out:    Weird
 ```
+
+```
+In:     24
+Out:    Not Weird
+```
