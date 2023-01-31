@@ -1,7 +1,9 @@
 // 30 Days of Code: Day 3 - Into to Condition Statements
 
 const isWeird = (N) => {
-    console.log(N);
+    // If N is odd, print Weird
+    // if N is odd and is in the range of 6 to 20, print Weird
+    // Otherwise, print Not Weird
 }
 
 console.log("*******************************");
