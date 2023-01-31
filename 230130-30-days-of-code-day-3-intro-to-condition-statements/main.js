@@ -24,3 +24,7 @@ console.log("30 Days of Code: (Day 3) Intro to condition statements\n");
 console.log("*******************************");
 console.log("Number: 3");
 isWeird(3);
+
+console.log("\n*******************************");
+console.log("Number: 24");
+isWeird(24);
