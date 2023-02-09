@@ -20,6 +20,10 @@ In addition, you must write the following instance methods:
 - Otherwise print "You are old"
 ```
 
+## Output format:
+
+Complete the method definitions provided in the editor so they meet the specifications outlined above; the code to test your work is already in the editor. If your methods are implemented correctly, each test case will print 2 or 3 lines (depending on whether or not a valid  was passed to the constructor).
+
 # Language
 
 JavaScript
