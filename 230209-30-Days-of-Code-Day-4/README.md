@@ -33,3 +33,32 @@ JavaScript
 HackerRank
 
 # Examples
+
+```
+Input: -1
+Output: 'Age is not valid, setting age to 0.'
+        'You are young.'
+        'You are young.'
+
+Explanation: 
+Since initialAge is < 0, then age is set to 0 and print 'Age is not valid, stting age to 0.'  Then since the age is < 13, print 'You are young.'
+Three years pass and age is not 3, so now a message is printed 'You are young.'
+```
+
+```
+Input: 10
+Output: 'You are young.'
+        'You are a teenager.'
+```
+
+```
+Input: 16
+Output: 'You are a teenager.'
+        'You are old.'
+```
+
+```
+Input: 18
+Output: 'You are old.'
+        'You are old.'
+```
