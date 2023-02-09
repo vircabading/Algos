@@ -22,6 +22,8 @@ In addition, you must write the following instance methods:
 
 # Language
 
+JavaScript
+
 # Origin
 
 # Examples
