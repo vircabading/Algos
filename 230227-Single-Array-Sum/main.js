@@ -7,8 +7,12 @@
  * @param {Array of integers} ar 
  */
 function simpleArraySum(ar) {
-    console.log({ar});
+    // Pseudo Code
+    // 1. Iterate through the array of integers
+    // 2. Add each array in the integer into a sum
+    // 3. Return the sum
 
+    
 }
 
 console.log("***************************");
