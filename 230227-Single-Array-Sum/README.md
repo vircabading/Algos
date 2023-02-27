@@ -6,6 +6,10 @@ Given an array of integers, find the sum of its elements.
 
 ## Language
 
+JavaScript
+
 ## Origin
+
+HackerRank
 
 ## Examples
