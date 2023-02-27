@@ -17,6 +17,11 @@ Given a and b, determine their respective comparison points.
 
 ## Language
 
+JavaScript
+
 ## Origin
 
+HackerRank
+
 ## Examples
+
